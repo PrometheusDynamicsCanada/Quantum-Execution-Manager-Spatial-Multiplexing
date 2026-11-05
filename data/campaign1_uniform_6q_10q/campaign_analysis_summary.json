@@ -1,0 +1,682 @@
+{
+  "campaign_overview": {
+    "pre_execution_lock_timestamp_utc": "2026-11-02T04:58:16.846723+00:00",
+    "commitment_sha256": "661f49d86fdd0acb435f79c6dba8a544de6befa645b1d3377d951c58e8339f9b",
+    "total_jobs_executed": 7,
+    "total_qpu_seconds_charged": 97.0,
+    "total_estimated_qpu_seconds": 100.342
+  },
+  "quantum_os_forecasting": {
+    "os_selected_qpu_mean_fb": 0.920654,
+    "oracle_best_qpu_mean_fb": 0.922141,
+    "mean_selection_regret_fb": 0.001487,
+    "median_selection_regret_fb": 0.0,
+    "exact_top1_qpu_accuracy": "8 / 12 (66.7%)",
+    "within_0015_overlap_tolerance_accuracy": "12 / 12 (100.0%)",
+    "fixed_qpu_prometheus_mean_fb": {
+      "ibm_kingston": 0.920654,
+      "ibm_marrakesh": 0.905852,
+      "ibm_fez": 0.910699
+    },
+    "delta_selected_vs_fixed_qpu_prometheus_fb": {
+      "ibm_kingston": 0.0,
+      "ibm_marrakesh": 0.014803,
+      "ibm_fez": 0.009955
+    },
+    "fixed_qpu_sabre_mean_fb": {
+      "ibm_kingston": 0.895101,
+      "ibm_marrakesh": 0.875688,
+      "ibm_fez": 0.866726
+    },
+    "per_workload_forecasts_and_outcomes": [
+      {
+        "workload_id": "os_qaoa_6q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.984647,
+        "oracle_best_fb": 0.984647,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.984647,
+          "ibm_marrakesh": 0.973388,
+          "ibm_fez": 0.976217
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.902754,
+          "ibm_marrakesh": 0.981293,
+          "ibm_fez": 0.977694
+        }
+      },
+      {
+        "workload_id": "os_qaoa_8q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.936558,
+        "oracle_best_fb": 0.936558,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.936558,
+          "ibm_marrakesh": 0.905767,
+          "ibm_fez": 0.927907
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.905954,
+          "ibm_marrakesh": 0.838195,
+          "ibm_fez": 0.912897
+        }
+      },
+      {
+        "workload_id": "os_qaoa_10q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.803653,
+        "oracle_best_fb": 0.803653,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.803653,
+          "ibm_marrakesh": 0.780322,
+          "ibm_fez": 0.768351
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.738648,
+          "ibm_marrakesh": 0.753554,
+          "ibm_fez": 0.756789
+        }
+      },
+      {
+        "workload_id": "os_qft_6q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.974478,
+        "oracle_best_fb": 0.974478,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.974478,
+          "ibm_marrakesh": 0.949473,
+          "ibm_fez": 0.971704
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.966566,
+          "ibm_marrakesh": 0.947835,
+          "ibm_fez": 0.933234
+        }
+      },
+      {
+        "workload_id": "os_qft_8q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.948265,
+        "oracle_best_fb": 0.948265,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.948265,
+          "ibm_marrakesh": 0.915918,
+          "ibm_fez": 0.915349
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.928136,
+          "ibm_marrakesh": 0.885141,
+          "ibm_fez": 0.611825
+        }
+      },
+      {
+        "workload_id": "os_qft_10q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.8981,
+        "oracle_best_fb": 0.8981,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.8981,
+          "ibm_marrakesh": 0.863636,
+          "ibm_fez": 0.86041
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.898264,
+          "ibm_marrakesh": 0.864134,
+          "ibm_fez": 0.867684
+        }
+      },
+      {
+        "workload_id": "os_dense_6q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_marrakesh",
+        "selected_qpu_fb": 0.9813,
+        "oracle_best_fb": 0.982487,
+        "selection_regret_fb": 0.001187,
+        "exact_top1_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.9813,
+          "ibm_marrakesh": 0.982487,
+          "ibm_fez": 0.98038
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.976935,
+          "ibm_marrakesh": 0.958446,
+          "ibm_fez": 0.966318
+        }
+      },
+      {
+        "workload_id": "os_dense_8q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.952904,
+        "oracle_best_fb": 0.952904,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.952904,
+          "ibm_marrakesh": 0.9424,
+          "ibm_fez": 0.951776
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.935688,
+          "ibm_marrakesh": 0.937644,
+          "ibm_fez": 0.929158
+        }
+      },
+      {
+        "workload_id": "os_dense_10q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.792557,
+        "oracle_best_fb": 0.792557,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.792557,
+          "ibm_marrakesh": 0.789874,
+          "ibm_fez": 0.785368
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.747213,
+          "ibm_marrakesh": 0.778901,
+          "ibm_fez": 0.79064
+        }
+      },
+      {
+        "workload_id": "os_ising_6q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_marrakesh",
+        "selected_qpu_fb": 0.973231,
+        "oracle_best_fb": 0.974931,
+        "selection_regret_fb": 0.0017,
+        "exact_top1_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.973231,
+          "ibm_marrakesh": 0.974931,
+          "ibm_fez": 0.973816
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.964141,
+          "ibm_marrakesh": 0.952087,
+          "ibm_fez": 0.957168
+        }
+      },
+      {
+        "workload_id": "os_ising_8q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_fez",
+        "selected_qpu_fb": 0.942357,
+        "oracle_best_fb": 0.949323,
+        "selection_regret_fb": 0.006966,
+        "exact_top1_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.942357,
+          "ibm_marrakesh": 0.938278,
+          "ibm_fez": 0.949323
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.941898,
+          "ibm_marrakesh": 0.93871,
+          "ibm_fez": 0.890074
+        }
+      },
+      {
+        "workload_id": "os_ising_10q",
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_fez",
+        "selected_qpu_fb": 0.859802,
+        "oracle_best_fb": 0.867793,
+        "selection_regret_fb": 0.007991,
+        "exact_top1_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_kingston": 0.859802,
+          "ibm_marrakesh": 0.853745,
+          "ibm_fez": 0.867793
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_kingston": 0.835014,
+          "ibm_marrakesh": 0.672316,
+          "ibm_fez": 0.807232
+        }
+      }
+    ]
+  },
+  "pooled_3qpu_arm_comparison": {
+    "arm_a_sabre_seq_fullchip_mean_fb": 0.879172,
+    "arm_b_prometheus_os_best_seq_mean_fb": 0.912402,
+    "arm_c_prometheus_k4_isolated_same_qubits_mean_fb": 0.909175,
+    "arm_d_prometheus_k4_packed_buffered_mean_fb": 0.907944,
+    "arm_e_sabre_k4_packed_buffered_mean_fb": 0.88174,
+    "arm_f_sabre_k4_packed_unbuffered_mean_fb": 0.875747,
+    "arm_g_ctrl_prometheus_k6_isolated_same_qubits_mean_fb": 0.905118,
+    "arm_g_prometheus_k6_packed_buffered_mean_fb": 0.905954,
+    "same_qubit_interference_k4_delta_fb": {
+      "mean_delta_fb": -0.001231,
+      "bootstrap_95ci": [
+        -0.003775,
+        0.001262
+      ],
+      "paired_sign_flip_p_12workloads": 0.322266
+    },
+    "same_qubit_interference_k6_delta_fb": {
+      "mean_delta_fb": 0.000836,
+      "bootstrap_95ci": [
+        -0.001824,
+        0.003623
+      ],
+      "paired_sign_flip_p_12workloads": 0.51709
+    },
+    "hypothesis_tests_12workloads_pooled_across_3qpus": {
+      "prom_os_seq_vs_sabre_seq": {
+        "pct_gain": 3.78,
+        "raw_p": 0.000977,
+        "holm_p": 0.001953
+      },
+      "prom_k4_buffered_vs_sabre_k4_buffered": {
+        "pct_gain": 2.97,
+        "raw_p": 0.000488,
+        "holm_p": 0.001465
+      },
+      "prom_k4_buffered_vs_sabre_k4_unbuffered": {
+        "pct_gain": 3.68,
+        "raw_p": 0.000977,
+        "holm_p": 0.001953
+      }
+    },
+    "per_qpu_arm_means": {
+      "ibm_kingston": {
+        "arm_a_sabre_seq": {
+          "mean_fb": 0.895101,
+          "mean_fh": 0.807176,
+          "mean_tvd": 0.287581,
+          "mean_2q": 76.5,
+          "mean_depth": 163.67
+        },
+        "arm_b_prom_os_best": {
+          "mean_fb": 0.920654,
+          "mean_fh": 0.851794,
+          "mean_tvd": 0.233898,
+          "mean_2q": 75.0,
+          "mean_depth": 149.5
+        },
+        "arm_c_prom_k4_isolated": {
+          "mean_fb": 0.915192,
+          "mean_fh": 0.842213,
+          "mean_tvd": 0.242018,
+          "mean_2q": 79.75,
+          "mean_depth": 157.83
+        },
+        "arm_d_prom_k4_packed": {
+          "mean_fb": 0.913761,
+          "mean_fh": 0.840053,
+          "mean_tvd": 0.247357,
+          "mean_2q": 79.75,
+          "mean_depth": 157.83
+        },
+        "arm_e_sabre_k4_buffered_packed": {
+          "mean_fb": 0.91082,
+          "mean_fh": 0.834339,
+          "mean_tvd": 0.253825,
+          "mean_2q": 92.25,
+          "mean_depth": 174.25
+        },
+        "arm_f_sabre_k4_unbuffered_packed": {
+          "mean_fb": 0.909474,
+          "mean_fh": 0.832042,
+          "mean_tvd": 0.255117,
+          "mean_2q": 88.17,
+          "mean_depth": 179.33
+        },
+        "arm_g_ctrl_prom_k6_isolated": {
+          "mean_fb": 0.917239,
+          "mean_fh": 0.845992,
+          "mean_tvd": 0.241684,
+          "mean_2q": 80.92,
+          "mean_depth": 156.83
+        },
+        "arm_g_prom_k6_packed": {
+          "mean_fb": 0.914881,
+          "mean_fh": 0.842076,
+          "mean_tvd": 0.244336,
+          "mean_2q": 80.92,
+          "mean_depth": 156.83
+        }
+      },
+      "ibm_marrakesh": {
+        "arm_a_sabre_seq": {
+          "mean_fb": 0.875688,
+          "mean_fh": 0.775507,
+          "mean_tvd": 0.309432,
+          "mean_2q": 76.5,
+          "mean_depth": 163.58
+        },
+        "arm_b_prom_os_best": {
+          "mean_fb": 0.905852,
+          "mean_fh": 0.825009,
+          "mean_tvd": 0.267509,
+          "mean_2q": 78.33,
+          "mean_depth": 152.17
+        },
+        "arm_c_prom_k4_isolated": {
+          "mean_fb": 0.903576,
+          "mean_fh": 0.821581,
+          "mean_tvd": 0.268039,
+          "mean_2q": 84.83,
+          "mean_depth": 159.42
+        },
+        "arm_d_prom_k4_packed": {
+          "mean_fb": 0.904754,
+          "mean_fh": 0.823973,
+          "mean_tvd": 0.263308,
+          "mean_2q": 84.83,
+          "mean_depth": 159.42
+        },
+        "arm_e_sabre_k4_buffered_packed": {
+          "mean_fb": 0.875863,
+          "mean_fh": 0.771199,
+          "mean_tvd": 0.326356,
+          "mean_2q": 92.25,
+          "mean_depth": 174.08
+        },
+        "arm_f_sabre_k4_unbuffered_packed": {
+          "mean_fb": 0.891127,
+          "mean_fh": 0.799687,
+          "mean_tvd": 0.295237,
+          "mean_2q": 88.17,
+          "mean_depth": 179.42
+        },
+        "arm_g_ctrl_prom_k6_isolated": {
+          "mean_fb": 0.898154,
+          "mean_fh": 0.81136,
+          "mean_tvd": 0.281624,
+          "mean_2q": 86.08,
+          "mean_depth": 159.33
+        },
+        "arm_g_prom_k6_packed": {
+          "mean_fb": 0.899944,
+          "mean_fh": 0.814546,
+          "mean_tvd": 0.280646,
+          "mean_2q": 86.08,
+          "mean_depth": 159.33
+        }
+      },
+      "ibm_fez": {
+        "arm_a_sabre_seq": {
+          "mean_fb": 0.866726,
+          "mean_fh": 0.761864,
+          "mean_tvd": 0.332019,
+          "mean_2q": 76.5,
+          "mean_depth": 163.5
+        },
+        "arm_b_prom_os_best": {
+          "mean_fb": 0.910699,
+          "mean_fh": 0.834431,
+          "mean_tvd": 0.248966,
+          "mean_2q": 77.92,
+          "mean_depth": 152.33
+        },
+        "arm_c_prom_k4_isolated": {
+          "mean_fb": 0.908757,
+          "mean_fh": 0.829928,
+          "mean_tvd": 0.262562,
+          "mean_2q": 82.75,
+          "mean_depth": 153.5
+        },
+        "arm_d_prom_k4_packed": {
+          "mean_fb": 0.905317,
+          "mean_fh": 0.824003,
+          "mean_tvd": 0.269304,
+          "mean_2q": 82.75,
+          "mean_depth": 153.5
+        },
+        "arm_e_sabre_k4_buffered_packed": {
+          "mean_fb": 0.858537,
+          "mean_fh": 0.746446,
+          "mean_tvd": 0.350595,
+          "mean_2q": 92.25,
+          "mean_depth": 174.92
+        },
+        "arm_f_sabre_k4_unbuffered_packed": {
+          "mean_fb": 0.826638,
+          "mean_fh": 0.692645,
+          "mean_tvd": 0.397813,
+          "mean_2q": 88.17,
+          "mean_depth": 179.0
+        },
+        "arm_g_ctrl_prom_k6_isolated": {
+          "mean_fb": 0.899962,
+          "mean_fh": 0.814606,
+          "mean_tvd": 0.274364,
+          "mean_2q": 84.25,
+          "mean_depth": 155.33
+        },
+        "arm_g_prom_k6_packed": {
+          "mean_fb": 0.903037,
+          "mean_fh": 0.819743,
+          "mean_tvd": 0.273379,
+          "mean_2q": 84.25,
+          "mean_depth": 155.33
+        }
+      }
+    }
+  },
+  "spatial_replica_independence_4x1024_vs_isolated_4096": {
+    "num_qpu_workload_cases": 18,
+    "pooled_4x1024_mean_fb": 0.953491,
+    "isolated_1x4096_same_qubit_mean_fb": 0.945969,
+    "replica_0_1024_same_qubit_mean_fb": 0.894479,
+    "best_single_replica_mean_fb": 0.907028,
+    "mean_shot_by_shot_pairwise_pearson_r_prob": 0.000602,
+    "mean_shot_by_shot_pairwise_pearson_r_hamming": -0.003299,
+    "mean_shot_by_shot_pairwise_mutual_info_bits": 0.000738,
+    "mean_effective_independent_samples_n_eff_of_4096": 4017.8
+  },
+  "timing_isolation_and_throughput_ibm_kingston": {
+    "T1_sabre_sequential_12pubs": {
+      "job_id": "dbk1i3l6p51s73clp22g",
+      "backend": "ibm_kingston",
+      "num_pubs": 12,
+      "total_physical_shots": 12288,
+      "workloads_evaluated": 12,
+      "quantum_seconds_charged": 6.0,
+      "circuits_execution_time_seconds": 3.2775,
+      "wall_seconds": 11.57,
+      "mean_classical_overlap_fb": 0.894021,
+      "mean_hellinger_fidelity_fh": 0.806657,
+      "workloads_passing_fb_ge_080": 10,
+      "workloads_passing_fb_ge_085": 9,
+      "workloads_passing_fb_ge_090": 7,
+      "workloads_per_charged_qpu_sec_fb085": 1.5,
+      "workloads_per_charged_qpu_sec_fb090": 1.1667,
+      "workloads_per_exec_sec_fb085": 2.746,
+      "workloads_per_exec_sec_fb090": 2.1358
+    },
+    "T2_prometheus_sequential_12pubs": {
+      "job_id": "dbk1i6t6p51s73clp290",
+      "backend": "ibm_kingston",
+      "num_pubs": 12,
+      "total_physical_shots": 12288,
+      "workloads_evaluated": 12,
+      "quantum_seconds_charged": 5.0,
+      "circuits_execution_time_seconds": 3.2736,
+      "wall_seconds": 12.11,
+      "mean_classical_overlap_fb": 0.917888,
+      "mean_hellinger_fidelity_fh": 0.846724,
+      "workloads_passing_fb_ge_080": 11,
+      "workloads_passing_fb_ge_085": 10,
+      "workloads_passing_fb_ge_090": 8,
+      "workloads_per_charged_qpu_sec_fb085": 2.0,
+      "workloads_per_charged_qpu_sec_fb090": 1.6,
+      "workloads_per_exec_sec_fb085": 3.0547,
+      "workloads_per_exec_sec_fb090": 2.4438
+    },
+    "T3_prometheus_packed_k4_3pubs": {
+      "job_id": "dbk1ia1kdqps7391ikgg",
+      "backend": "ibm_kingston",
+      "num_pubs": 3,
+      "total_physical_shots": 3072,
+      "workloads_evaluated": 12,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.8294,
+      "wall_seconds": 7.85,
+      "mean_classical_overlap_fb": 0.910795,
+      "mean_hellinger_fidelity_fh": 0.835167,
+      "workloads_passing_fb_ge_080": 10,
+      "workloads_passing_fb_ge_085": 10,
+      "workloads_passing_fb_ge_090": 8,
+      "workloads_per_charged_qpu_sec_fb085": 3.3333,
+      "workloads_per_charged_qpu_sec_fb090": 2.6667,
+      "workloads_per_exec_sec_fb085": 12.0569,
+      "workloads_per_exec_sec_fb090": 9.6455
+    },
+    "T4_prometheus_packed_k6_2pubs": {
+      "job_id": "dbk1ic9ffo6c73baki30",
+      "backend": "ibm_kingston",
+      "num_pubs": 2,
+      "total_physical_shots": 2048,
+      "workloads_evaluated": 12,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.556,
+      "wall_seconds": 8.17,
+      "mean_classical_overlap_fb": 0.915689,
+      "mean_hellinger_fidelity_fh": 0.843405,
+      "workloads_passing_fb_ge_080": 10,
+      "workloads_passing_fb_ge_085": 10,
+      "workloads_passing_fb_ge_090": 9,
+      "workloads_per_charged_qpu_sec_fb085": 3.3333,
+      "workloads_per_charged_qpu_sec_fb090": 3.0,
+      "workloads_per_exec_sec_fb085": 17.9856,
+      "workloads_per_exec_sec_fb090": 16.1871
+    }
+  },
+  "job_ledger": [
+    {
+      "file": "master_interleaved_ibm_fez.json",
+      "batch_label": "QuantumOS_Interleaved_Master_ibm_fez",
+      "backend": "ibm_fez",
+      "job_id": "dbk1hq0nceqs73al07v0",
+      "submission_timestamp": "2026-11-02T05:00:24.781633+00:00",
+      "completion_timestamp": "2026-11-02T05:01:00.484182+00:00",
+      "num_pubs": 71,
+      "total_shots": 91136,
+      "isa_estimated_seconds": 26.798,
+      "quantum_seconds_charged": 26.0,
+      "circuits_execution_time_seconds": 24.0753,
+      "wall_seconds": 35.7
+    },
+    {
+      "file": "master_interleaved_ibm_kingston.json",
+      "batch_label": "QuantumOS_Interleaved_Master_ibm_kingston",
+      "backend": "ibm_kingston",
+      "job_id": "dbk1h6d6p51s73clp0hg",
+      "submission_timestamp": "2026-11-02T04:59:04.104617+00:00",
+      "completion_timestamp": "2026-11-02T04:59:41.339974+00:00",
+      "num_pubs": 71,
+      "total_shots": 91136,
+      "isa_estimated_seconds": 26.855,
+      "quantum_seconds_charged": 27.0,
+      "circuits_execution_time_seconds": 24.3674,
+      "wall_seconds": 37.24
+    },
+    {
+      "file": "master_interleaved_ibm_marrakesh.json",
+      "batch_label": "QuantumOS_Interleaved_Master_ibm_marrakesh",
+      "backend": "ibm_marrakesh",
+      "job_id": "dbk1hfl6p51s73clp140",
+      "submission_timestamp": "2026-11-02T04:59:42.622349+00:00",
+      "completion_timestamp": "2026-11-02T05:00:22.413405+00:00",
+      "num_pubs": 71,
+      "total_shots": 91136,
+      "isa_estimated_seconds": 26.912,
+      "quantum_seconds_charged": 27.0,
+      "circuits_execution_time_seconds": 24.6964,
+      "wall_seconds": 39.79
+    },
+    {
+      "file": "timing_T1_sabre_sequential_12pubs_ibm_kingston.json",
+      "batch_label": "QuantumOS_T1_sabre_sequential_12pubs_ibm_kingston",
+      "backend": "ibm_kingston",
+      "job_id": "dbk1i3l6p51s73clp22g",
+      "submission_timestamp": "2026-11-02T05:01:02.134725+00:00",
+      "completion_timestamp": "2026-11-02T05:01:13.705069+00:00",
+      "num_pubs": 12,
+      "total_shots": 12288,
+      "isa_estimated_seconds": 6.21,
+      "quantum_seconds_charged": 6.0,
+      "circuits_execution_time_seconds": 3.2775,
+      "wall_seconds": 11.57
+    },
+    {
+      "file": "timing_T2_prometheus_sequential_12pubs_ibm_kingston.json",
+      "batch_label": "QuantumOS_T2_prometheus_sequential_12pubs_ibm_kingston",
+      "backend": "ibm_kingston",
+      "job_id": "dbk1i6t6p51s73clp290",
+      "submission_timestamp": "2026-11-02T05:01:15.538444+00:00",
+      "completion_timestamp": "2026-11-02T05:01:27.648606+00:00",
+      "num_pubs": 12,
+      "total_shots": 12288,
+      "isa_estimated_seconds": 6.201,
+      "quantum_seconds_charged": 5.0,
+      "circuits_execution_time_seconds": 3.2736,
+      "wall_seconds": 12.11
+    },
+    {
+      "file": "timing_T3_prometheus_packed_k4_3pubs_ibm_kingston.json",
+      "batch_label": "QuantumOS_T3_prometheus_packed_k4_3pubs_ibm_kingston",
+      "backend": "ibm_kingston",
+      "job_id": "dbk1ia1kdqps7391ikgg",
+      "submission_timestamp": "2026-11-02T05:01:28.827633+00:00",
+      "completion_timestamp": "2026-11-02T05:01:36.682522+00:00",
+      "num_pubs": 3,
+      "total_shots": 3072,
+      "isa_estimated_seconds": 3.817,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.8294,
+      "wall_seconds": 7.85
+    },
+    {
+      "file": "timing_T4_prometheus_packed_k6_2pubs_ibm_kingston.json",
+      "batch_label": "QuantumOS_T4_prometheus_packed_k6_2pubs_ibm_kingston",
+      "backend": "ibm_kingston",
+      "job_id": "dbk1ic9ffo6c73baki30",
+      "submission_timestamp": "2026-11-02T05:01:37.896248+00:00",
+      "completion_timestamp": "2026-11-02T05:01:46.067405+00:00",
+      "num_pubs": 2,
+      "total_shots": 2048,
+      "isa_estimated_seconds": 3.549,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.556,
+      "wall_seconds": 8.17
+    }
+  ]
+}

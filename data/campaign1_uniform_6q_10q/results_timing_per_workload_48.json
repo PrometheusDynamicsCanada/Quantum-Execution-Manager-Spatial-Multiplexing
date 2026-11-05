@@ -1,0 +1,770 @@
+[
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 0,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qaoa_6q",
+    "family": "qaoa_maxcut",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.897282,
+      "hellinger_fidelity_fh": 0.805115,
+      "tvd": 0.36635
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 1,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qaoa_8q",
+    "family": "qaoa_maxcut",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.901851,
+      "hellinger_fidelity_fh": 0.813335,
+      "tvd": 0.319573
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 2,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qaoa_10q",
+    "family": "qaoa_maxcut",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.703132,
+      "hellinger_fidelity_fh": 0.494394,
+      "tvd": 0.546136
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 3,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qft_6q",
+    "family": "qft_phase",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.968175,
+      "hellinger_fidelity_fh": 0.937363,
+      "tvd": 0.144467
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 4,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qft_8q",
+    "family": "qft_phase",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.943126,
+      "hellinger_fidelity_fh": 0.889486,
+      "tvd": 0.20118
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 5,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qft_10q",
+    "family": "qft_phase",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.897928,
+      "hellinger_fidelity_fh": 0.806274,
+      "tvd": 0.264525
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 6,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_dense_6q",
+    "family": "dense_bipartite",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.977544,
+      "hellinger_fidelity_fh": 0.955592,
+      "tvd": 0.142131
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 7,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_dense_8q",
+    "family": "dense_bipartite",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.938694,
+      "hellinger_fidelity_fh": 0.881147,
+      "tvd": 0.248272
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 8,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_dense_10q",
+    "family": "dense_bipartite",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.742682,
+      "hellinger_fidelity_fh": 0.551577,
+      "tvd": 0.465878
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 9,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_ising_6q",
+    "family": "trotter_ising",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.971279,
+      "hellinger_fidelity_fh": 0.943382,
+      "tvd": 0.17497
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 10,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_ising_8q",
+    "family": "trotter_ising",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.949521,
+      "hellinger_fidelity_fh": 0.90159,
+      "tvd": 0.210458
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "pub_index": 11,
+    "arm": "T1_sabre_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_ising_10q",
+    "family": "trotter_ising",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.837034,
+      "hellinger_fidelity_fh": 0.700625,
+      "tvd": 0.372168
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 0,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qaoa_6q",
+    "family": "qaoa_maxcut",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.987146,
+      "hellinger_fidelity_fh": 0.974458,
+      "tvd": 0.111885
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 1,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qaoa_8q",
+    "family": "qaoa_maxcut",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.936953,
+      "hellinger_fidelity_fh": 0.877882,
+      "tvd": 0.254614
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 2,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qaoa_10q",
+    "family": "qaoa_maxcut",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.787919,
+      "hellinger_fidelity_fh": 0.620817,
+      "tvd": 0.410632
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 3,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qft_6q",
+    "family": "qft_phase",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.970084,
+      "hellinger_fidelity_fh": 0.941063,
+      "tvd": 0.122595
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 4,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qft_8q",
+    "family": "qft_phase",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.93905,
+      "hellinger_fidelity_fh": 0.881816,
+      "tvd": 0.221986
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 5,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_qft_10q",
+    "family": "qft_phase",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.893817,
+      "hellinger_fidelity_fh": 0.79891,
+      "tvd": 0.276499
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 6,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_dense_6q",
+    "family": "dense_bipartite",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.98321,
+      "hellinger_fidelity_fh": 0.966702,
+      "tvd": 0.115829
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 7,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_dense_8q",
+    "family": "dense_bipartite",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.935932,
+      "hellinger_fidelity_fh": 0.875968,
+      "tvd": 0.231378
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 8,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_dense_10q",
+    "family": "dense_bipartite",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.810247,
+      "hellinger_fidelity_fh": 0.6565,
+      "tvd": 0.387245
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 9,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_ising_6q",
+    "family": "trotter_ising",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.975846,
+      "hellinger_fidelity_fh": 0.952275,
+      "tvd": 0.128523
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 10,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_ising_8q",
+    "family": "trotter_ising",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.943416,
+      "hellinger_fidelity_fh": 0.890034,
+      "tvd": 0.215529
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1i6t6p51s73clp290",
+    "pub_index": 11,
+    "arm": "T2_prometheus_sequential_12pubs",
+    "execution_mode": "timing_isolation_single_circuit",
+    "workload_id": "os_ising_10q",
+    "family": "trotter_ising",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.851037,
+      "hellinger_fidelity_fh": 0.724263,
+      "tvd": 0.341092
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 0,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_qaoa_6q",
+    "family": "qaoa_maxcut",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.964391,
+      "hellinger_fidelity_fh": 0.930049,
+      "tvd": 0.195274
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 0,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_qft_8q",
+    "family": "qft_phase",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.945022,
+      "hellinger_fidelity_fh": 0.893066,
+      "tvd": 0.211045
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 0,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_dense_10q",
+    "family": "dense_bipartite",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.79897,
+      "hellinger_fidelity_fh": 0.638354,
+      "tvd": 0.39935
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 0,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_ising_8q",
+    "family": "trotter_ising",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.943609,
+      "hellinger_fidelity_fh": 0.890398,
+      "tvd": 0.209518
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 1,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_qft_6q",
+    "family": "qft_phase",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.949595,
+      "hellinger_fidelity_fh": 0.901731,
+      "tvd": 0.178596
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 1,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_dense_8q",
+    "family": "dense_bipartite",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.945535,
+      "hellinger_fidelity_fh": 0.894036,
+      "tvd": 0.208528
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 1,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_ising_10q",
+    "family": "trotter_ising",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.868897,
+      "hellinger_fidelity_fh": 0.754982,
+      "tvd": 0.32021
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 1,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_qaoa_8q",
+    "family": "qaoa_maxcut",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.922885,
+      "hellinger_fidelity_fh": 0.851717,
+      "tvd": 0.269162
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 2,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_dense_6q",
+    "family": "dense_bipartite",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.985759,
+      "hellinger_fidelity_fh": 0.971721,
+      "tvd": 0.113689
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 2,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_ising_6q",
+    "family": "trotter_ising",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.984063,
+      "hellinger_fidelity_fh": 0.96838,
+      "tvd": 0.118028
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 2,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_qaoa_10q",
+    "family": "qaoa_maxcut",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.726583,
+      "hellinger_fidelity_fh": 0.527923,
+      "tvd": 0.513106
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "pub_index": 2,
+    "arm": "T3_prometheus_packed_k4_3pubs",
+    "execution_mode": "timing_isolation_packed_k4",
+    "workload_id": "os_qft_10q",
+    "family": "qft_phase",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.894227,
+      "hellinger_fidelity_fh": 0.799642,
+      "tvd": 0.287183
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 0,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_qaoa_6q",
+    "family": "qaoa_maxcut",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.988898,
+      "hellinger_fidelity_fh": 0.977919,
+      "tvd": 0.111084
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 0,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_qft_6q",
+    "family": "qft_phase",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.970389,
+      "hellinger_fidelity_fh": 0.941656,
+      "tvd": 0.139253
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 0,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_dense_8q",
+    "family": "dense_bipartite",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.940739,
+      "hellinger_fidelity_fh": 0.88499,
+      "tvd": 0.225109
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 0,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_ising_8q",
+    "family": "trotter_ising",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.952941,
+      "hellinger_fidelity_fh": 0.908096,
+      "tvd": 0.183879
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 0,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_qaoa_10q",
+    "family": "qaoa_maxcut",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.758896,
+      "hellinger_fidelity_fh": 0.575924,
+      "tvd": 0.476431
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 0,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_qft_10q",
+    "family": "qft_phase",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.900733,
+      "hellinger_fidelity_fh": 0.811319,
+      "tvd": 0.264601
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 1,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_dense_6q",
+    "family": "dense_bipartite",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.983564,
+      "hellinger_fidelity_fh": 0.967398,
+      "tvd": 0.109298
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 1,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_ising_6q",
+    "family": "trotter_ising",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.963319,
+      "hellinger_fidelity_fh": 0.927983,
+      "tvd": 0.201732
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 1,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_qaoa_8q",
+    "family": "qaoa_maxcut",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.920775,
+      "hellinger_fidelity_fh": 0.847827,
+      "tvd": 0.277335
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 1,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_qft_8q",
+    "family": "qft_phase",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.942976,
+      "hellinger_fidelity_fh": 0.889203,
+      "tvd": 0.198987
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 1,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_dense_10q",
+    "family": "dense_bipartite",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.798023,
+      "hellinger_fidelity_fh": 0.636841,
+      "tvd": 0.396077
+    }
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "pub_index": 1,
+    "arm": "T4_prometheus_packed_k6_2pubs",
+    "execution_mode": "timing_isolation_packed_k6",
+    "workload_id": "os_ising_10q",
+    "family": "trotter_ising",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.867012,
+      "hellinger_fidelity_fh": 0.751709,
+      "tvd": 0.330064
+    }
+  }
+]

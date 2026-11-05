@@ -1,0 +1,1000 @@
+{
+  "campaign_overview": {
+    "pre_execution_lock_timestamp_utc": "2026-11-02T05:47:57.961685+00:00",
+    "commitment_sha256": "97bbb8f22c4301d4364ee1197a6ca2eb44926085c2acb635ffbd6b89dd718ee1",
+    "accounting_summary": {
+      "workloads_per_arm": 16,
+      "total_logical_qubits_across_16_workloads": 124,
+      "experimental_arms_per_qpu": 8,
+      "circuit_executions_per_qpu": 128,
+      "interleaved_pubs_per_qpu": 75,
+      "physical_shots_per_qpu": 76800,
+      "three_qpu_interleaved_pubs": 225,
+      "three_qpu_circuit_executions": 384,
+      "timing_isolation_jobs": 4,
+      "timing_isolation_pubs": 37,
+      "timing_isolation_circuit_executions": 64,
+      "grand_total_jobs": 7,
+      "grand_total_pubs": 262,
+      "grand_total_physical_shots": 268288,
+      "grand_total_circuit_executions": 448
+    },
+    "total_jobs_executed": 7,
+    "total_qpu_seconds_charged": 89.0,
+    "total_estimated_qpu_seconds": 90.821
+  },
+  "classical_acceleration_benchmarks": {
+    "gpu_device": "NVIDIA GeForce RTX 5070 Ti (15.92 GB VRAM, CUDA)",
+    "cpu_vs_rtx5070ti_subgraph_scoring_and_packing": {
+      "ibm_marrakesh": {
+        "num_candidate_subgraphs": 2171,
+        "cpu_subgraph_enumeration_ms": 64.546,
+        "cpu_score_and_sort_ms": 325.165,
+        "gpu_score_and_sort_breakdown_ms": {
+          "num_candidates": 2171,
+          "h2d_transfer_ms": 3.896,
+          "gpu_kernel_ms": 4.441,
+          "d2h_and_sort_ms": 0.542,
+          "total_score_and_sort_ms": 8.881
+        },
+        "score_and_sort_speedup_gpu_vs_cpu": 36.61,
+        "cpu_5bins_conflict_matrix_ms": 269.865,
+        "gpu_5bins_conflict_matrix_ms": 16.654,
+        "conflict_matrix_speedup_gpu_vs_cpu": 16.2,
+        "cpu_5bins_total_packing_ms": 285.364,
+        "gpu_5bins_total_packing_ms": 31.459,
+        "packing_speedup_gpu_vs_cpu": 9.07,
+        "cpu_post_enumeration_scheduling_ms": 610.529,
+        "gpu_post_enumeration_scheduling_ms": 40.34,
+        "post_enumeration_speedup_gpu_vs_cpu": 15.13,
+        "cpu_end_to_end_including_enumeration_ms": 675.075,
+        "gpu_end_to_end_including_enumeration_ms": 104.886,
+        "end_to_end_speedup_gpu_vs_cpu": 6.44
+      },
+      "ibm_fez": {
+        "num_candidate_subgraphs": 2143,
+        "cpu_subgraph_enumeration_ms": 62.521,
+        "cpu_score_and_sort_ms": 125.523,
+        "gpu_score_and_sort_breakdown_ms": {
+          "num_candidates": 2143,
+          "h2d_transfer_ms": 3.242,
+          "gpu_kernel_ms": 0.704,
+          "d2h_and_sort_ms": 0.4,
+          "total_score_and_sort_ms": 4.346
+        },
+        "score_and_sort_speedup_gpu_vs_cpu": 28.88,
+        "cpu_5bins_conflict_matrix_ms": 272.315,
+        "gpu_5bins_conflict_matrix_ms": 7.93,
+        "conflict_matrix_speedup_gpu_vs_cpu": 34.34,
+        "cpu_5bins_total_packing_ms": 293.026,
+        "gpu_5bins_total_packing_ms": 26.643,
+        "packing_speedup_gpu_vs_cpu": 11.0,
+        "cpu_post_enumeration_scheduling_ms": 418.549,
+        "gpu_post_enumeration_scheduling_ms": 30.989,
+        "post_enumeration_speedup_gpu_vs_cpu": 13.51,
+        "cpu_end_to_end_including_enumeration_ms": 481.07,
+        "gpu_end_to_end_including_enumeration_ms": 93.51,
+        "end_to_end_speedup_gpu_vs_cpu": 5.14
+      },
+      "ibm_kingston": {
+        "num_candidate_subgraphs": 2040,
+        "cpu_subgraph_enumeration_ms": 60.685,
+        "cpu_score_and_sort_ms": 118.317,
+        "gpu_score_and_sort_breakdown_ms": {
+          "num_candidates": 2040,
+          "h2d_transfer_ms": 3.078,
+          "gpu_kernel_ms": 0.782,
+          "d2h_and_sort_ms": 0.502,
+          "total_score_and_sort_ms": 4.362
+        },
+        "score_and_sort_speedup_gpu_vs_cpu": 27.12,
+        "cpu_5bins_conflict_matrix_ms": 268.216,
+        "gpu_5bins_conflict_matrix_ms": 8.303,
+        "conflict_matrix_speedup_gpu_vs_cpu": 32.3,
+        "cpu_5bins_total_packing_ms": 283.058,
+        "gpu_5bins_total_packing_ms": 21.979,
+        "packing_speedup_gpu_vs_cpu": 12.88,
+        "cpu_post_enumeration_scheduling_ms": 401.375,
+        "gpu_post_enumeration_scheduling_ms": 26.341,
+        "post_enumeration_speedup_gpu_vs_cpu": 15.24,
+        "cpu_end_to_end_including_enumeration_ms": 462.06,
+        "gpu_end_to_end_including_enumeration_ms": 87.026,
+        "end_to_end_speedup_gpu_vs_cpu": 5.31
+      }
+    },
+    "cpu_1core_vs_24core_parallel_compilation": {
+      "num_workloads": 16,
+      "total_logical_qubits": 124,
+      "cpu_logical_cores_available": 24,
+      "parallel_worker_processes": 8,
+      "rayon_threads_per_worker": 3,
+      "total_parallel_threads": 24,
+      "sequential_1core_wall_seconds": 18.6781,
+      "parallel_24core_wall_seconds": 11.5474,
+      "measured_wall_clock_speedup_factor": 1.618
+    }
+  },
+  "quantum_os_forecasting_16workloads": {
+    "os_selected_qpu_mean_fb": 0.902825,
+    "oracle_best_qpu_mean_fb": 0.903885,
+    "mean_selection_regret_fb": 0.00106,
+    "median_selection_regret_fb": 0.0,
+    "exact_top1_qpu_accuracy": "11 / 16 (68.8%)",
+    "within_0015_overlap_tolerance_accuracy": "16 / 16 (100.0%)",
+    "fixed_qpu_prometheus_mean_fb": {
+      "ibm_marrakesh": 0.885613,
+      "ibm_fez": 0.891657,
+      "ibm_kingston": 0.902923
+    },
+    "delta_selected_vs_fixed_qpu_prometheus_fb": {
+      "ibm_marrakesh": 0.017212,
+      "ibm_fez": 0.011168,
+      "ibm_kingston": -9.9e-05
+    },
+    "fixed_qpu_sabre_mean_fb": {
+      "ibm_marrakesh": 0.860649,
+      "ibm_fez": 0.812869,
+      "ibm_kingston": 0.887065
+    },
+    "per_workload_forecasts_and_outcomes": [
+      {
+        "workload_id": "het_ghz_4q",
+        "family": "ghz_entangler",
+        "width": 4,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_fez",
+        "selected_qpu_fb": 0.983178,
+        "oracle_best_fb": 0.983751,
+        "selection_regret_fb": 0.000573,
+        "exact_top1_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.963289,
+          "ibm_fez": 0.983751,
+          "ibm_kingston": 0.983178
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.970064,
+          "ibm_fez": 0.959796,
+          "ibm_kingston": 0.978829
+        }
+      },
+      {
+        "workload_id": "het_bv_5q",
+        "family": "bernstein_vazirani",
+        "width": 5,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_marrakesh",
+        "selected_qpu_fb": 0.971204,
+        "oracle_best_fb": 0.975248,
+        "selection_regret_fb": 0.004044,
+        "exact_top1_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.975248,
+          "ibm_fez": 0.968811,
+          "ibm_kingston": 0.971204
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.904491,
+          "ibm_fez": 0.943188,
+          "ibm_kingston": 0.958107
+        }
+      },
+      {
+        "workload_id": "het_grover_5q",
+        "family": "grover_search",
+        "width": 5,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_fez",
+        "selected_qpu_fb": 0.9768,
+        "oracle_best_fb": 0.980813,
+        "selection_regret_fb": 0.004013,
+        "exact_top1_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.975343,
+          "ibm_fez": 0.980813,
+          "ibm_kingston": 0.9768
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.981554,
+          "ibm_fez": 0.970834,
+          "ibm_kingston": 0.988164
+        }
+      },
+      {
+        "workload_id": "het_wstate_6q",
+        "family": "w_state_dicke",
+        "width": 6,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.945914,
+        "oracle_best_fb": 0.945914,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.914645,
+          "ibm_fez": 0.943489,
+          "ibm_kingston": 0.945914
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.942716,
+          "ibm_fez": 0.902888,
+          "ibm_kingston": 0.966669
+        }
+      },
+      {
+        "workload_id": "het_simon_6q",
+        "family": "simon_period",
+        "width": 6,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.99213,
+        "oracle_best_fb": 0.99213,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.990986,
+          "ibm_fez": 0.990499,
+          "ibm_kingston": 0.99213
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.992632,
+          "ibm_fez": 0.992407,
+          "ibm_kingston": 0.991467
+        }
+      },
+      {
+        "workload_id": "het_qv_6q",
+        "family": "quantum_volume",
+        "width": 6,
+        "predicted_qpu": "ibm_fez",
+        "observed_best_qpu": "ibm_fez",
+        "selected_qpu_fb": 0.986204,
+        "oracle_best_fb": 0.986204,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.982203,
+          "ibm_fez": 0.986204,
+          "ibm_kingston": 0.982879
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.968291,
+          "ibm_fez": 0.979935,
+          "ibm_kingston": 0.984408
+        }
+      },
+      {
+        "workload_id": "het_qaoa_7q",
+        "family": "qaoa_maxcut",
+        "width": 7,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_fez",
+        "selected_qpu_fb": 0.970051,
+        "oracle_best_fb": 0.973477,
+        "selection_regret_fb": 0.003426,
+        "exact_top1_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.969102,
+          "ibm_fez": 0.973477,
+          "ibm_kingston": 0.970051
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.934384,
+          "ibm_fez": 0.934798,
+          "ibm_kingston": 0.956939
+        }
+      },
+      {
+        "workload_id": "het_vqe_su2_7q",
+        "family": "vqe_su2",
+        "width": 7,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.968966,
+        "oracle_best_fb": 0.968966,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.952355,
+          "ibm_fez": 0.945629,
+          "ibm_kingston": 0.968966
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.915571,
+          "ibm_fez": 0.9399,
+          "ibm_kingston": 0.932972
+        }
+      },
+      {
+        "workload_id": "het_qft_8q",
+        "family": "qft_phase",
+        "width": 8,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.932514,
+        "oracle_best_fb": 0.932514,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.927393,
+          "ibm_fez": 0.915845,
+          "ibm_kingston": 0.932514
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.921418,
+          "ibm_fez": 0.596754,
+          "ibm_kingston": 0.923872
+        }
+      },
+      {
+        "workload_id": "het_heisenberg_8q",
+        "family": "heisenberg_xxz",
+        "width": 8,
+        "predicted_qpu": "ibm_fez",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.911904,
+        "oracle_best_fb": 0.916806,
+        "selection_regret_fb": 0.004902,
+        "exact_top1_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.897839,
+          "ibm_fez": 0.911904,
+          "ibm_kingston": 0.916806
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.784822,
+          "ibm_fez": 0.893204,
+          "ibm_kingston": 0.850858
+        }
+      },
+      {
+        "workload_id": "het_hiddenshift_9q",
+        "family": "hidden_shift",
+        "width": 9,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.952772,
+        "oracle_best_fb": 0.952772,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.933457,
+          "ibm_fez": 0.930692,
+          "ibm_kingston": 0.952772
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.900878,
+          "ibm_fez": 0.849642,
+          "ibm_kingston": 0.91396
+        }
+      },
+      {
+        "workload_id": "het_bipartite_9q",
+        "family": "dense_bipartite",
+        "width": 9,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.907524,
+        "oracle_best_fb": 0.907524,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.904075,
+          "ibm_fez": 0.896611,
+          "ibm_kingston": 0.907524
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.8876,
+          "ibm_fez": 0.740083,
+          "ibm_kingston": 0.89877
+        }
+      },
+      {
+        "workload_id": "het_iqp_10q",
+        "family": "iqp_pauli",
+        "width": 10,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.80917,
+        "oracle_best_fb": 0.80917,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.788731,
+          "ibm_fez": 0.783316,
+          "ibm_kingston": 0.80917
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.787038,
+          "ibm_fez": 0.694732,
+          "ibm_kingston": 0.790933
+        }
+      },
+      {
+        "workload_id": "het_ising_11q",
+        "family": "trotter_ising_nnn",
+        "width": 11,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.782023,
+        "oracle_best_fb": 0.782023,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.764212,
+          "ibm_fez": 0.760694,
+          "ibm_kingston": 0.782023
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.608393,
+          "ibm_fez": 0.623365,
+          "ibm_kingston": 0.753822
+        }
+      },
+      {
+        "workload_id": "het_qft_11q",
+        "family": "qft_phase",
+        "width": 11,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.840689,
+        "oracle_best_fb": 0.840689,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.772738,
+          "ibm_fez": 0.798141,
+          "ibm_kingston": 0.840689
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.733867,
+          "ibm_fez": 0.52358,
+          "ibm_kingston": 0.767288
+        }
+      },
+      {
+        "workload_id": "het_qaoa_plaid_12q",
+        "family": "qaoa_plaid",
+        "width": 12,
+        "predicted_qpu": "ibm_kingston",
+        "observed_best_qpu": "ibm_kingston",
+        "selected_qpu_fb": 0.514153,
+        "oracle_best_fb": 0.514153,
+        "selection_regret_fb": 0.0,
+        "exact_top1_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_prom_fb_by_qpu": {
+          "ibm_marrakesh": 0.458187,
+          "ibm_fez": 0.496637,
+          "ibm_kingston": 0.514153
+        },
+        "observed_sabre_fb_by_qpu": {
+          "ibm_marrakesh": 0.536664,
+          "ibm_fez": 0.460803,
+          "ibm_kingston": 0.535981
+        }
+      }
+    ]
+  },
+  "pooled_3qpu_arm_comparison": {
+    "pooled_arm_summary": {
+      "arm_1_sabre_seq": {
+        "n_executions": 48,
+        "mean_fb": 0.853528,
+        "median_fb": 0.914766,
+        "mean_fh": 0.749873,
+        "mean_tvd": 0.295612,
+        "mean_2q": 53.25,
+        "mean_depth": 116.15
+      },
+      "arm_2_prom_os_best": {
+        "n_executions": 48,
+        "mean_fb": 0.893398,
+        "median_fb": 0.938473,
+        "mean_fh": 0.81388,
+        "mean_tvd": 0.236124,
+        "mean_2q": 58.54,
+        "mean_depth": 110.85
+      },
+      "arm_3_prom_3pub_isolated": {
+        "n_executions": 48,
+        "mean_fb": 0.881459,
+        "median_fb": 0.936103,
+        "mean_fh": 0.793891,
+        "mean_tvd": 0.25617,
+        "mean_2q": 59.4,
+        "mean_depth": 113.4
+      },
+      "arm_4_prom_3pub_packed": {
+        "n_executions": 48,
+        "mean_fb": 0.884911,
+        "median_fb": 0.944059,
+        "mean_fh": 0.800115,
+        "mean_tvd": 0.251072,
+        "mean_2q": 59.4,
+        "mean_depth": 113.4
+      },
+      "arm_5_sabre_3pub_buffered_packed": {
+        "n_executions": 48,
+        "mean_fb": 0.836468,
+        "median_fb": 0.914633,
+        "mean_fh": 0.730817,
+        "mean_tvd": 0.313575,
+        "mean_2q": 63.73,
+        "mean_depth": 130.15
+      },
+      "arm_6_sabre_3pub_unbuffered_packed": {
+        "n_executions": 48,
+        "mean_fb": 0.851497,
+        "median_fb": 0.904287,
+        "mean_fh": 0.744915,
+        "mean_tvd": 0.305884,
+        "mean_2q": 64.81,
+        "mean_depth": 127.65
+      },
+      "arm_7_prom_2pub_k8_isolated": {
+        "n_executions": 48,
+        "mean_fb": 0.870679,
+        "median_fb": 0.924108,
+        "mean_fh": 0.780153,
+        "mean_tvd": 0.270073,
+        "mean_2q": 60.5,
+        "mean_depth": 117.31
+      },
+      "arm_8_prom_2pub_k8_packed": {
+        "n_executions": 48,
+        "mean_fb": 0.873256,
+        "median_fb": 0.933361,
+        "mean_fh": 0.784785,
+        "mean_tvd": 0.267499,
+        "mean_2q": 60.5,
+        "mean_depth": 117.31
+      }
+    },
+    "same_qubit_interference_3pub_k556_delta_fb": {
+      "mean_delta_fb": 0.003451,
+      "median_delta_fb": 0.003738,
+      "bootstrap_95ci": [
+        0.000555,
+        0.006397
+      ],
+      "paired_sign_flip_p_16workloads": 0.009613
+    },
+    "same_qubit_interference_2pub_k88_delta_fb": {
+      "mean_delta_fb": 0.002577,
+      "median_delta_fb": 0.00206,
+      "bootstrap_95ci": [
+        -0.000411,
+        0.00548
+      ],
+      "paired_sign_flip_p_16workloads": 0.067108
+    },
+    "hypothesis_tests_16workloads_pooled_across_3qpus": {
+      "prom_os_seq_vs_sabre_seq": {
+        "pct_gain": 4.67,
+        "raw_p": 0.001312,
+        "holm_p": 0.002625
+      },
+      "prom_3pub_buffered_vs_sabre_3pub_buffered": {
+        "pct_gain": 5.79,
+        "raw_p": 0.000671,
+        "holm_p": 0.002014
+      },
+      "prom_3pub_buffered_vs_sabre_3pub_unbuffered": {
+        "pct_gain": 3.92,
+        "raw_p": 0.000122,
+        "holm_p": 0.000488
+      },
+      "prom_2pub_k8_buffered_vs_sabre_seq": {
+        "pct_gain": 2.31,
+        "raw_p": 0.146393,
+        "holm_p": 0.146393
+      }
+    },
+    "per_qpu_arm_means": {
+      "ibm_marrakesh": {
+        "arm_1_sabre_seq": {
+          "mean_fb": 0.860649,
+          "median_fb": 0.910031,
+          "mean_fh": 0.757878,
+          "mean_tvd": 0.293438,
+          "mean_2q": 53.25,
+          "mean_depth": 116.12
+        },
+        "arm_2_prom_os_best": {
+          "mean_fb": 0.885613,
+          "median_fb": 0.930425,
+          "mean_fh": 0.801741,
+          "mean_tvd": 0.249132,
+          "mean_2q": 59.94,
+          "mean_depth": 110.56
+        },
+        "arm_3_prom_3pub_isolated": {
+          "mean_fb": 0.879943,
+          "median_fb": 0.921535,
+          "mean_fh": 0.793147,
+          "mean_tvd": 0.257489,
+          "mean_2q": 61.19,
+          "mean_depth": 114.62
+        },
+        "arm_4_prom_3pub_packed": {
+          "mean_fb": 0.887395,
+          "median_fb": 0.943969,
+          "mean_fh": 0.806194,
+          "mean_tvd": 0.242199,
+          "mean_2q": 61.19,
+          "mean_depth": 114.62
+        },
+        "arm_5_sabre_3pub_buffered_packed": {
+          "mean_fb": 0.844516,
+          "median_fb": 0.918117,
+          "mean_fh": 0.734394,
+          "mean_tvd": 0.314734,
+          "mean_2q": 64.5,
+          "mean_depth": 130.88
+        },
+        "arm_6_sabre_3pub_unbuffered_packed": {
+          "mean_fb": 0.849918,
+          "median_fb": 0.890641,
+          "mean_fh": 0.736525,
+          "mean_tvd": 0.319324,
+          "mean_2q": 64.75,
+          "mean_depth": 127.69
+        },
+        "arm_7_prom_2pub_k8_isolated": {
+          "mean_fb": 0.874815,
+          "median_fb": 0.91972,
+          "mean_fh": 0.781901,
+          "mean_tvd": 0.271747,
+          "mean_2q": 61.25,
+          "mean_depth": 115.44
+        },
+        "arm_8_prom_2pub_k8_packed": {
+          "mean_fb": 0.877865,
+          "median_fb": 0.934063,
+          "mean_fh": 0.787658,
+          "mean_tvd": 0.267562,
+          "mean_2q": 61.25,
+          "mean_depth": 115.44
+        }
+      },
+      "ibm_fez": {
+        "arm_1_sabre_seq": {
+          "mean_fb": 0.812869,
+          "median_fb": 0.898046,
+          "mean_fh": 0.690762,
+          "mean_tvd": 0.347554,
+          "mean_2q": 53.25,
+          "mean_depth": 116.19
+        },
+        "arm_2_prom_os_best": {
+          "mean_fb": 0.891657,
+          "median_fb": 0.937091,
+          "mean_fh": 0.810652,
+          "mean_tvd": 0.236939,
+          "mean_2q": 58.31,
+          "mean_depth": 115.12
+        },
+        "arm_3_prom_3pub_isolated": {
+          "mean_fb": 0.873019,
+          "median_fb": 0.936103,
+          "mean_fh": 0.781283,
+          "mean_tvd": 0.267157,
+          "mean_2q": 58.75,
+          "mean_depth": 114.94
+        },
+        "arm_4_prom_3pub_packed": {
+          "mean_fb": 0.876555,
+          "median_fb": 0.943537,
+          "mean_fh": 0.787199,
+          "mean_tvd": 0.260194,
+          "mean_2q": 58.75,
+          "mean_depth": 114.94
+        },
+        "arm_5_sabre_3pub_buffered_packed": {
+          "mean_fb": 0.855512,
+          "median_fb": 0.905445,
+          "mean_fh": 0.753335,
+          "mean_tvd": 0.293899,
+          "mean_2q": 64.25,
+          "mean_depth": 133.56
+        },
+        "arm_6_sabre_3pub_unbuffered_packed": {
+          "mean_fb": 0.843878,
+          "median_fb": 0.893198,
+          "mean_fh": 0.733301,
+          "mean_tvd": 0.313106,
+          "mean_2q": 64.81,
+          "mean_depth": 127.44
+        },
+        "arm_7_prom_2pub_k8_isolated": {
+          "mean_fb": 0.881597,
+          "median_fb": 0.926562,
+          "mean_fh": 0.792485,
+          "mean_tvd": 0.256092,
+          "mean_2q": 59.38,
+          "mean_depth": 119.38
+        },
+        "arm_8_prom_2pub_k8_packed": {
+          "mean_fb": 0.87918,
+          "median_fb": 0.927243,
+          "mean_fh": 0.789698,
+          "mean_tvd": 0.263143,
+          "mean_2q": 59.38,
+          "mean_depth": 119.38
+        }
+      },
+      "ibm_kingston": {
+        "arm_1_sabre_seq": {
+          "mean_fb": 0.887065,
+          "median_fb": 0.928422,
+          "mean_fh": 0.800979,
+          "mean_tvd": 0.245845,
+          "mean_2q": 53.25,
+          "mean_depth": 116.12
+        },
+        "arm_2_prom_os_best": {
+          "mean_fb": 0.902923,
+          "median_fb": 0.949343,
+          "mean_fh": 0.829247,
+          "mean_tvd": 0.222302,
+          "mean_2q": 57.38,
+          "mean_depth": 106.88
+        },
+        "arm_3_prom_3pub_isolated": {
+          "mean_fb": 0.891415,
+          "median_fb": 0.950198,
+          "mean_fh": 0.807244,
+          "mean_tvd": 0.243864,
+          "mean_2q": 58.25,
+          "mean_depth": 110.62
+        },
+        "arm_4_prom_3pub_packed": {
+          "mean_fb": 0.890782,
+          "median_fb": 0.944059,
+          "mean_fh": 0.806951,
+          "mean_tvd": 0.250824,
+          "mean_2q": 58.25,
+          "mean_depth": 110.62
+        },
+        "arm_5_sabre_3pub_buffered_packed": {
+          "mean_fb": 0.809376,
+          "median_fb": 0.924921,
+          "mean_fh": 0.704723,
+          "mean_tvd": 0.332093,
+          "mean_2q": 62.44,
+          "mean_depth": 126.0
+        },
+        "arm_6_sabre_3pub_unbuffered_packed": {
+          "mean_fb": 0.860695,
+          "median_fb": 0.919348,
+          "mean_fh": 0.76492,
+          "mean_tvd": 0.28522,
+          "mean_2q": 64.88,
+          "mean_depth": 127.81
+        },
+        "arm_7_prom_2pub_k8_isolated": {
+          "mean_fb": 0.855624,
+          "median_fb": 0.951887,
+          "mean_fh": 0.766071,
+          "mean_tvd": 0.28238,
+          "mean_2q": 60.88,
+          "mean_depth": 117.12
+        },
+        "arm_8_prom_2pub_k8_packed": {
+          "mean_fb": 0.862724,
+          "median_fb": 0.95545,
+          "mean_fh": 0.776999,
+          "mean_tvd": 0.271793,
+          "mean_2q": 60.88,
+          "mean_depth": 117.12
+        }
+      }
+    }
+  },
+  "timing_isolation_and_throughput_ibm_marrakesh": {
+    "T1_sabre_sequential_16pubs": {
+      "job_id": "dbk2gr1kdqps7391kq90",
+      "backend": "ibm_marrakesh",
+      "num_pubs": 16,
+      "workloads_evaluated": 16,
+      "quantum_seconds_charged": 7.0,
+      "circuits_execution_time_seconds": 4.4424,
+      "wall_seconds": 79.44,
+      "mean_classical_overlap_fb": 0.85925,
+      "median_classical_overlap_fb": 0.906152,
+      "mean_hellinger_fidelity_fh": 0.755694,
+      "mean_tvd": 0.294474,
+      "workloads_passing_fb_ge_080": 12,
+      "workloads_passing_fb_ge_085": 11,
+      "workloads_passing_fb_ge_090": 9,
+      "qualified_per_charged_s_fb080": 1.7143,
+      "qualified_per_exec_s_fb080": 2.7012,
+      "qualified_per_charged_s_fb085": 1.5714,
+      "qualified_per_exec_s_fb085": 2.4761,
+      "qualified_per_charged_s_fb090": 1.2857,
+      "qualified_per_exec_s_fb090": 2.0259
+    },
+    "T2_prometheus_sequential_16pubs": {
+      "job_id": "dbk2hf9kdqps7391krmg",
+      "backend": "ibm_marrakesh",
+      "num_pubs": 16,
+      "workloads_evaluated": 16,
+      "quantum_seconds_charged": 7.0,
+      "circuits_execution_time_seconds": 4.3905,
+      "wall_seconds": 19.42,
+      "mean_classical_overlap_fb": 0.883972,
+      "median_classical_overlap_fb": 0.928033,
+      "mean_hellinger_fidelity_fh": 0.798577,
+      "mean_tvd": 0.248912,
+      "workloads_passing_fb_ge_080": 12,
+      "workloads_passing_fb_ge_085": 12,
+      "workloads_passing_fb_ge_090": 11,
+      "qualified_per_charged_s_fb080": 1.7143,
+      "qualified_per_exec_s_fb080": 2.7332,
+      "qualified_per_charged_s_fb085": 1.7143,
+      "qualified_per_exec_s_fb085": 2.7332,
+      "qualified_per_charged_s_fb090": 1.5714,
+      "qualified_per_exec_s_fb090": 2.5054
+    },
+    "T3_prometheus_packed_3pubs_k556": {
+      "job_id": "dbk2hkl6p51s73clr60g",
+      "backend": "ibm_marrakesh",
+      "num_pubs": 3,
+      "workloads_evaluated": 16,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.8451,
+      "wall_seconds": 50.09,
+      "mean_classical_overlap_fb": 0.883843,
+      "median_classical_overlap_fb": 0.936532,
+      "mean_hellinger_fidelity_fh": 0.798087,
+      "mean_tvd": 0.249418,
+      "workloads_passing_fb_ge_080": 12,
+      "workloads_passing_fb_ge_085": 12,
+      "workloads_passing_fb_ge_090": 11,
+      "qualified_per_charged_s_fb080": 4.0,
+      "qualified_per_exec_s_fb080": 14.1995,
+      "qualified_per_charged_s_fb085": 4.0,
+      "qualified_per_exec_s_fb085": 14.1995,
+      "qualified_per_charged_s_fb090": 3.6667,
+      "qualified_per_exec_s_fb090": 13.0162
+    },
+    "T4_prometheus_packed_2pubs_k88": {
+      "job_id": "dbk2i1d6p51s73clr6ug",
+      "backend": "ibm_marrakesh",
+      "num_pubs": 2,
+      "workloads_evaluated": 16,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.5663,
+      "wall_seconds": 13.82,
+      "mean_classical_overlap_fb": 0.88367,
+      "median_classical_overlap_fb": 0.939635,
+      "mean_hellinger_fidelity_fh": 0.797589,
+      "mean_tvd": 0.255972,
+      "workloads_passing_fb_ge_080": 12,
+      "workloads_passing_fb_ge_085": 12,
+      "workloads_passing_fb_ge_090": 11,
+      "qualified_per_charged_s_fb080": 4.0,
+      "qualified_per_exec_s_fb080": 21.1902,
+      "qualified_per_charged_s_fb085": 4.0,
+      "qualified_per_exec_s_fb085": 21.1902,
+      "qualified_per_charged_s_fb090": 3.6667,
+      "qualified_per_exec_s_fb090": 19.4243
+    }
+  },
+  "job_ledger": [
+    {
+      "file": "master_het_interleaved_ibm_fez.json",
+      "batch_label": "HetQuantumOS_Interleaved_Master_ibm_fez",
+      "backend": "ibm_fez",
+      "job_id": "dbk2g9gnceqs73al2eig",
+      "submission_timestamp": "2026-11-02T06:05:26.226206+00:00",
+      "completion_timestamp": "2026-11-02T06:06:02.091241+00:00",
+      "num_pubs": 75,
+      "total_shots": 76800,
+      "isa_estimated_seconds": 22.958,
+      "quantum_seconds_charged": 23.0,
+      "circuits_execution_time_seconds": 20.2298,
+      "wall_seconds": 35.86
+    },
+    {
+      "file": "master_het_interleaved_ibm_kingston.json",
+      "batch_label": "HetQuantumOS_Interleaved_Master_ibm_kingston",
+      "backend": "ibm_kingston",
+      "job_id": "dbk2gipffo6c73bamlt0",
+      "submission_timestamp": "2026-11-02T06:06:03.411368+00:00",
+      "completion_timestamp": "2026-11-02T06:06:35.525749+00:00",
+      "num_pubs": 75,
+      "total_shots": 76800,
+      "isa_estimated_seconds": 22.975,
+      "quantum_seconds_charged": 23.0,
+      "circuits_execution_time_seconds": 20.4548,
+      "wall_seconds": 32.11
+    },
+    {
+      "file": "master_het_interleaved_ibm_marrakesh.json",
+      "batch_label": "HetQuantumOS_Interleaved_Master_ibm_marrakesh",
+      "backend": "ibm_marrakesh",
+      "job_id": "dbk284hkdqps7391k5v0",
+      "submission_timestamp": "2026-11-02T05:48:00.948423+00:00",
+      "completion_timestamp": "2026-11-02T06:05:24.340680+00:00",
+      "num_pubs": 75,
+      "total_shots": 76800,
+      "isa_estimated_seconds": 23.021,
+      "quantum_seconds_charged": 23.0,
+      "circuits_execution_time_seconds": 20.7671,
+      "wall_seconds": 1043.39
+    },
+    {
+      "file": "timing_T1_sabre_sequential_16pubs_ibm_marrakesh.json",
+      "batch_label": "HetQuantumOS_T1_sabre_sequential_16pubs_ibm_marrakesh",
+      "backend": "ibm_marrakesh",
+      "job_id": "dbk2gr1kdqps7391kq90",
+      "submission_timestamp": "2026-11-02T06:06:36.959380+00:00",
+      "completion_timestamp": "2026-11-02T06:07:56.398635+00:00",
+      "num_pubs": 16,
+      "total_shots": 16384,
+      "isa_estimated_seconds": 7.246,
+      "quantum_seconds_charged": 7.0,
+      "circuits_execution_time_seconds": 4.4424,
+      "wall_seconds": 79.44
+    },
+    {
+      "file": "timing_T2_prometheus_sequential_16pubs_ibm_marrakesh.json",
+      "batch_label": "HetQuantumOS_T2_prometheus_sequential_16pubs_ibm_marrakesh",
+      "backend": "ibm_marrakesh",
+      "job_id": "dbk2hf9kdqps7391krmg",
+      "submission_timestamp": "2026-11-02T06:07:57.766503+00:00",
+      "completion_timestamp": "2026-11-02T06:08:17.186933+00:00",
+      "num_pubs": 16,
+      "total_shots": 16384,
+      "isa_estimated_seconds": 7.241,
+      "quantum_seconds_charged": 7.0,
+      "circuits_execution_time_seconds": 4.3905,
+      "wall_seconds": 19.42
+    },
+    {
+      "file": "timing_T3_prometheus_packed_3pubs_k556_ibm_marrakesh.json",
+      "batch_label": "HetQuantumOS_T3_prometheus_packed_3pubs_k556_ibm_marrakesh",
+      "backend": "ibm_marrakesh",
+      "job_id": "dbk2hkl6p51s73clr60g",
+      "submission_timestamp": "2026-11-02T06:08:18.369435+00:00",
+      "completion_timestamp": "2026-11-02T06:09:08.460037+00:00",
+      "num_pubs": 3,
+      "total_shots": 3072,
+      "isa_estimated_seconds": 3.825,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.8451,
+      "wall_seconds": 50.09
+    },
+    {
+      "file": "timing_T4_prometheus_packed_2pubs_k88_ibm_marrakesh.json",
+      "batch_label": "HetQuantumOS_T4_prometheus_packed_2pubs_k88_ibm_marrakesh",
+      "backend": "ibm_marrakesh",
+      "job_id": "dbk2i1d6p51s73clr6ug",
+      "submission_timestamp": "2026-11-02T06:09:09.684355+00:00",
+      "completion_timestamp": "2026-11-02T06:09:23.503312+00:00",
+      "num_pubs": 2,
+      "total_shots": 2048,
+      "isa_estimated_seconds": 3.555,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.5663,
+      "wall_seconds": 13.82
+    }
+  ]
+}

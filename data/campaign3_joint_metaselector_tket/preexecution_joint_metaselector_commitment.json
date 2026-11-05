@@ -1,0 +1,4312 @@
+{
+  "campaign_title": "Campaign 3: Multi-Compiler {SABRE O3, TKET, Prometheus} Joint Circuit & QPU Meta-Selection + 8-Way Spatial Multiplexing",
+  "pre_execution_lock_timestamp_utc": "2026-11-02T14:58:41.108890+00:00",
+  "qpus_evaluated": [
+    "ibm_kingston",
+    "ibm_marrakesh",
+    "ibm_fez"
+  ],
+  "primary_timing_qpu": "ibm_marrakesh",
+  "compilers_evaluated": [
+    "sabre_o3",
+    "tket",
+    "prometheus_native"
+  ],
+  "accounting_summary": {
+    "workloads_per_arm": 16,
+    "total_logical_qubits_across_16_workloads": 124,
+    "experimental_arms_per_qpu": 6,
+    "circuit_executions_per_qpu": 96,
+    "interleaved_pubs_per_qpu": 26,
+    "physical_shots_per_qpu": 26624,
+    "three_qpu_interleaved_pubs": 78,
+    "three_qpu_circuit_executions": 288,
+    "timing_isolation_jobs": 2,
+    "timing_isolation_pubs": 4,
+    "timing_isolation_circuit_executions": 32,
+    "grand_total_jobs": 5,
+    "grand_total_pubs": 82,
+    "grand_total_physical_shots": 83968,
+    "grand_total_circuit_executions": 320
+  },
+  "het_2pub_bins_k88": [
+    [
+      "het_qaoa_plaid_12q",
+      "het_ising_11q",
+      "het_bipartite_9q",
+      "het_qft_8q",
+      "het_qaoa_7q",
+      "het_wstate_6q",
+      "het_bv_5q",
+      "het_ghz_4q"
+    ],
+    [
+      "het_qft_11q",
+      "het_iqp_10q",
+      "het_hiddenshift_9q",
+      "het_heisenberg_8q",
+      "het_vqe_su2_7q",
+      "het_simon_6q",
+      "het_qv_6q",
+      "het_grover_5q"
+    ]
+  ],
+  "gpu_scheduling_summary": {
+    "ibm_kingston": {
+      "num_candidate_subgraphs": 2141,
+      "cpu_enumeration_ms": 338.602,
+      "gpu_score_and_sort_ms": 12.606
+    },
+    "ibm_marrakesh": {
+      "num_candidate_subgraphs": 2171,
+      "cpu_enumeration_ms": 102.522,
+      "gpu_score_and_sort_ms": 4.9
+    },
+    "ibm_fez": {
+      "num_candidate_subgraphs": 2143,
+      "cpu_enumeration_ms": 94.991,
+      "gpu_score_and_sort_ms": 6.839
+    }
+  },
+  "per_qpu_compiler_selection_counts": {
+    "ibm_kingston": {
+      "sabre_o3": 1,
+      "tket": 7,
+      "prometheus_native": 8
+    },
+    "ibm_marrakesh": {
+      "sabre_o3": 0,
+      "tket": 6,
+      "prometheus_native": 10
+    },
+    "ibm_fez": {
+      "sabre_o3": 0,
+      "tket": 5,
+      "prometheus_native": 11
+    }
+  },
+  "pre_registered_analysis_and_quality_thresholds": {
+    "primary_quality_metric": "classical_overlap_fb",
+    "secondary_quality_metrics": [
+      "hellinger_fidelity_fh",
+      "tvd"
+    ],
+    "frozen_quality_thresholds_tau": [
+      0.8,
+      0.85,
+      0.9
+    ],
+    "joint_metaselection_metrics": [
+      "per_qpu_compiler_selection_accuracy_and_regret_vs_sabre_o3_tket_prometheus_native",
+      "joint_9way_compiler_qpu_selection_mean_fb_vs_all_9_fixed_policies",
+      "joint_9way_oracle_selection_regret_fb"
+    ],
+    "tket_spatial_multiplexing_metrics": [
+      "tket_same_qubit_same_gate_isolated_vs_8way_packed_delta_fb",
+      "tket_buffered_dg_ge_2_vs_tket_unbuffered_adjacent_dg_eq_1",
+      "prometheus_metaselected_vs_tket_and_sabre_o3_buffered_8way"
+    ]
+  },
+  "isa_and_empirical_duration_estimates_seconds": {
+    "interleaved_master_jobs_isa": {
+      "ibm_kingston": {
+        "total_circuits": 26,
+        "total_shots": 26624,
+        "repetition_delay_seconds": 6.656,
+        "isa_gate_readout_seconds": 0.374,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 10.03
+      },
+      "ibm_marrakesh": {
+        "total_circuits": 26,
+        "total_shots": 26624,
+        "repetition_delay_seconds": 6.656,
+        "isa_gate_readout_seconds": 0.38,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 10.036
+      },
+      "ibm_fez": {
+        "total_circuits": 26,
+        "total_shots": 26624,
+        "repetition_delay_seconds": 6.656,
+        "isa_gate_readout_seconds": 0.351,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 10.007
+      }
+    },
+    "timing_isolation_jobs_isa": {
+      "T5_tket_packed_2pubs_k88": {
+        "total_circuits": 2,
+        "total_shots": 2048,
+        "repetition_delay_seconds": 0.512,
+        "isa_gate_readout_seconds": 0.045,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 3.557
+      },
+      "T6_prometheus_metaselected_packed_2pubs_k88": {
+        "total_circuits": 2,
+        "total_shots": 2048,
+        "repetition_delay_seconds": 0.512,
+        "isa_gate_readout_seconds": 0.043,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 3.555
+      }
+    },
+    "total_isa_circuit_seconds": 37.185,
+    "empirical_expected_charged_qpu_seconds_by_master_job": {
+      "ibm_kingston": 9.47,
+      "ibm_marrakesh": 9.47,
+      "ibm_fez": 9.47
+    },
+    "empirical_expected_charged_qpu_seconds_by_timing_job": {
+      "T5_tket_packed_2pubs_k88": 2.94,
+      "T6_prometheus_metaselected_packed_2pubs_k88": 2.94
+    },
+    "empirical_expected_total_charged_qpu_seconds": 34.29
+  },
+  "joint_compiler_qpu_pre_execution_forecasts": [
+    {
+      "workload_id": "het_ghz_4q",
+      "family": "ghz_entangler",
+      "width": 4,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "prometheus_native",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_marrakesh",
+      "predicted_rank_3_qpu": "ibm_fez",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "prometheus_native",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.007658,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.025444,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.941897,
+          "native_2q": 3,
+          "depth": 13,
+          "sub_nodes": [
+            80,
+            81,
+            82,
+            83
+          ],
+          "circuit_sha256": "469fa4241dcaa11b23b22740d42394278e89093764d15f02a7a08927d09ffc56"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.934239,
+          "native_2q": 3,
+          "depth": 13,
+          "sub_nodes": [
+            147,
+            148,
+            149,
+            150
+          ],
+          "circuit_sha256": "7b596e2aa5c1c7bede2c365d837c8f6106a4de1873d8927c573fe97312d2d166"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.916453,
+          "native_2q": 3,
+          "depth": 13,
+          "sub_nodes": [
+            126,
+            127,
+            137,
+            147
+          ],
+          "circuit_sha256": "8d0b6738d806837378dce0be5440eac5d82aa673dfaf022d3259895f3de011bc"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.941897,
+          "native_2q": 3,
+          "depth": 13,
+          "sub_nodes": [
+            80,
+            81,
+            82,
+            83
+          ],
+          "circuit_sha256": "469fa4241dcaa11b23b22740d42394278e89093764d15f02a7a08927d09ffc56"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.940669,
+          "native_2q": 3,
+          "depth": 14,
+          "sub_nodes": [
+            80,
+            81,
+            82,
+            83
+          ],
+          "circuit_sha256": "a5779c8b457b837c765a6628ecf1295e07dc0ea81ab5bc2cdd1d44dd13e53dff"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.940669,
+          "native_2q": 3,
+          "depth": 14,
+          "sub_nodes": [
+            80,
+            81,
+            82,
+            83
+          ],
+          "circuit_sha256": "8e54421ace953dfb43cb3110f72066f209025ff9a41dc7dff1360aa5b943f23d"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.934239,
+          "native_2q": 3,
+          "depth": 13,
+          "sub_nodes": [
+            147,
+            148,
+            149,
+            150
+          ],
+          "circuit_sha256": "7b596e2aa5c1c7bede2c365d837c8f6106a4de1873d8927c573fe97312d2d166"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.932764,
+          "native_2q": 3,
+          "depth": 14,
+          "sub_nodes": [
+            147,
+            148,
+            149,
+            150
+          ],
+          "circuit_sha256": "1a0fa437135f566f9d45782535ae42cdc771a426b588b40c7ac323edc133e1de"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.932764,
+          "native_2q": 3,
+          "depth": 14,
+          "sub_nodes": [
+            147,
+            148,
+            149,
+            150
+          ],
+          "circuit_sha256": "975681fbcca2824a706675bafa3b231edbdebe479714dbeddbefdf8d4e05bd87"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.916453,
+          "native_2q": 3,
+          "depth": 13,
+          "sub_nodes": [
+            126,
+            127,
+            137,
+            147
+          ],
+          "circuit_sha256": "8d0b6738d806837378dce0be5440eac5d82aa673dfaf022d3259895f3de011bc"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.915073,
+          "native_2q": 3,
+          "depth": 14,
+          "sub_nodes": [
+            126,
+            127,
+            137,
+            147
+          ],
+          "circuit_sha256": "7a82b486736c56948bd2d831ac3286caad5d34220164a77a6c9672ce33d207f8"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.915073,
+          "native_2q": 3,
+          "depth": 14,
+          "sub_nodes": [
+            126,
+            127,
+            137,
+            147
+          ],
+          "circuit_sha256": "3eae91f1d78d9d38c5a31b25c4861fc98248280d4348a8fca4ca8a8406a0b77c"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_bv_5q",
+      "family": "bernstein_vazirani",
+      "width": 5,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "tket",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_marrakesh",
+      "predicted_rank_3_qpu": "ibm_fez",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "tket",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.015373,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.016047,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "tket",
+          "f_pred": 0.94304,
+          "native_2q": 3,
+          "depth": 8,
+          "sub_nodes": [
+            7,
+            17,
+            26,
+            27,
+            28
+          ],
+          "circuit_sha256": "eb03dd08fc698f8d951a16178632581fcdeb486d73525dd2e57c42c33a591ead"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.927667,
+          "native_2q": 4,
+          "depth": 13,
+          "sub_nodes": [
+            33,
+            39,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "a724c674a7a3f85fae9b480225d1d2c8ed89cdb510d65c02b623dc710d1a098c"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.926993,
+          "native_2q": 4,
+          "depth": 13,
+          "sub_nodes": [
+            138,
+            151,
+            152,
+            153,
+            154
+          ],
+          "circuit_sha256": "98e910dcd05fe111990e8a219a0c46639cb581539c261623d78f09ca0705eaaa"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.94304,
+          "native_2q": 3,
+          "depth": 8,
+          "sub_nodes": [
+            7,
+            17,
+            26,
+            27,
+            28
+          ],
+          "circuit_sha256": "eb03dd08fc698f8d951a16178632581fcdeb486d73525dd2e57c42c33a591ead"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.94304,
+          "native_2q": 3,
+          "depth": 8,
+          "sub_nodes": [
+            7,
+            17,
+            26,
+            27,
+            28
+          ],
+          "circuit_sha256": "9e455068b92062e3f689a67fd141eeef37bdb2b1a8b8cb32a48b8993969d06ee"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.941698,
+          "native_2q": 3,
+          "depth": 9,
+          "sub_nodes": [
+            7,
+            17,
+            26,
+            27,
+            28
+          ],
+          "circuit_sha256": "f8bdbfa44ff2b70e14bb56050a38e27142093ceef4dd0e2f17a69021b2c82175"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.927667,
+          "native_2q": 4,
+          "depth": 13,
+          "sub_nodes": [
+            33,
+            39,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "a724c674a7a3f85fae9b480225d1d2c8ed89cdb510d65c02b623dc710d1a098c"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.926993,
+          "native_2q": 4,
+          "depth": 13,
+          "sub_nodes": [
+            138,
+            151,
+            152,
+            153,
+            154
+          ],
+          "circuit_sha256": "98e910dcd05fe111990e8a219a0c46639cb581539c261623d78f09ca0705eaaa"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.926182,
+          "native_2q": 4,
+          "depth": 14,
+          "sub_nodes": [
+            33,
+            39,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "0727bd556837afbbab5aec2ba1014d9cd0ba06c3995bd449f9ef98500e7a603e"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.925318,
+          "native_2q": 4,
+          "depth": 14,
+          "sub_nodes": [
+            138,
+            151,
+            152,
+            153,
+            154
+          ],
+          "circuit_sha256": "50f027037268175357f44b13770781420c418c79e5b88453cbb0f48680c1a5ac"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.905748,
+          "native_2q": 6,
+          "depth": 18,
+          "sub_nodes": [
+            33,
+            39,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "7997de376a31e768ebd5e7e9ba17e5b541f5d553ccfbf25472fd6209477c9977"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.903981,
+          "native_2q": 6,
+          "depth": 18,
+          "sub_nodes": [
+            138,
+            151,
+            152,
+            153,
+            154
+          ],
+          "circuit_sha256": "b4c160a8a8ff06df6e394631e9b3dc2c385f5b6862bd6a021cf5e4a320539314"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_grover_5q",
+      "family": "grover_search",
+      "width": 5,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "tket",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_marrakesh",
+      "predicted_rank_3_qpu": "ibm_fez",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "tket",
+        "ibm_marrakesh": "tket",
+        "ibm_fez": "tket"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.067976,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.068566,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "tket",
+          "f_pred": 0.672136,
+          "native_2q": 33,
+          "depth": 82,
+          "sub_nodes": [
+            7,
+            17,
+            26,
+            27,
+            28
+          ],
+          "circuit_sha256": "e915ed8fde855b7d474bf053e4d23cd4b435a8a1af2b917c4f7e93f6296e3bb0"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "tket",
+          "f_pred": 0.60416,
+          "native_2q": 40,
+          "depth": 91,
+          "sub_nodes": [
+            146,
+            147,
+            148,
+            149,
+            150
+          ],
+          "circuit_sha256": "6b5ae011cf1f7ee78972c48fa47fc637337b141a302ea28630e7b3e097381d76"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "tket",
+          "f_pred": 0.60357,
+          "native_2q": 40,
+          "depth": 91,
+          "sub_nodes": [
+            138,
+            151,
+            152,
+            153,
+            154
+          ],
+          "circuit_sha256": "b9475496a2a955ec2d3244f29ac8e4bba75baca03a0f1a73615f754cd356ea17"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.672136,
+          "native_2q": 33,
+          "depth": 82,
+          "sub_nodes": [
+            7,
+            17,
+            26,
+            27,
+            28
+          ],
+          "circuit_sha256": "e915ed8fde855b7d474bf053e4d23cd4b435a8a1af2b917c4f7e93f6296e3bb0"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.661392,
+          "native_2q": 36,
+          "depth": 77,
+          "sub_nodes": [
+            7,
+            17,
+            26,
+            27,
+            28
+          ],
+          "circuit_sha256": "3ea44269b7df46ddbb3d0190f908cc4c86dea99852b135e5d44f6d9db3b9ffab"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.640482,
+          "native_2q": 38,
+          "depth": 88,
+          "sub_nodes": [
+            7,
+            17,
+            26,
+            27,
+            28
+          ],
+          "circuit_sha256": "5cfcc28142da1432611df147dd2c2c3028ce48a7a344a5966e114d2c83e39335"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.60416,
+          "native_2q": 40,
+          "depth": 91,
+          "sub_nodes": [
+            146,
+            147,
+            148,
+            149,
+            150
+          ],
+          "circuit_sha256": "6b5ae011cf1f7ee78972c48fa47fc637337b141a302ea28630e7b3e097381d76"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.60357,
+          "native_2q": 40,
+          "depth": 91,
+          "sub_nodes": [
+            138,
+            151,
+            152,
+            153,
+            154
+          ],
+          "circuit_sha256": "b9475496a2a955ec2d3244f29ac8e4bba75baca03a0f1a73615f754cd356ea17"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.58552,
+          "native_2q": 46,
+          "depth": 81,
+          "sub_nodes": [
+            138,
+            151,
+            152,
+            153,
+            154
+          ],
+          "circuit_sha256": "74d6a5e36be1749c12bcda5182b09f8f618e7bfb750546c138b4b82ca8864ec9"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.585265,
+          "native_2q": 46,
+          "depth": 82,
+          "sub_nodes": [
+            146,
+            147,
+            148,
+            149,
+            150
+          ],
+          "circuit_sha256": "ad6ae814a0fe500ef528eccd819c7edb46da4f9f953bb49ceb0f0c46867a60ee"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.579971,
+          "native_2q": 46,
+          "depth": 86,
+          "sub_nodes": [
+            138,
+            151,
+            152,
+            153,
+            154
+          ],
+          "circuit_sha256": "42343a4ce07d186a696afaf4674beeb3fc84f60a353dc7c7f86114e3e1cf820d"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.57905,
+          "native_2q": 46,
+          "depth": 88,
+          "sub_nodes": [
+            146,
+            147,
+            148,
+            149,
+            150
+          ],
+          "circuit_sha256": "7d969c3dcdfe880916d82e09d578c411bad8fe06e724f641c1297a4e8c3af12a"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_wstate_6q",
+      "family": "w_state_dicke",
+      "width": 6,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "prometheus_native",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "prometheus_native",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.029942,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.199409,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.872166,
+          "native_2q": 10,
+          "depth": 32,
+          "sub_nodes": [
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ],
+          "circuit_sha256": "b762da31749637065833f08f0fe3feb621691c37b2ae5f5635145c699fef8938"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.842224,
+          "native_2q": 10,
+          "depth": 30,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            34,
+            35
+          ],
+          "circuit_sha256": "afd41b4c6686d1ea2f53e58593d6275b01e0f5006d20805fc980e739bb3a362a"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.672757,
+          "native_2q": 10,
+          "depth": 32,
+          "sub_nodes": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "fcb13caec8b559bc5a343a7a86b158189c26b04b4bd4a9b723bd3e2c04dbea74"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.872166,
+          "native_2q": 10,
+          "depth": 32,
+          "sub_nodes": [
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ],
+          "circuit_sha256": "b762da31749637065833f08f0fe3feb621691c37b2ae5f5635145c699fef8938"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.867467,
+          "native_2q": 10,
+          "depth": 36,
+          "sub_nodes": [
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ],
+          "circuit_sha256": "9557179734d1c86e966742b48140bef656de5e38671d778fe9dd1128b1100c64"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.866297,
+          "native_2q": 10,
+          "depth": 37,
+          "sub_nodes": [
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ],
+          "circuit_sha256": "7270358eda3dc4e7d5c39b006cc9ae69e7f17e1b1de1d177514776f8784dc880"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.842224,
+          "native_2q": 10,
+          "depth": 30,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            34,
+            35
+          ],
+          "circuit_sha256": "afd41b4c6686d1ea2f53e58593d6275b01e0f5006d20805fc980e739bb3a362a"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.833583,
+          "native_2q": 10,
+          "depth": 36,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            34,
+            35
+          ],
+          "circuit_sha256": "575b603d86418a1f0c16f9dde689b56be74f281298f1fbb5ba14d5e10e6202cd"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.832152,
+          "native_2q": 10,
+          "depth": 37,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            34,
+            35
+          ],
+          "circuit_sha256": "7639fa7544dfa6c6570bf618eb5ba2ba63fc08a8b2292ce0ba4d008e6ec01401"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.672757,
+          "native_2q": 10,
+          "depth": 32,
+          "sub_nodes": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "fcb13caec8b559bc5a343a7a86b158189c26b04b4bd4a9b723bd3e2c04dbea74"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.668553,
+          "native_2q": 10,
+          "depth": 36,
+          "sub_nodes": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "b209fffec750e212f5870c1560d60dc57afd655dcc11f88ac3befa4f4b00385d"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.667507,
+          "native_2q": 10,
+          "depth": 37,
+          "sub_nodes": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "957fe390b47a079e16058a02af8e6b5a84d9ef660e41fd821eded1b4fe9da18d"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_simon_6q",
+      "family": "simon_period",
+      "width": 6,
+      "predicted_best_qpu": "ibm_fez",
+      "predicted_best_compiler_on_best_qpu": "tket",
+      "predicted_rank_1_qpu": "ibm_fez",
+      "predicted_rank_2_qpu": "ibm_kingston",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "tket",
+        "ibm_marrakesh": "tket",
+        "ibm_fez": "tket"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.009642,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.194178,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "tket",
+          "f_pred": 0.897684,
+          "native_2q": 8,
+          "depth": 14,
+          "sub_nodes": [
+            109,
+            110,
+            111,
+            112,
+            118,
+            129
+          ],
+          "circuit_sha256": "7426c1e14b837d16d13cd1e6544418c182fb8e018270a09d9b40a64152eec31a"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "tket",
+          "f_pred": 0.888042,
+          "native_2q": 8,
+          "depth": 14,
+          "sub_nodes": [
+            80,
+            81,
+            82,
+            83,
+            96,
+            103
+          ],
+          "circuit_sha256": "76c388fd2d224cea8914cb5876447119c82f82f4eaabecc2a0ee858204c829db"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "tket",
+          "f_pred": 0.703506,
+          "native_2q": 8,
+          "depth": 14,
+          "sub_nodes": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "8a8e3b2e38f1f4f945ced2bc52b7b741a687c659365f0744b901e0a6f2e2831e"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.897684,
+          "native_2q": 8,
+          "depth": 14,
+          "sub_nodes": [
+            109,
+            110,
+            111,
+            112,
+            118,
+            129
+          ],
+          "circuit_sha256": "7426c1e14b837d16d13cd1e6544418c182fb8e018270a09d9b40a64152eec31a"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.89757,
+          "native_2q": 8,
+          "depth": 14,
+          "sub_nodes": [
+            109,
+            110,
+            111,
+            112,
+            118,
+            129
+          ],
+          "circuit_sha256": "c6d202daec3357574eb38047df6cdf4bc71adc2fde43a4e9b9e2e0df4b134e39"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.893157,
+          "native_2q": 8,
+          "depth": 17,
+          "sub_nodes": [
+            109,
+            110,
+            111,
+            112,
+            118,
+            129
+          ],
+          "circuit_sha256": "0dbc9028b794a01cf7ea3bdad3e96351c3e1b3c3ee0abbca30b4e861e877abfc"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.888042,
+          "native_2q": 8,
+          "depth": 14,
+          "sub_nodes": [
+            80,
+            81,
+            82,
+            83,
+            96,
+            103
+          ],
+          "circuit_sha256": "76c388fd2d224cea8914cb5876447119c82f82f4eaabecc2a0ee858204c829db"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.885651,
+          "native_2q": 8,
+          "depth": 16,
+          "sub_nodes": [
+            80,
+            81,
+            82,
+            83,
+            96,
+            103
+          ],
+          "circuit_sha256": "16db2e6dd32469ec46dc64c06a3a0b88099efac64fe9c369da5b3851deeee4b0"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.885572,
+          "native_2q": 8,
+          "depth": 16,
+          "sub_nodes": [
+            80,
+            81,
+            82,
+            83,
+            96,
+            103
+          ],
+          "circuit_sha256": "cb52178c340f37f3bab4c246ea59a53898dcd3ddba50414aeee8cc2bbbeb9a6e"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.703506,
+          "native_2q": 8,
+          "depth": 14,
+          "sub_nodes": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "8a8e3b2e38f1f4f945ced2bc52b7b741a687c659365f0744b901e0a6f2e2831e"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.701298,
+          "native_2q": 8,
+          "depth": 16,
+          "sub_nodes": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "2113a056474c21d290a3c0d0743e6345c5cf4d18b48df95026cf49f7d41c7d87"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.701298,
+          "native_2q": 8,
+          "depth": 16,
+          "sub_nodes": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "464ccc882b375d884f4adfce8846ed917eb83142ee8da0406386f86288311ab4"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_qv_6q",
+      "family": "quantum_volume",
+      "width": 6,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "tket",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_marrakesh",
+      "predicted_rank_3_qpu": "ibm_fez",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "tket",
+        "ibm_marrakesh": "tket",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.003873,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.039072,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "tket",
+          "f_pred": 0.725645,
+          "native_2q": 27,
+          "depth": 51,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            34,
+            35
+          ],
+          "circuit_sha256": "130e9171fc2cbd43e8ac5bd2f765ab11ba742de2d4498d93030d452f9de82899"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "tket",
+          "f_pred": 0.721772,
+          "native_2q": 27,
+          "depth": 51,
+          "sub_nodes": [
+            32,
+            33,
+            39,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "45bc0f5e6b4ac73a0ea2640fd299978b50727dc38ee904c662d68045e3a2629f"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.686573,
+          "native_2q": 29,
+          "depth": 68,
+          "sub_nodes": [
+            96,
+            103,
+            104,
+            105,
+            106,
+            117
+          ],
+          "circuit_sha256": "8c6d65e4f7ddbf6fe6e984d465cf7895ceff9a49884d553367955b75b532d901"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.725645,
+          "native_2q": 27,
+          "depth": 51,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            34,
+            35
+          ],
+          "circuit_sha256": "130e9171fc2cbd43e8ac5bd2f765ab11ba742de2d4498d93030d452f9de82899"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.725645,
+          "native_2q": 27,
+          "depth": 51,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            34,
+            35
+          ],
+          "circuit_sha256": "64283f66d96bdc4f08e970fc2c7f028edbce2488d2373f3a7061894962859d45"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.721772,
+          "native_2q": 27,
+          "depth": 51,
+          "sub_nodes": [
+            32,
+            33,
+            39,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "45bc0f5e6b4ac73a0ea2640fd299978b50727dc38ee904c662d68045e3a2629f"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.708291,
+          "native_2q": 29,
+          "depth": 56,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            34,
+            35
+          ],
+          "circuit_sha256": "c6a20157705849bc2130ef7e17f1e5b9aeaf821f69c2d19e6a807413e375824e"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.706947,
+          "native_2q": 29,
+          "depth": 54,
+          "sub_nodes": [
+            32,
+            33,
+            39,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "474ab211470eb81266fbf595b8526f6d3a35a87ca705f34390b13cd2d0797872"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.703808,
+          "native_2q": 29,
+          "depth": 56,
+          "sub_nodes": [
+            32,
+            33,
+            39,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "f38eba4984c7e321b51aa54573f3bcaa6e4990a0f70f3c1c81e3ffd6978f3a59"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.686573,
+          "native_2q": 29,
+          "depth": 68,
+          "sub_nodes": [
+            96,
+            103,
+            104,
+            105,
+            106,
+            117
+          ],
+          "circuit_sha256": "8c6d65e4f7ddbf6fe6e984d465cf7895ceff9a49884d553367955b75b532d901"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.684538,
+          "native_2q": 29,
+          "depth": 70,
+          "sub_nodes": [
+            96,
+            103,
+            104,
+            105,
+            106,
+            117
+          ],
+          "circuit_sha256": "aab70c9726ccfcd45bed3d0ac102123b410756e5b1179253a29012afc4225b5a"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.674467,
+          "native_2q": 29,
+          "depth": 80,
+          "sub_nodes": [
+            96,
+            103,
+            104,
+            105,
+            106,
+            117
+          ],
+          "circuit_sha256": "778a96c50dae5efc63d47aa8ff7b98fac98241654742c274c6829b30c93c6322"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_qaoa_7q",
+      "family": "qaoa_maxcut",
+      "width": 7,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "prometheus_native",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "prometheus_native",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.027018,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.103447,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.300787,
+          "native_2q": 111,
+          "depth": 219,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            33,
+            34,
+            35
+          ],
+          "circuit_sha256": "c5c8cfef2b9742e613849fe5f0c659a6afce8e427e19691cb30f6220b9cd786c"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.273769,
+          "native_2q": 113,
+          "depth": 221,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94
+          ],
+          "circuit_sha256": "d89f8ce671d78b65b91da92aa7cf6796b75bd35683690b1b42f7eda0143b2f72"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.19734,
+          "native_2q": 111,
+          "depth": 221,
+          "sub_nodes": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            58
+          ],
+          "circuit_sha256": "5aec4f5c7520b9f4cd12c367adf6a08d9c96a2bd4e253661a4fd5b22ae773a35"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.300787,
+          "native_2q": 111,
+          "depth": 219,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            33,
+            34,
+            35
+          ],
+          "circuit_sha256": "c5c8cfef2b9742e613849fe5f0c659a6afce8e427e19691cb30f6220b9cd786c"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.285954,
+          "native_2q": 114,
+          "depth": 241,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            33,
+            34,
+            35
+          ],
+          "circuit_sha256": "a22ded82ebebe3c636792469c4b3a57c7efeed0b61c3e0512ba1691e61eff022"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.273769,
+          "native_2q": 113,
+          "depth": 221,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94
+          ],
+          "circuit_sha256": "d89f8ce671d78b65b91da92aa7cf6796b75bd35683690b1b42f7eda0143b2f72"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.269121,
+          "native_2q": 111,
+          "depth": 242,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94
+          ],
+          "circuit_sha256": "ebed9cd4245210a1acf5ad3db15027b176bf8eb3d2821df6aa5d63eefd9a5bba"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.258647,
+          "native_2q": 124,
+          "depth": 260,
+          "sub_nodes": [
+            13,
+            14,
+            15,
+            19,
+            33,
+            34,
+            35
+          ],
+          "circuit_sha256": "4f5423ad276ea79be553cd560b2089dc7546a1c742baf3d6ce8a68b84b837689"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.255752,
+          "native_2q": 116,
+          "depth": 249,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94
+          ],
+          "circuit_sha256": "36897ec3a29e53bff0386ceb79e2671dfe342afdf935f6b77983e2e824df72bb"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.19734,
+          "native_2q": 111,
+          "depth": 221,
+          "sub_nodes": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            58
+          ],
+          "circuit_sha256": "5aec4f5c7520b9f4cd12c367adf6a08d9c96a2bd4e253661a4fd5b22ae773a35"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.191187,
+          "native_2q": 111,
+          "depth": 242,
+          "sub_nodes": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            58
+          ],
+          "circuit_sha256": "f65b2ebff15ba25aafbb6f1cc9df91291c1f39bdc5cf1da5535c380042a7173b"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.167801,
+          "native_2q": 124,
+          "depth": 257,
+          "sub_nodes": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            58
+          ],
+          "circuit_sha256": "1d40df4d445be7256b17af955d6a594ccbe1ea1e31bbb4d83b3c6f860c9bd208"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_vqe_su2_7q",
+      "family": "vqe_su2",
+      "width": 7,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "prometheus_native",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "prometheus_native",
+        "ibm_marrakesh": "tket",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.055132,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.165685,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.481666,
+          "native_2q": 62,
+          "depth": 166,
+          "sub_nodes": [
+            138,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ],
+          "circuit_sha256": "0e10eb955230d9215087efe0b4636593a6819339741a760d74d1612bd02125bb"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.426534,
+          "native_2q": 69,
+          "depth": 163,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94
+          ],
+          "circuit_sha256": "d3c4acee52c5ebed17c960b12bc810a168b45ca6e2de3babcf2ea34faf886a17"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "tket",
+          "f_pred": 0.315981,
+          "native_2q": 69,
+          "depth": 157,
+          "sub_nodes": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            58
+          ],
+          "circuit_sha256": "430c6aaf2a9673e5ead8cc2cdd020a1cba2593d260acfb391e932534747bd099"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.481666,
+          "native_2q": 62,
+          "depth": 166,
+          "sub_nodes": [
+            138,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ],
+          "circuit_sha256": "0e10eb955230d9215087efe0b4636593a6819339741a760d74d1612bd02125bb"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.481024,
+          "native_2q": 64,
+          "depth": 155,
+          "sub_nodes": [
+            138,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ],
+          "circuit_sha256": "20526e746a0dde1d6d7a58ec3ceee1985ec87a729bb989a6f5fc61f3c488d790"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.467263,
+          "native_2q": 66,
+          "depth": 165,
+          "sub_nodes": [
+            138,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152
+          ],
+          "circuit_sha256": "d1af9935adb8a04f7d17651d94d829c2ca5e02f57ea8e9e9a90d964b0c78414f"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.426534,
+          "native_2q": 69,
+          "depth": 163,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94
+          ],
+          "circuit_sha256": "d3c4acee52c5ebed17c960b12bc810a168b45ca6e2de3babcf2ea34faf886a17"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.423771,
+          "native_2q": 69,
+          "depth": 167,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94
+          ],
+          "circuit_sha256": "0fb5b53bcc1d452713b7651726b1a7a1fd0b0afd8019676b06fef773e9b67d7f"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.416387,
+          "native_2q": 66,
+          "depth": 193,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94
+          ],
+          "circuit_sha256": "46b28b472f92c3fe51a6d95d98f31719bc59218ff70bc46a80905687317aded2"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.315981,
+          "native_2q": 69,
+          "depth": 157,
+          "sub_nodes": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            58
+          ],
+          "circuit_sha256": "430c6aaf2a9673e5ead8cc2cdd020a1cba2593d260acfb391e932534747bd099"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.314093,
+          "native_2q": 69,
+          "depth": 161,
+          "sub_nodes": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            58
+          ],
+          "circuit_sha256": "1996faf7a659d47fbf6cec57cad3ff905f512dac5bba6abea35bcdc775833d13"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.307447,
+          "native_2q": 69,
+          "depth": 173,
+          "sub_nodes": [
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            58
+          ],
+          "circuit_sha256": "40cf5c6130193afb337e1066e63f134eb26ece471db10d6d04675119788a9a5c"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_qft_8q",
+      "family": "qft_phase",
+      "width": 8,
+      "predicted_best_qpu": "ibm_fez",
+      "predicted_best_compiler_on_best_qpu": "tket",
+      "predicted_rank_1_qpu": "ibm_fez",
+      "predicted_rank_2_qpu": "ibm_kingston",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "prometheus_native",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "tket"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.036211,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.07499,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "tket",
+          "f_pred": 0.42276,
+          "native_2q": 72,
+          "depth": 165,
+          "sub_nodes": [
+            122,
+            123,
+            124,
+            136,
+            142,
+            143,
+            144,
+            145
+          ],
+          "circuit_sha256": "d2810a4042ef7fb1005966c0dd9301003bb11b4be9ce8e1a4868f75a6bd21144"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.386549,
+          "native_2q": 88,
+          "depth": 180,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "c8af0cca2e9069c446b7f870074b867046d5a91b457ce8d200e374cc3c58271e"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.34777,
+          "native_2q": 90,
+          "depth": 167,
+          "sub_nodes": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            35
+          ],
+          "circuit_sha256": "e6ffed60aaeac6fe5115f6bd56abe18ad6572104ea535b7639f9be52db9cc54c"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.42276,
+          "native_2q": 72,
+          "depth": 165,
+          "sub_nodes": [
+            122,
+            123,
+            124,
+            136,
+            142,
+            143,
+            144,
+            145
+          ],
+          "circuit_sha256": "d2810a4042ef7fb1005966c0dd9301003bb11b4be9ce8e1a4868f75a6bd21144"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.422002,
+          "native_2q": 72,
+          "depth": 166,
+          "sub_nodes": [
+            122,
+            123,
+            124,
+            136,
+            142,
+            143,
+            144,
+            145
+          ],
+          "circuit_sha256": "3d64abe78af5b2b1011bb20f7f8c2bc16477fec1534fb4a2ea5653f8dbb0aff8"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.410418,
+          "native_2q": 76,
+          "depth": 163,
+          "sub_nodes": [
+            122,
+            123,
+            124,
+            136,
+            142,
+            143,
+            144,
+            145
+          ],
+          "circuit_sha256": "545778213ee49042f75e248b6d6f53f39e02e8f1ba61d1319732e9240121b6e4"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.386549,
+          "native_2q": 88,
+          "depth": 180,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "c8af0cca2e9069c446b7f870074b867046d5a91b457ce8d200e374cc3c58271e"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.377934,
+          "native_2q": 90,
+          "depth": 186,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "0a584ccb1237ee1742164e1fd73d702ca054107d774f95dd05980ddb8d795d3b"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.377231,
+          "native_2q": 89,
+          "depth": 193,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "1d2b02405f3925f65a7d5036b84248f44bba82e77574f6d55cbed5581b04d776"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.34777,
+          "native_2q": 90,
+          "depth": 167,
+          "sub_nodes": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            35
+          ],
+          "circuit_sha256": "e6ffed60aaeac6fe5115f6bd56abe18ad6572104ea535b7639f9be52db9cc54c"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.339926,
+          "native_2q": 89,
+          "depth": 184,
+          "sub_nodes": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            35
+          ],
+          "circuit_sha256": "8c9f14f0e1579a45bf9d96e76b24756f57da5da2b45b5aa663a6eeb97b7a551d"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.336639,
+          "native_2q": 90,
+          "depth": 186,
+          "sub_nodes": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            35
+          ],
+          "circuit_sha256": "326e82e08558d310ede4d6e0547aef8f2e9c5b45d1f4d0573e41d56712155209"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_heisenberg_8q",
+      "family": "heisenberg_xxz",
+      "width": 8,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "tket",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "tket",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.001786,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.028542,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "tket",
+          "f_pred": 0.745102,
+          "native_2q": 28,
+          "depth": 33,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "b3e38d8088570c4e662fc69c68eb1b3ead2f616379b04b2414e66a39938df257"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.743316,
+          "native_2q": 28,
+          "depth": 32,
+          "sub_nodes": [
+            127,
+            136,
+            137,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "dd29208d05c57c331dfdc1dc5974ba7a7d3e5ba12708cc6cb5d0e9ba130eeea7"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.71656,
+          "native_2q": 28,
+          "depth": 32,
+          "sub_nodes": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            35
+          ],
+          "circuit_sha256": "53a2e84b28345474ae9afd7fea7d140a36977aeaa0eeeef418ef3e35e65fa6d9"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.745102,
+          "native_2q": 28,
+          "depth": 33,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "b3e38d8088570c4e662fc69c68eb1b3ead2f616379b04b2414e66a39938df257"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.744055,
+          "native_2q": 28,
+          "depth": 34,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "edcd96218ac3e41c20747af2410348b4448c1d969b9854d644547210379370b2"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.743316,
+          "native_2q": 28,
+          "depth": 32,
+          "sub_nodes": [
+            127,
+            136,
+            137,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "dd29208d05c57c331dfdc1dc5974ba7a7d3e5ba12708cc6cb5d0e9ba130eeea7"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.741965,
+          "native_2q": 28,
+          "depth": 36,
+          "sub_nodes": [
+            59,
+            73,
+            74,
+            75,
+            79,
+            93,
+            94,
+            95
+          ],
+          "circuit_sha256": "c19a97293c2f7fb953876b9189f2eab042d28c808dc89410a7e9ebfca459a09e"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.740936,
+          "native_2q": 28,
+          "depth": 34,
+          "sub_nodes": [
+            127,
+            136,
+            137,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "38cbfb78ad019711674c6530f3f6e73cf698bec8ba51450da6f4679d4ceed573"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.738564,
+          "native_2q": 28,
+          "depth": 36,
+          "sub_nodes": [
+            127,
+            136,
+            137,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "469488901cd12b007458e0aee7e79c01050fbf66ba2bbeadae4dd23e23d242ce"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.71656,
+          "native_2q": 28,
+          "depth": 32,
+          "sub_nodes": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            35
+          ],
+          "circuit_sha256": "53a2e84b28345474ae9afd7fea7d140a36977aeaa0eeeef418ef3e35e65fa6d9"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.71403,
+          "native_2q": 28,
+          "depth": 34,
+          "sub_nodes": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            35
+          ],
+          "circuit_sha256": "0cabbf0d685cdb501004960b8e91d1889d947c0ee0b7455a0710a1cd3960b339"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.711508,
+          "native_2q": 28,
+          "depth": 36,
+          "sub_nodes": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            35
+          ],
+          "circuit_sha256": "e4c324fa545f8abc8c70665825d725c0608158058e435cf7e0f4414ceaf4ff07"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_hiddenshift_9q",
+      "family": "hidden_shift",
+      "width": 9,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "tket",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "tket",
+        "ibm_marrakesh": "tket",
+        "ibm_fez": "tket"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.005645,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.013418,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "tket",
+          "f_pred": 0.826909,
+          "native_2q": 15,
+          "depth": 23,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23
+          ],
+          "circuit_sha256": "94a5c02a79104521c65d196e07c97f830f9009aa2f34f3f622f4cf5a18e53497"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "tket",
+          "f_pred": 0.821264,
+          "native_2q": 15,
+          "depth": 23,
+          "sub_nodes": [
+            58,
+            68,
+            69,
+            70,
+            71,
+            78,
+            88,
+            89,
+            90
+          ],
+          "circuit_sha256": "3ccbf6d17c193bacc673f2accbe59d9a982ef5fbb5ece13561ba4659b0b5c9e9"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "tket",
+          "f_pred": 0.813491,
+          "native_2q": 15,
+          "depth": 23,
+          "sub_nodes": [
+            87,
+            97,
+            107,
+            108,
+            109,
+            110,
+            118,
+            128,
+            129
+          ],
+          "circuit_sha256": "b198f8b70322c015e952735b65175b0cd2bbf089cb5d582ed752045f9388ce89"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.826909,
+          "native_2q": 15,
+          "depth": 23,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23
+          ],
+          "circuit_sha256": "94a5c02a79104521c65d196e07c97f830f9009aa2f34f3f622f4cf5a18e53497"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.821264,
+          "native_2q": 15,
+          "depth": 23,
+          "sub_nodes": [
+            58,
+            68,
+            69,
+            70,
+            71,
+            78,
+            88,
+            89,
+            90
+          ],
+          "circuit_sha256": "3ccbf6d17c193bacc673f2accbe59d9a982ef5fbb5ece13561ba4659b0b5c9e9"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.813491,
+          "native_2q": 15,
+          "depth": 23,
+          "sub_nodes": [
+            87,
+            97,
+            107,
+            108,
+            109,
+            110,
+            118,
+            128,
+            129
+          ],
+          "circuit_sha256": "b198f8b70322c015e952735b65175b0cd2bbf089cb5d582ed752045f9388ce89"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.789373,
+          "native_2q": 20,
+          "depth": 28,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23
+          ],
+          "circuit_sha256": "296828881430ae60345b5b0c1dfd929bdbc89dc2556f7a307643ad3fd7bd5e0c"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.789373,
+          "native_2q": 20,
+          "depth": 28,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23
+          ],
+          "circuit_sha256": "0885705d6696b87af6f460b33d42fcb6b8f14d2aaf8cf23903f025436b333f35"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.773971,
+          "native_2q": 20,
+          "depth": 28,
+          "sub_nodes": [
+            87,
+            97,
+            107,
+            108,
+            109,
+            110,
+            118,
+            128,
+            129
+          ],
+          "circuit_sha256": "947c433c8bf2165b0a793dcf0b72e08e3186b9ae73b9cc308e169d0ba09d11ea"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.773971,
+          "native_2q": 20,
+          "depth": 28,
+          "sub_nodes": [
+            87,
+            97,
+            107,
+            108,
+            109,
+            110,
+            118,
+            128,
+            129
+          ],
+          "circuit_sha256": "947c433c8bf2165b0a793dcf0b72e08e3186b9ae73b9cc308e169d0ba09d11ea"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.764579,
+          "native_2q": 23,
+          "depth": 28,
+          "sub_nodes": [
+            58,
+            68,
+            69,
+            70,
+            71,
+            78,
+            88,
+            89,
+            90
+          ],
+          "circuit_sha256": "8a789f89b28d0c5c5cf34444d8e8c7a12ba5ce361aab11fd560c7166667f78ad"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.763685,
+          "native_2q": 23,
+          "depth": 28,
+          "sub_nodes": [
+            58,
+            68,
+            69,
+            70,
+            71,
+            78,
+            88,
+            89,
+            90
+          ],
+          "circuit_sha256": "31a473747f2e9b324bef93077b2c628517b7a08717cd2715ffbda91ecdbaf1d8"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_bipartite_9q",
+      "family": "dense_bipartite",
+      "width": 9,
+      "predicted_best_qpu": "ibm_fez",
+      "predicted_best_compiler_on_best_qpu": "prometheus_native",
+      "predicted_rank_1_qpu": "ibm_fez",
+      "predicted_rank_2_qpu": "ibm_kingston",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "prometheus_native",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.008759,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.039529,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.635757,
+          "native_2q": 39,
+          "depth": 61,
+          "sub_nodes": [
+            58,
+            68,
+            69,
+            70,
+            71,
+            78,
+            88,
+            89,
+            90
+          ],
+          "circuit_sha256": "1af90fb985fd2a9007d77b124084b05d4730cb8394aacb324d3038a2e215b2d5"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.626998,
+          "native_2q": 42,
+          "depth": 73,
+          "sub_nodes": [
+            57,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            77
+          ],
+          "circuit_sha256": "32d8ecc90e2dfd0126cb69dbe851c5241021ddf10db047ffe94cc96d97cbacef"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.596228,
+          "native_2q": 45,
+          "depth": 64,
+          "sub_nodes": [
+            132,
+            133,
+            134,
+            135,
+            139,
+            152,
+            153,
+            154,
+            155
+          ],
+          "circuit_sha256": "e857c5818d07c61c7dce8cf784e19e7880a41a1807d72a057727fa1fbe344b6a"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.635757,
+          "native_2q": 39,
+          "depth": 61,
+          "sub_nodes": [
+            58,
+            68,
+            69,
+            70,
+            71,
+            78,
+            88,
+            89,
+            90
+          ],
+          "circuit_sha256": "1af90fb985fd2a9007d77b124084b05d4730cb8394aacb324d3038a2e215b2d5"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.628733,
+          "native_2q": 39,
+          "depth": 68,
+          "sub_nodes": [
+            58,
+            68,
+            69,
+            70,
+            71,
+            78,
+            88,
+            89,
+            90
+          ],
+          "circuit_sha256": "06f16c962a1f0aac60f45312f8b937c6c73d9e1e227ab75cbd768e0ef8102ca6"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.626998,
+          "native_2q": 42,
+          "depth": 73,
+          "sub_nodes": [
+            57,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            77
+          ],
+          "circuit_sha256": "32d8ecc90e2dfd0126cb69dbe851c5241021ddf10db047ffe94cc96d97cbacef"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.622965,
+          "native_2q": 39,
+          "depth": 74,
+          "sub_nodes": [
+            58,
+            68,
+            69,
+            70,
+            71,
+            78,
+            88,
+            89,
+            90
+          ],
+          "circuit_sha256": "cb48cf12bb3596b0e2f93d2c6a20631100a07724a604cb8cdeb6bdbaba0c851c"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.616197,
+          "native_2q": 42,
+          "depth": 85,
+          "sub_nodes": [
+            57,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            77
+          ],
+          "circuit_sha256": "d7b407d26f9c73c662cf2bb006dcb13cc11da8c0542ce0e1f198c44302b857ce"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.615317,
+          "native_2q": 42,
+          "depth": 86,
+          "sub_nodes": [
+            57,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            77
+          ],
+          "circuit_sha256": "088b94eb0f4373886f6ada9de379691f27962bf080ed9dd29d471bc468f96973"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.596228,
+          "native_2q": 45,
+          "depth": 64,
+          "sub_nodes": [
+            132,
+            133,
+            134,
+            135,
+            139,
+            152,
+            153,
+            154,
+            155
+          ],
+          "circuit_sha256": "e857c5818d07c61c7dce8cf784e19e7880a41a1807d72a057727fa1fbe344b6a"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.590352,
+          "native_2q": 45,
+          "depth": 70,
+          "sub_nodes": [
+            132,
+            133,
+            134,
+            135,
+            139,
+            152,
+            153,
+            154,
+            155
+          ],
+          "circuit_sha256": "f51115a0a2a3e6352a2491ad6dc288eaf7d794e2cefe21414de0a5f63b97e4bd"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.582018,
+          "native_2q": 45,
+          "depth": 75,
+          "sub_nodes": [
+            132,
+            133,
+            134,
+            135,
+            139,
+            152,
+            153,
+            154,
+            155
+          ],
+          "circuit_sha256": "bc234a47dae02c1624925d30ab4820ad02af2b864762c4287307bdeb37cbfe44"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_iqp_10q",
+      "family": "iqp_pauli",
+      "width": 10,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "prometheus_native",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "prometheus_native",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.096449,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.110938,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.458727,
+          "native_2q": 71,
+          "depth": 130,
+          "sub_nodes": [
+            57,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            77
+          ],
+          "circuit_sha256": "2b946d25befacf8105a046db1fd551292fc2cc65c1f8ae2dd1ea7ad7fd039abd"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.362278,
+          "native_2q": 78,
+          "depth": 151,
+          "sub_nodes": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            19
+          ],
+          "circuit_sha256": "9c535694390e5db37b6226d06cf6d0ba426566e1d5751a4f80a1ef8aaac2e507"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.347789,
+          "native_2q": 88,
+          "depth": 177,
+          "sub_nodes": [
+            131,
+            132,
+            133,
+            134,
+            135,
+            139,
+            152,
+            153,
+            154,
+            155
+          ],
+          "circuit_sha256": "bd0aac7fb91e3009f322808050a020077e433acd6b35560a8dbf0a88a4a0d70e"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.458727,
+          "native_2q": 71,
+          "depth": 130,
+          "sub_nodes": [
+            57,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            77
+          ],
+          "circuit_sha256": "2b946d25befacf8105a046db1fd551292fc2cc65c1f8ae2dd1ea7ad7fd039abd"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.441673,
+          "native_2q": 72,
+          "depth": 152,
+          "sub_nodes": [
+            57,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            77
+          ],
+          "circuit_sha256": "b98de9886b859d0a6294a24bb40a5f5aa09129384df2b06b291e1bacf7019cdf"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.404478,
+          "native_2q": 81,
+          "depth": 164,
+          "sub_nodes": [
+            57,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            77
+          ],
+          "circuit_sha256": "b0211bc69b23f8a622d69bda4fae0d4e8c083ff9b9b45a96d45436c12175063d"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.362278,
+          "native_2q": 78,
+          "depth": 151,
+          "sub_nodes": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            19
+          ],
+          "circuit_sha256": "9c535694390e5db37b6226d06cf6d0ba426566e1d5751a4f80a1ef8aaac2e507"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.352805,
+          "native_2q": 78,
+          "depth": 165,
+          "sub_nodes": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            19
+          ],
+          "circuit_sha256": "7a7623f1ca02e2e74505e662f1b2aafb99feece104e21cca2e25d7d1b3a9717a"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.347789,
+          "native_2q": 88,
+          "depth": 177,
+          "sub_nodes": [
+            131,
+            132,
+            133,
+            134,
+            135,
+            139,
+            152,
+            153,
+            154,
+            155
+          ],
+          "circuit_sha256": "bd0aac7fb91e3009f322808050a020077e433acd6b35560a8dbf0a88a4a0d70e"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.345411,
+          "native_2q": 88,
+          "depth": 178,
+          "sub_nodes": [
+            131,
+            132,
+            133,
+            134,
+            135,
+            139,
+            152,
+            153,
+            154,
+            155
+          ],
+          "circuit_sha256": "587ccc99714039e4648a4fd7bd68d515bc9bad9b3f05b9be98ff641286e1a19b"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.345288,
+          "native_2q": 84,
+          "depth": 146,
+          "sub_nodes": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            18,
+            19
+          ],
+          "circuit_sha256": "e5cb72420b809ee9bdf7604d3f2ea9fef52987a8bfd36bc453472b4417ce0711"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.342112,
+          "native_2q": 88,
+          "depth": 184,
+          "sub_nodes": [
+            131,
+            132,
+            133,
+            134,
+            135,
+            139,
+            152,
+            153,
+            154,
+            155
+          ],
+          "circuit_sha256": "7068845463c8026a94114acfa0e788ccb46fb735905e3579f5b778d43a3c50a2"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_ising_11q",
+      "family": "trotter_ising_nnn",
+      "width": 11,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "prometheus_native",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "prometheus_native",
+        "ibm_marrakesh": "tket",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.018073,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.03748,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.371241,
+          "native_2q": 94,
+          "depth": 158,
+          "sub_nodes": [
+            97,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            117,
+            124,
+            125,
+            126
+          ],
+          "circuit_sha256": "db3b793549cc98fa08e49005ce8b4141dc1ce00349df987fff47703ff73be775"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.353168,
+          "native_2q": 93,
+          "depth": 157,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "circuit_sha256": "a859aae46a80b6ae177100d9d8963c52b1e07d76ea7bd6024dd80333cab0c2a2"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "tket",
+          "f_pred": 0.333761,
+          "native_2q": 95,
+          "depth": 148,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "8bc202a7648781e3ba726fb9fddf87b8e400d37925852dd1be767c67cf2ed320"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.371241,
+          "native_2q": 94,
+          "depth": 158,
+          "sub_nodes": [
+            97,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            117,
+            124,
+            125,
+            126
+          ],
+          "circuit_sha256": "db3b793549cc98fa08e49005ce8b4141dc1ce00349df987fff47703ff73be775"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.359984,
+          "native_2q": 97,
+          "depth": 164,
+          "sub_nodes": [
+            97,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            117,
+            124,
+            125,
+            126
+          ],
+          "circuit_sha256": "1dacf05cd55523daea053aedc5c6531fcb2e6065189202d3c546cfba46f05155"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.359496,
+          "native_2q": 97,
+          "depth": 165,
+          "sub_nodes": [
+            97,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            117,
+            124,
+            125,
+            126
+          ],
+          "circuit_sha256": "87aeadad5bcda181ba3dc4154dc0eba7c23fa1421b1bf8fb32c38e47ab2b5efd"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.353168,
+          "native_2q": 93,
+          "depth": 157,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "circuit_sha256": "a859aae46a80b6ae177100d9d8963c52b1e07d76ea7bd6024dd80333cab0c2a2"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.349716,
+          "native_2q": 95,
+          "depth": 150,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "circuit_sha256": "3df51b82b61e2ef018a94a273013b0cb4b6cd17144011a36ae7168eacaf0a4a2"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.333761,
+          "native_2q": 95,
+          "depth": 148,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "8bc202a7648781e3ba726fb9fddf87b8e400d37925852dd1be767c67cf2ed320"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.330332,
+          "native_2q": 97,
+          "depth": 145,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "b3a7bcffa10c54bdc310851c69f28db28527ff428dce55aa236d14a9b8d6cf24"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.317858,
+          "native_2q": 99,
+          "depth": 192,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "circuit_sha256": "a0596b0c35d16f0e3592e33f306daeb7fa34ceeb827389f59467d4ffbd51c951"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.310141,
+          "native_2q": 98,
+          "depth": 175,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "8f0c5f67c1b7d235060300d73cf744dc895e4e59faaea1d5e797cdbdbf7d7120"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_qft_11q",
+      "family": "qft_phase",
+      "width": 11,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "tket",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "tket",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "tket"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.005894,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.048763,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "tket",
+          "f_pred": 0.239378,
+          "native_2q": 135,
+          "depth": 253,
+          "sub_nodes": [
+            97,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            117,
+            124,
+            125,
+            126
+          ],
+          "circuit_sha256": "2c1967866964dfda4b5f2ef02381688587fb12facdc9d09082e7690ae4b36bba"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "tket",
+          "f_pred": 0.233484,
+          "native_2q": 129,
+          "depth": 255,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "circuit_sha256": "a830ac47a8a81b82d55ff4caea8cc425841dbd85bb8a3fe7636387987afab0c2"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.190615,
+          "native_2q": 143,
+          "depth": 252,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "a3b500e456dca21d5544231314fcf07b7405358fdee4f4dd1dd40349682eabec"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.239378,
+          "native_2q": 135,
+          "depth": 253,
+          "sub_nodes": [
+            97,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            117,
+            124,
+            125,
+            126
+          ],
+          "circuit_sha256": "2c1967866964dfda4b5f2ef02381688587fb12facdc9d09082e7690ae4b36bba"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.233484,
+          "native_2q": 129,
+          "depth": 255,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "circuit_sha256": "a830ac47a8a81b82d55ff4caea8cc425841dbd85bb8a3fe7636387987afab0c2"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.221915,
+          "native_2q": 143,
+          "depth": 265,
+          "sub_nodes": [
+            97,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            117,
+            124,
+            125,
+            126
+          ],
+          "circuit_sha256": "fdf7913fbdeae1943b70d3d166889f5fbf1dc4861f4e0ca51b1df3dd2fc4dabe"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.221877,
+          "native_2q": 135,
+          "depth": 259,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "circuit_sha256": "ffa7d56b36261709b5c7c87d4d883e8ae1031c23382d45826ab3db60c5cd57ae"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.21949,
+          "native_2q": 139,
+          "depth": 297,
+          "sub_nodes": [
+            97,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            117,
+            124,
+            125,
+            126
+          ],
+          "circuit_sha256": "a04a71494c4caa362ff70f9c4fdc782b77526415c369618c5978d3b2dd72a61a"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.201883,
+          "native_2q": 139,
+          "depth": 298,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "circuit_sha256": "727f80d8aa708459340d52c36e3f46ff6cc06b1b3a2a2c9518db8ed6d3b12fd3"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.190615,
+          "native_2q": 143,
+          "depth": 252,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "a3b500e456dca21d5544231314fcf07b7405358fdee4f4dd1dd40349682eabec"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.188851,
+          "native_2q": 137,
+          "depth": 282,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "1248515fa4cacc0590a784e8f9a42f2642d855332539974d56eb3cecc7e405cc"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.162637,
+          "native_2q": 152,
+          "depth": 301,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "b85bdf3c272b260a53682d6d89ad978a326ae0d1ebbd53c5f25e8b10ccc8e9b4"
+        }
+      ]
+    },
+    {
+      "workload_id": "het_qaoa_plaid_12q",
+      "family": "qaoa_plaid",
+      "width": 12,
+      "predicted_best_qpu": "ibm_kingston",
+      "predicted_best_compiler_on_best_qpu": "sabre_o3",
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "per_qpu_selected_compiler": {
+        "ibm_kingston": "sabre_o3",
+        "ibm_marrakesh": "prometheus_native",
+        "ibm_fez": "prometheus_native"
+      },
+      "predicted_f_pred_margin_qpu_1_vs_2": 0.004676,
+      "predicted_f_pred_margin_qpu_1_vs_3": 0.013077,
+      "qpu_meta_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "selected_compiler": "sabre_o3",
+          "f_pred": 0.099275,
+          "native_2q": 217,
+          "depth": 436,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23,
+            36,
+            40,
+            41
+          ],
+          "circuit_sha256": "21dc91f64718cc9ad74425310b21e989db9c5388c87f1390ff3ee53df78fd1a2"
+        },
+        {
+          "qpu": "ibm_fez",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.094599,
+          "native_2q": 195,
+          "depth": 392,
+          "sub_nodes": [
+            97,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            117,
+            118
+          ],
+          "circuit_sha256": "16f848d339a047ff575d75cacc825c3d8d4c5088e24d4adeebb68e7c8cdfb391"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "selected_compiler": "prometheus_native",
+          "f_pred": 0.086198,
+          "native_2q": 206,
+          "depth": 418,
+          "sub_nodes": [
+            86,
+            87,
+            97,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            118,
+            128,
+            129
+          ],
+          "circuit_sha256": "1b1a6d8ac3b397f8684656643ef0027f7cb6467f9d713c2ab52976607214a64d"
+        }
+      ],
+      "all_9_compiler_qpu_candidates_ranked": [
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "sabre_o3",
+          "f_pred": 0.099275,
+          "native_2q": 217,
+          "depth": 436,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23,
+            36,
+            40,
+            41
+          ],
+          "circuit_sha256": "21dc91f64718cc9ad74425310b21e989db9c5388c87f1390ff3ee53df78fd1a2"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "tket",
+          "f_pred": 0.096484,
+          "native_2q": 214,
+          "depth": 477,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23,
+            36,
+            40,
+            41
+          ],
+          "circuit_sha256": "f9223396525a54f318b1177b969309fbd5ab12f8d3dc98126f7b732ed615721e"
+        },
+        {
+          "qpu": "ibm_kingston",
+          "compiler": "prometheus_native",
+          "f_pred": 0.0964,
+          "native_2q": 220,
+          "depth": 443,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            16,
+            21,
+            22,
+            23,
+            36,
+            40,
+            41
+          ],
+          "circuit_sha256": "e8d103a89f98b1d1ab512b5c0fac5055e4570b3e51a9a9718a5c0e50c7814c7c"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "prometheus_native",
+          "f_pred": 0.094599,
+          "native_2q": 195,
+          "depth": 392,
+          "sub_nodes": [
+            97,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            117,
+            118
+          ],
+          "circuit_sha256": "16f848d339a047ff575d75cacc825c3d8d4c5088e24d4adeebb68e7c8cdfb391"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "tket",
+          "f_pred": 0.091021,
+          "native_2q": 191,
+          "depth": 430,
+          "sub_nodes": [
+            97,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            117,
+            118
+          ],
+          "circuit_sha256": "daf9c238aa97901a1f19e3f8081da7a121d34fcbad3f256bb0b5287b6e8dc937"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "prometheus_native",
+          "f_pred": 0.086198,
+          "native_2q": 206,
+          "depth": 418,
+          "sub_nodes": [
+            86,
+            87,
+            97,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            118,
+            128,
+            129
+          ],
+          "circuit_sha256": "1b1a6d8ac3b397f8684656643ef0027f7cb6467f9d713c2ab52976607214a64d"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "tket",
+          "f_pred": 0.085336,
+          "native_2q": 208,
+          "depth": 412,
+          "sub_nodes": [
+            86,
+            87,
+            97,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            118,
+            128,
+            129
+          ],
+          "circuit_sha256": "effc5ef384aa15c5a3b8c133ca43eeb760528f50afb0b31d3558b5c7ea2dcdf5"
+        },
+        {
+          "qpu": "ibm_fez",
+          "compiler": "sabre_o3",
+          "f_pred": 0.081639,
+          "native_2q": 202,
+          "depth": 443,
+          "sub_nodes": [
+            97,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            117,
+            118
+          ],
+          "circuit_sha256": "6c5838bec385069532c7fc6c8d02755b3cc3977524527d2dc9b22b54c8b16992"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "compiler": "sabre_o3",
+          "f_pred": 0.072888,
+          "native_2q": 225,
+          "depth": 429,
+          "sub_nodes": [
+            86,
+            87,
+            97,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            118,
+            128,
+            129
+          ],
+          "circuit_sha256": "25b9e1f07b09edcc90998d8efe7ecb7ec013e44fd9903b9fb572553def947567"
+        }
+      ]
+    }
+  ],
+  "interleaved_pub_manifests": {
+    "ibm_kingston": [
+      {
+        "arm": "arm_5_prom_native_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_5_prom_native_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_3_tket_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_2_sabre_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_4_tket_2pub_k8_unbuffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_wstate_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qv_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qaoa_7q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qft_11q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_3_tket_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_heisenberg_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_2_sabre_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_4_tket_2pub_k8_unbuffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_hiddenshift_9q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_grover_5q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_ghz_4q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_bipartite_9q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_6_prom_metaselected_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_6_prom_metaselected_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_bv_5q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qaoa_plaid_12q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_simon_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_vqe_su2_7q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_ising_11q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_iqp_10q",
+        "shots": 1024
+      }
+    ],
+    "ibm_marrakesh": [
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qft_11q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_6_prom_metaselected_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_ising_11q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_ghz_4q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_bipartite_9q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_5_prom_native_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qaoa_7q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_2_sabre_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_hiddenshift_9q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_5_prom_native_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qv_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_2_sabre_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_3_tket_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_iqp_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_simon_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qaoa_plaid_12q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_6_prom_metaselected_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_grover_5q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_heisenberg_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_4_tket_2pub_k8_unbuffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_bv_5q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_3_tket_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_wstate_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_4_tket_2pub_k8_unbuffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_vqe_su2_7q",
+        "shots": 1024
+      }
+    ],
+    "ibm_fez": [
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_ising_11q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_5_prom_native_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qaoa_7q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_2_sabre_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qaoa_plaid_12q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_vqe_su2_7q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_wstate_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_2_sabre_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_4_tket_2pub_k8_unbuffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_iqp_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qft_11q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_5_prom_native_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_heisenberg_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_6_prom_metaselected_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_ghz_4q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_bipartite_9q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_grover_5q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_4_tket_2pub_k8_unbuffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_simon_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_3_tket_2pub_k8_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_3_tket_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_hiddenshift_9q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_bv_5q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_6_prom_metaselected_2pub_k8_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_1_tket_2pub_k8_isolated",
+        "id": "het_qv_6q",
+        "shots": 1024
+      }
+    ]
+  },
+  "commitment_sha256": "78426d6417210ec1b101f1141969edaa46c6b381eeb4af831eaabd1314495f82"
+}

@@ -1,0 +1,506 @@
+[
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1h6d6p51s73clp0hg",
+    "pub_index": 18,
+    "workload_id": "os_dense_8q",
+    "family": "dense_bipartite",
+    "width": 8,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4096.0,
+    "effective_sample_ratio": 1.0,
+    "mean_pairwise_pearson_r_prob": -0.006419,
+    "max_abs_pairwise_pearson_r_prob": 0.037626,
+    "mean_pairwise_pearson_r_hamming": 0.007209,
+    "mean_pairwise_mutual_info_bits": 0.000964,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.97947,
+      "hellinger_fidelity_fh": 0.959362,
+      "tvd": 0.135735
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.946019,
+      "hellinger_fidelity_fh": 0.894952,
+      "tvd": 0.219867
+    },
+    "mean_single_replica_fb": 0.946168,
+    "best_single_replica_fb": 0.950443
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1h6d6p51s73clp0hg",
+    "pub_index": 30,
+    "workload_id": "os_qaoa_10q",
+    "family": "qaoa_maxcut",
+    "width": 10,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4070.3,
+    "effective_sample_ratio": 0.9937,
+    "mean_pairwise_pearson_r_prob": 0.002108,
+    "max_abs_pairwise_pearson_r_prob": 0.051293,
+    "mean_pairwise_pearson_r_hamming": -0.000844,
+    "mean_pairwise_mutual_info_bits": 0.000209,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.909084,
+      "hellinger_fidelity_fh": 0.826433,
+      "tvd": 0.315213
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.750078,
+      "hellinger_fidelity_fh": 0.562617,
+      "tvd": 0.490999
+    },
+    "mean_single_replica_fb": 0.778843,
+    "best_single_replica_fb": 0.805677
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1h6d6p51s73clp0hg",
+    "pub_index": 42,
+    "workload_id": "os_qaoa_6q",
+    "family": "qaoa_maxcut",
+    "width": 6,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 3772.6,
+    "effective_sample_ratio": 0.9211,
+    "mean_pairwise_pearson_r_prob": 0.028572,
+    "max_abs_pairwise_pearson_r_prob": 0.072851,
+    "mean_pairwise_pearson_r_hamming": -0.025065,
+    "mean_pairwise_mutual_info_bits": 0.00031,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.987719,
+      "hellinger_fidelity_fh": 0.975589,
+      "tvd": 0.098978
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.966625,
+      "hellinger_fidelity_fh": 0.934364,
+      "tvd": 0.172621
+    },
+    "mean_single_replica_fb": 0.978899,
+    "best_single_replica_fb": 0.986079
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1h6d6p51s73clp0hg",
+    "pub_index": 43,
+    "workload_id": "os_ising_8q",
+    "family": "trotter_ising",
+    "width": 8,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4096.0,
+    "effective_sample_ratio": 1.0,
+    "mean_pairwise_pearson_r_prob": -0.00059,
+    "max_abs_pairwise_pearson_r_prob": 0.035293,
+    "mean_pairwise_pearson_r_hamming": -0.012257,
+    "mean_pairwise_mutual_info_bits": 0.000209,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.97035,
+      "hellinger_fidelity_fh": 0.941579,
+      "tvd": 0.169868
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.926335,
+      "hellinger_fidelity_fh": 0.858097,
+      "tvd": 0.262752
+    },
+    "mean_single_replica_fb": 0.942059,
+    "best_single_replica_fb": 0.954182
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1h6d6p51s73clp0hg",
+    "pub_index": 55,
+    "workload_id": "os_qft_6q",
+    "family": "qft_phase",
+    "width": 6,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4096.0,
+    "effective_sample_ratio": 1.0,
+    "mean_pairwise_pearson_r_prob": -0.031317,
+    "max_abs_pairwise_pearson_r_prob": 0.068798,
+    "mean_pairwise_pearson_r_hamming": 0.010362,
+    "mean_pairwise_mutual_info_bits": 0.001486,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.974868,
+      "hellinger_fidelity_fh": 0.950368,
+      "tvd": 0.10473
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.963691,
+      "hellinger_fidelity_fh": 0.9287,
+      "tvd": 0.136292
+    },
+    "mean_single_replica_fb": 0.970101,
+    "best_single_replica_fb": 0.979939
+  },
+  {
+    "backend": "ibm_kingston",
+    "job_id": "dbk1h6d6p51s73clp0hg",
+    "pub_index": 56,
+    "workload_id": "os_dense_10q",
+    "family": "dense_bipartite",
+    "width": 10,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 3885.0,
+    "effective_sample_ratio": 0.9485,
+    "mean_pairwise_pearson_r_prob": 0.018104,
+    "max_abs_pairwise_pearson_r_prob": 0.09484,
+    "mean_pairwise_pearson_r_hamming": -0.005053,
+    "mean_pairwise_mutual_info_bits": 0.000275,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.941878,
+      "hellinger_fidelity_fh": 0.887134,
+      "tvd": 0.223371
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.797592,
+      "hellinger_fidelity_fh": 0.636153,
+      "tvd": 0.400295
+    },
+    "mean_single_replica_fb": 0.800058,
+    "best_single_replica_fb": 0.803289
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbk1hfl6p51s73clp140",
+    "pub_index": 6,
+    "workload_id": "os_qaoa_6q",
+    "family": "qaoa_maxcut",
+    "width": 6,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4007.6,
+    "effective_sample_ratio": 0.9784,
+    "mean_pairwise_pearson_r_prob": 0.007349,
+    "max_abs_pairwise_pearson_r_prob": 0.063057,
+    "mean_pairwise_pearson_r_hamming": -0.001615,
+    "mean_pairwise_mutual_info_bits": 0.000875,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.981457,
+      "hellinger_fidelity_fh": 0.963258,
+      "tvd": 0.115798
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.97208,
+      "hellinger_fidelity_fh": 0.944939,
+      "tvd": 0.161615
+    },
+    "mean_single_replica_fb": 0.974069,
+    "best_single_replica_fb": 0.975202
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbk1hfl6p51s73clp140",
+    "pub_index": 10,
+    "workload_id": "os_dense_8q",
+    "family": "dense_bipartite",
+    "width": 8,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 3972.7,
+    "effective_sample_ratio": 0.9699,
+    "mean_pairwise_pearson_r_prob": 0.010344,
+    "max_abs_pairwise_pearson_r_prob": 0.057339,
+    "mean_pairwise_pearson_r_hamming": 0.001152,
+    "mean_pairwise_mutual_info_bits": 0.000951,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.976388,
+      "hellinger_fidelity_fh": 0.953333,
+      "tvd": 0.15046
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.952563,
+      "hellinger_fidelity_fh": 0.907376,
+      "tvd": 0.199509
+    },
+    "mean_single_replica_fb": 0.944788,
+    "best_single_replica_fb": 0.952563
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbk1hfl6p51s73clp140",
+    "pub_index": 27,
+    "workload_id": "os_qaoa_10q",
+    "family": "qaoa_maxcut",
+    "width": 10,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4037.5,
+    "effective_sample_ratio": 0.9857,
+    "mean_pairwise_pearson_r_prob": 0.004832,
+    "max_abs_pairwise_pearson_r_prob": 0.043441,
+    "mean_pairwise_pearson_r_hamming": -0.014315,
+    "mean_pairwise_mutual_info_bits": 0.000968,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.896074,
+      "hellinger_fidelity_fh": 0.802948,
+      "tvd": 0.335646
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.740827,
+      "hellinger_fidelity_fh": 0.548825,
+      "tvd": 0.498611
+    },
+    "mean_single_replica_fb": 0.769665,
+    "best_single_replica_fb": 0.784304
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbk1hfl6p51s73clp140",
+    "pub_index": 29,
+    "workload_id": "os_dense_10q",
+    "family": "dense_bipartite",
+    "width": 10,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4001.8,
+    "effective_sample_ratio": 0.977,
+    "mean_pairwise_pearson_r_prob": 0.007846,
+    "max_abs_pairwise_pearson_r_prob": 0.055502,
+    "mean_pairwise_pearson_r_hamming": 0.038728,
+    "mean_pairwise_mutual_info_bits": 0.001287,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.928568,
+      "hellinger_fidelity_fh": 0.862238,
+      "tvd": 0.267079
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.788451,
+      "hellinger_fidelity_fh": 0.621655,
+      "tvd": 0.409055
+    },
+    "mean_single_replica_fb": 0.79232,
+    "best_single_replica_fb": 0.799405
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbk1hfl6p51s73clp140",
+    "pub_index": 55,
+    "workload_id": "os_qft_6q",
+    "family": "qft_phase",
+    "width": 6,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4096.0,
+    "effective_sample_ratio": 1.0,
+    "mean_pairwise_pearson_r_prob": -0.020667,
+    "max_abs_pairwise_pearson_r_prob": 0.053897,
+    "mean_pairwise_pearson_r_hamming": -0.005756,
+    "mean_pairwise_mutual_info_bits": 0.000563,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.958329,
+      "hellinger_fidelity_fh": 0.918395,
+      "tvd": 0.154796
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.953868,
+      "hellinger_fidelity_fh": 0.909865,
+      "tvd": 0.166861
+    },
+    "mean_single_replica_fb": 0.952736,
+    "best_single_replica_fb": 0.955731
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbk1hfl6p51s73clp140",
+    "pub_index": 66,
+    "workload_id": "os_ising_8q",
+    "family": "trotter_ising",
+    "width": 8,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4084.2,
+    "effective_sample_ratio": 0.9971,
+    "mean_pairwise_pearson_r_prob": 0.000966,
+    "max_abs_pairwise_pearson_r_prob": 0.041018,
+    "mean_pairwise_pearson_r_hamming": -0.002389,
+    "mean_pairwise_mutual_info_bits": 0.000644,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.963439,
+      "hellinger_fidelity_fh": 0.928215,
+      "tvd": 0.199535
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.935061,
+      "hellinger_fidelity_fh": 0.874338,
+      "tvd": 0.25065
+    },
+    "mean_single_replica_fb": 0.936721,
+    "best_single_replica_fb": 0.947147
+  },
+  {
+    "backend": "ibm_fez",
+    "job_id": "dbk1hq0nceqs73al07v0",
+    "pub_index": 9,
+    "workload_id": "os_dense_10q",
+    "family": "dense_bipartite",
+    "width": 10,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 3915.9,
+    "effective_sample_ratio": 0.956,
+    "mean_pairwise_pearson_r_prob": 0.01533,
+    "max_abs_pairwise_pearson_r_prob": 0.065797,
+    "mean_pairwise_pearson_r_hamming": -0.018573,
+    "mean_pairwise_mutual_info_bits": 0.000991,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.933448,
+      "hellinger_fidelity_fh": 0.871325,
+      "tvd": 0.256687
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.795001,
+      "hellinger_fidelity_fh": 0.632027,
+      "tvd": 0.404378
+    },
+    "mean_single_replica_fb": 0.79177,
+    "best_single_replica_fb": 0.801
+  },
+  {
+    "backend": "ibm_fez",
+    "job_id": "dbk1hq0nceqs73al07v0",
+    "pub_index": 24,
+    "workload_id": "os_qaoa_10q",
+    "family": "qaoa_maxcut",
+    "width": 10,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 3914.5,
+    "effective_sample_ratio": 0.9557,
+    "mean_pairwise_pearson_r_prob": 0.015459,
+    "max_abs_pairwise_pearson_r_prob": 0.056924,
+    "mean_pairwise_pearson_r_hamming": 0.010743,
+    "mean_pairwise_mutual_info_bits": 0.00043,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.891968,
+      "hellinger_fidelity_fh": 0.795608,
+      "tvd": 0.344033
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.778187,
+      "hellinger_fidelity_fh": 0.605575,
+      "tvd": 0.461696
+    },
+    "mean_single_replica_fb": 0.766524,
+    "best_single_replica_fb": 0.790981
+  },
+  {
+    "backend": "ibm_fez",
+    "job_id": "dbk1hq0nceqs73al07v0",
+    "pub_index": 37,
+    "workload_id": "os_qaoa_6q",
+    "family": "qaoa_maxcut",
+    "width": 6,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4096.0,
+    "effective_sample_ratio": 1.0,
+    "mean_pairwise_pearson_r_prob": -0.007294,
+    "max_abs_pairwise_pearson_r_prob": 0.06043,
+    "mean_pairwise_pearson_r_hamming": -0.005117,
+    "mean_pairwise_mutual_info_bits": 0.001212,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.980314,
+      "hellinger_fidelity_fh": 0.961016,
+      "tvd": 0.125491
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.978533,
+      "hellinger_fidelity_fh": 0.957526,
+      "tvd": 0.136656
+    },
+    "mean_single_replica_fb": 0.973653,
+    "best_single_replica_fb": 0.978533
+  },
+  {
+    "backend": "ibm_fez",
+    "job_id": "dbk1hq0nceqs73al07v0",
+    "pub_index": 54,
+    "workload_id": "os_dense_8q",
+    "family": "dense_bipartite",
+    "width": 8,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4096.0,
+    "effective_sample_ratio": 1.0,
+    "mean_pairwise_pearson_r_prob": -0.018631,
+    "max_abs_pairwise_pearson_r_prob": 0.048493,
+    "mean_pairwise_pearson_r_hamming": -0.022293,
+    "mean_pairwise_mutual_info_bits": 0.000433,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.970902,
+      "hellinger_fidelity_fh": 0.942651,
+      "tvd": 0.170519
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.94845,
+      "hellinger_fidelity_fh": 0.899558,
+      "tvd": 0.207307
+    },
+    "mean_single_replica_fb": 0.938234,
+    "best_single_replica_fb": 0.94845
+  },
+  {
+    "backend": "ibm_fez",
+    "job_id": "dbk1hq0nceqs73al07v0",
+    "pub_index": 66,
+    "workload_id": "os_ising_8q",
+    "family": "trotter_ising",
+    "width": 8,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 4096.0,
+    "effective_sample_ratio": 1.0,
+    "mean_pairwise_pearson_r_prob": -0.024296,
+    "max_abs_pairwise_pearson_r_prob": 0.052429,
+    "mean_pairwise_pearson_r_hamming": -0.003137,
+    "mean_pairwise_mutual_info_bits": 0.000625,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.962892,
+      "hellinger_fidelity_fh": 0.927161,
+      "tvd": 0.183786
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.948301,
+      "hellinger_fidelity_fh": 0.899274,
+      "tvd": 0.211863
+    },
+    "mean_single_replica_fb": 0.935856,
+    "best_single_replica_fb": 0.952391
+  },
+  {
+    "backend": "ibm_fez",
+    "job_id": "dbk1hq0nceqs73al07v0",
+    "pub_index": 70,
+    "workload_id": "os_qft_6q",
+    "family": "qft_phase",
+    "width": 6,
+    "shots_per_replica": 1024,
+    "nominal_total_samples": 4096,
+    "effective_independent_samples_n_eff": 3986.6,
+    "effective_sample_ratio": 0.9733,
+    "mean_pairwise_pearson_r_prob": 0.009146,
+    "max_abs_pairwise_pearson_r_prob": 0.035205,
+    "mean_pairwise_pearson_r_hamming": -0.011169,
+    "mean_pairwise_mutual_info_bits": 0.000855,
+    "pooled_4x1024_metrics": {
+      "classical_overlap_fb": 0.955688,
+      "hellinger_fidelity_fh": 0.913339,
+      "tvd": 0.16011
+    },
+    "replica_0_metrics": {
+      "classical_overlap_fb": 0.958956,
+      "hellinger_fidelity_fh": 0.919596,
+      "tvd": 0.153999
+    },
+    "mean_single_replica_fb": 0.950789,
+    "best_single_replica_fb": 0.961192
+  }
+]

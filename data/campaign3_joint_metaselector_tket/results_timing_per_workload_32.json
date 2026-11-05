@@ -1,0 +1,514 @@
+[
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 0,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qaoa_plaid_12q",
+    "family": "qaoa_plaid",
+    "width": 12,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.480897,
+      "hellinger_fidelity_fh": 0.231262,
+      "tvd": 0.711098
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 0,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_ising_11q",
+    "family": "trotter_ising_nnn",
+    "width": 11,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.766802,
+      "hellinger_fidelity_fh": 0.587986,
+      "tvd": 0.430511
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 0,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_bipartite_9q",
+    "family": "dense_bipartite",
+    "width": 9,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.900704,
+      "hellinger_fidelity_fh": 0.811268,
+      "tvd": 0.270405
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 0,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qft_8q",
+    "family": "qft_phase",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.933655,
+      "hellinger_fidelity_fh": 0.871711,
+      "tvd": 0.202695
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 0,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qaoa_7q",
+    "family": "qaoa_maxcut",
+    "width": 7,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.9358,
+      "hellinger_fidelity_fh": 0.875721,
+      "tvd": 0.278867
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 0,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_wstate_6q",
+    "family": "w_state_dicke",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.514221,
+      "hellinger_fidelity_fh": 0.264423,
+      "tvd": 0.722656
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 0,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_bv_5q",
+    "family": "bernstein_vazirani",
+    "width": 5,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.967645,
+      "hellinger_fidelity_fh": 0.936338,
+      "tvd": 0.063477
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 0,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_ghz_4q",
+    "family": "ghz_entangler",
+    "width": 4,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.979885,
+      "hellinger_fidelity_fh": 0.960176,
+      "tvd": 0.045898
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 1,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qft_11q",
+    "family": "qft_phase",
+    "width": 11,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.697898,
+      "hellinger_fidelity_fh": 0.487062,
+      "tvd": 0.539063
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 1,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_iqp_10q",
+    "family": "iqp_pauli",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.774631,
+      "hellinger_fidelity_fh": 0.600053,
+      "tvd": 0.436183
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 1,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_hiddenshift_9q",
+    "family": "hidden_shift",
+    "width": 9,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.949386,
+      "hellinger_fidelity_fh": 0.901333,
+      "tvd": 0.12793
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 1,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_heisenberg_8q",
+    "family": "heisenberg_xxz",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.896318,
+      "hellinger_fidelity_fh": 0.803385,
+      "tvd": 0.200584
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 1,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_vqe_su2_7q",
+    "family": "vqe_su2",
+    "width": 7,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.926694,
+      "hellinger_fidelity_fh": 0.858762,
+      "tvd": 0.272462
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 1,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_simon_6q",
+    "family": "simon_period",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.984568,
+      "hellinger_fidelity_fh": 0.969374,
+      "tvd": 0.141602
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 1,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qv_6q",
+    "family": "quantum_volume",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.981899,
+      "hellinger_fidelity_fh": 0.964125,
+      "tvd": 0.124564
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkafj1kdqps739235eg",
+    "pub_index": 1,
+    "arm": "T5_tket_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_grover_5q",
+    "family": "grover_search",
+    "width": 5,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.976795,
+      "hellinger_fidelity_fh": 0.954128,
+      "tvd": 0.132139
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 0,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qaoa_plaid_12q",
+    "family": "qaoa_plaid",
+    "width": 12,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.457609,
+      "hellinger_fidelity_fh": 0.209406,
+      "tvd": 0.733795
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 0,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_ising_11q",
+    "family": "trotter_ising_nnn",
+    "width": 11,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.762916,
+      "hellinger_fidelity_fh": 0.582042,
+      "tvd": 0.43959
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 0,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_bipartite_9q",
+    "family": "dense_bipartite",
+    "width": 9,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.910287,
+      "hellinger_fidelity_fh": 0.828623,
+      "tvd": 0.255853
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 0,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qft_8q",
+    "family": "qft_phase",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.937154,
+      "hellinger_fidelity_fh": 0.878257,
+      "tvd": 0.18063
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 0,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qaoa_7q",
+    "family": "qaoa_maxcut",
+    "width": 7,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.945986,
+      "hellinger_fidelity_fh": 0.894889,
+      "tvd": 0.24717
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 0,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_wstate_6q",
+    "family": "w_state_dicke",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.551243,
+      "hellinger_fidelity_fh": 0.303869,
+      "tvd": 0.664062
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 0,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_bv_5q",
+    "family": "bernstein_vazirani",
+    "width": 5,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.968193,
+      "hellinger_fidelity_fh": 0.937398,
+      "tvd": 0.0625
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 0,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_ghz_4q",
+    "family": "ghz_entangler",
+    "width": 4,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.973754,
+      "hellinger_fidelity_fh": 0.948197,
+      "tvd": 0.06543
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 1,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qft_11q",
+    "family": "qft_phase",
+    "width": 11,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.808181,
+      "hellinger_fidelity_fh": 0.653157,
+      "tvd": 0.400356
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 1,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_iqp_10q",
+    "family": "iqp_pauli",
+    "width": 10,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.794517,
+      "hellinger_fidelity_fh": 0.631257,
+      "tvd": 0.405377
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 1,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_hiddenshift_9q",
+    "family": "hidden_shift",
+    "width": 9,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.939039,
+      "hellinger_fidelity_fh": 0.881794,
+      "tvd": 0.12793
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 1,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_heisenberg_8q",
+    "family": "heisenberg_xxz",
+    "width": 8,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.903023,
+      "hellinger_fidelity_fh": 0.81545,
+      "tvd": 0.20111
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 1,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_vqe_su2_7q",
+    "family": "vqe_su2",
+    "width": 7,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.919323,
+      "hellinger_fidelity_fh": 0.845155,
+      "tvd": 0.292024
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 1,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_simon_6q",
+    "family": "simon_period",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.984307,
+      "hellinger_fidelity_fh": 0.96886,
+      "tvd": 0.141602
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 1,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_qv_6q",
+    "family": "quantum_volume",
+    "width": 6,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.981086,
+      "hellinger_fidelity_fh": 0.96253,
+      "tvd": 0.132525
+    }
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "job_id": "dbkaflhkdqps739235hg",
+    "pub_index": 1,
+    "arm": "T6_prometheus_metaselected_packed_2pubs_k88",
+    "execution_mode": "timing_isolation_packed_k8",
+    "workload_id": "het_grover_5q",
+    "family": "grover_search",
+    "width": 5,
+    "shots": 1024,
+    "metrics": {
+      "classical_overlap_fb": 0.978193,
+      "hellinger_fidelity_fh": 0.956861,
+      "tvd": 0.132436
+    }
+  }
+]

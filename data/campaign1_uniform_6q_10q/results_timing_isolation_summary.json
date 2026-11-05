@@ -1,0 +1,58 @@
+{
+  "T1_sabre_sequential_12pubs": {
+    "job_id": "dbk1i3l6p51s73clp22g",
+    "backend": "ibm_kingston",
+    "num_pubs": 12,
+    "workloads_evaluated": 12,
+    "quantum_seconds_charged": 6.0,
+    "circuits_execution_time_seconds": 3.2775,
+    "wall_seconds": 11.57,
+    "mean_classical_overlap_fb": 0.894021,
+    "workloads_passing_fb_ge_050": 12,
+    "workloads_passing_fb_ge_055": 12,
+    "qualified_workloads_per_charged_qpu_second_fb050": 2.0,
+    "qualified_workloads_per_exec_second_fb050": 3.6613
+  },
+  "T2_prometheus_sequential_12pubs": {
+    "job_id": "dbk1i6t6p51s73clp290",
+    "backend": "ibm_kingston",
+    "num_pubs": 12,
+    "workloads_evaluated": 12,
+    "quantum_seconds_charged": 5.0,
+    "circuits_execution_time_seconds": 3.2736,
+    "wall_seconds": 12.11,
+    "mean_classical_overlap_fb": 0.917888,
+    "workloads_passing_fb_ge_050": 12,
+    "workloads_passing_fb_ge_055": 12,
+    "qualified_workloads_per_charged_qpu_second_fb050": 2.4,
+    "qualified_workloads_per_exec_second_fb050": 3.6657
+  },
+  "T3_prometheus_packed_k4_3pubs": {
+    "job_id": "dbk1ia1kdqps7391ikgg",
+    "backend": "ibm_kingston",
+    "num_pubs": 3,
+    "workloads_evaluated": 12,
+    "quantum_seconds_charged": 3.0,
+    "circuits_execution_time_seconds": 0.8294,
+    "wall_seconds": 7.85,
+    "mean_classical_overlap_fb": 0.910795,
+    "workloads_passing_fb_ge_050": 12,
+    "workloads_passing_fb_ge_055": 12,
+    "qualified_workloads_per_charged_qpu_second_fb050": 4.0,
+    "qualified_workloads_per_exec_second_fb050": 14.4683
+  },
+  "T4_prometheus_packed_k6_2pubs": {
+    "job_id": "dbk1ic9ffo6c73baki30",
+    "backend": "ibm_kingston",
+    "num_pubs": 2,
+    "workloads_evaluated": 12,
+    "quantum_seconds_charged": 3.0,
+    "circuits_execution_time_seconds": 0.556,
+    "wall_seconds": 8.17,
+    "mean_classical_overlap_fb": 0.915689,
+    "workloads_passing_fb_ge_050": 12,
+    "workloads_passing_fb_ge_055": 12,
+    "qualified_workloads_per_charged_qpu_second_fb050": 4.0,
+    "qualified_workloads_per_exec_second_fb050": 21.5827
+  }
+}

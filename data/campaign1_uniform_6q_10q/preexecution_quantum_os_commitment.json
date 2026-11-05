@@ -1,0 +1,1991 @@
+{
+  "campaign_title": "Pre-Committed Quantum OS QPU Forecasting & Disjoint-Subgraph Spatial Multiplexing Validation",
+  "pre_execution_lock_timestamp_utc": "2026-11-02T04:58:16.846723+00:00",
+  "qpus_evaluated": [
+    "ibm_kingston",
+    "ibm_marrakesh",
+    "ibm_fez"
+  ],
+  "total_workloads": 12,
+  "k4_groups": [
+    [
+      "os_qaoa_6q",
+      "os_qft_8q",
+      "os_dense_10q",
+      "os_ising_8q"
+    ],
+    [
+      "os_qft_6q",
+      "os_dense_8q",
+      "os_ising_10q",
+      "os_qaoa_8q"
+    ],
+    [
+      "os_dense_6q",
+      "os_ising_6q",
+      "os_qaoa_10q",
+      "os_qft_10q"
+    ]
+  ],
+  "k6_groups": [
+    [
+      "os_qaoa_6q",
+      "os_qft_6q",
+      "os_dense_8q",
+      "os_ising_8q",
+      "os_qaoa_10q",
+      "os_qft_10q"
+    ],
+    [
+      "os_dense_6q",
+      "os_ising_6q",
+      "os_qaoa_8q",
+      "os_qft_8q",
+      "os_dense_10q",
+      "os_ising_10q"
+    ]
+  ],
+  "replica_workloads": [
+    "os_qaoa_6q",
+    "os_qft_6q",
+    "os_dense_8q",
+    "os_ising_8q",
+    "os_qaoa_10q",
+    "os_dense_10q"
+  ],
+  "pre_registered_analysis_and_fallback_rules": {
+    "primary_quality_metric": "classical_overlap_fb",
+    "secondary_quality_metrics": [
+      "hellinger_fidelity_fh",
+      "tvd"
+    ],
+    "os_forecasting_metrics": [
+      "selected_qpu_mean_fb_vs_each_fixed_qpu_policy",
+      "oracle_selection_regret_fb",
+      "top1_qpu_ranking_accuracy_raw_and_noise_tolerant_1sigma"
+    ],
+    "spatial_multiplexing_metrics": [
+      "same_qubit_same_gate_interference_delta_fb_k4_and_k6",
+      "prometheus_buffered_k4_vs_sabre_buffered_k4_and_unbuffered_k4",
+      "completed_workloads_meeting_quality_threshold_per_qpu_second"
+    ],
+    "replica_independence_metrics": [
+      "shot_by_shot_cross_region_pearson_r_and_mutual_information",
+      "effective_sample_size_n_eff_vs_4096_isolated_single_region"
+    ],
+    "fallback_rule": "If any QPU goes offline prior to its job submission, evaluate OS forecast across remaining operational QPUs and halt if budget cap is approached."
+  },
+  "isa_duration_estimates_seconds": {
+    "interleaved_master_jobs": {
+      "ibm_kingston": {
+        "total_circuits": 71,
+        "total_shots": 91136,
+        "repetition_delay_seconds": 22.784,
+        "isa_gate_readout_seconds": 1.071,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 26.855
+      },
+      "ibm_marrakesh": {
+        "total_circuits": 71,
+        "total_shots": 91136,
+        "repetition_delay_seconds": 22.784,
+        "isa_gate_readout_seconds": 1.128,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 26.912
+      },
+      "ibm_fez": {
+        "total_circuits": 71,
+        "total_shots": 91136,
+        "repetition_delay_seconds": 22.784,
+        "isa_gate_readout_seconds": 1.014,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 26.798
+      }
+    },
+    "timing_isolation_jobs_ibm_kingston": {
+      "T1_sabre_sequential_12pubs": {
+        "total_circuits": 12,
+        "total_shots": 12288,
+        "repetition_delay_seconds": 3.072,
+        "isa_gate_readout_seconds": 0.138,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 6.21
+      },
+      "T2_prometheus_sequential_12pubs": {
+        "total_circuits": 12,
+        "total_shots": 12288,
+        "repetition_delay_seconds": 3.072,
+        "isa_gate_readout_seconds": 0.129,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 6.201
+      },
+      "T3_prometheus_packed_k4_3pubs": {
+        "total_circuits": 3,
+        "total_shots": 3072,
+        "repetition_delay_seconds": 0.768,
+        "isa_gate_readout_seconds": 0.049,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 3.817
+      },
+      "T4_prometheus_packed_k6_2pubs": {
+        "total_circuits": 2,
+        "total_shots": 2048,
+        "repetition_delay_seconds": 0.512,
+        "isa_gate_readout_seconds": 0.037,
+        "job_init_allowance_seconds": 3.0,
+        "total_estimated_seconds": 3.549
+      }
+    },
+    "total_campaign_estimated_qpu_seconds": 100.342
+  },
+  "quantum_os_pre_execution_forecasts": [
+    {
+      "workload_id": "os_qaoa_6q",
+      "family": "qaoa_maxcut",
+      "width": 6,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.038838,
+      "predicted_f_pred_margin_1_vs_3": 0.043215,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.822522,
+          "native_2q": 70,
+          "depth": 170,
+          "sub_nodes": [
+            96,
+            103,
+            104,
+            105,
+            106,
+            117
+          ],
+          "circuit_sha256": "97e01a6ec9162fb18180f125c64d3002c49c27de6fcfee62aef69dc3926d2249"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.783684,
+          "native_2q": 70,
+          "depth": 170,
+          "sub_nodes": [
+            136,
+            142,
+            143,
+            144,
+            145,
+            146
+          ],
+          "circuit_sha256": "55231345b05f36a1d84f952b1263e46467dc40b6e1fe56d02b9ea2532531ae99"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.779307,
+          "native_2q": 65,
+          "depth": 158,
+          "sub_nodes": [
+            33,
+            39,
+            52,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "ec54a1f0ef5880e2b8f93759a9ba70b6da0a3496d4485e798168072fd2a3fcef"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_qaoa_8q",
+      "family": "qaoa_maxcut",
+      "width": 8,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.055282,
+      "predicted_f_pred_margin_1_vs_3": 0.093418,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.746054,
+          "native_2q": 116,
+          "depth": 228,
+          "sub_nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            23
+          ],
+          "circuit_sha256": "66770af2a8e639180612425a58947ec751d7b57664feac45f44033b887ada11b"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.690772,
+          "native_2q": 106,
+          "depth": 228,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            16,
+            22,
+            23,
+            24
+          ],
+          "circuit_sha256": "5c7edccf864afb9ade9aab7db5f0305e3452e99e0e9530f484673ae1d51f3198"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.652636,
+          "native_2q": 130,
+          "depth": 236,
+          "sub_nodes": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "453d36c036e979e9fb9956005b9f194baa512d84dca211b94d78f090b3edc9e4"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_qaoa_10q",
+      "family": "qaoa_maxcut",
+      "width": 10,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.085535,
+      "predicted_f_pred_margin_1_vs_3": 0.10969,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.696314,
+          "native_2q": 149,
+          "depth": 270,
+          "sub_nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            21,
+            22,
+            23
+          ],
+          "circuit_sha256": "fcd635909defff83e1ce0ce4834f70f2d96dc49d66eeec1dd64e7217871f18a2"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.610779,
+          "native_2q": 159,
+          "depth": 303,
+          "sub_nodes": [
+            123,
+            127,
+            136,
+            137,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "3bc4f1bb55232947dfa7eb0ba1c84fbc639b89907821120a13680510ddb27d43"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.586624,
+          "native_2q": 156,
+          "depth": 291,
+          "sub_nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "2e6fb09c4560173b809424582b9fd3d0d4cdd783a5cd38750d3f7aa2a8f6f906"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_qft_6q",
+      "family": "qft_phase",
+      "width": 6,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.017753,
+      "predicted_f_pred_margin_1_vs_3": 0.042621,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.877256,
+          "native_2q": 44,
+          "depth": 105,
+          "sub_nodes": [
+            96,
+            103,
+            104,
+            105,
+            106,
+            117
+          ],
+          "circuit_sha256": "33c37e3e290e675b5da5f8cddc173e06eb5a295e069677cde26ef13071949ad2"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.859503,
+          "native_2q": 48,
+          "depth": 108,
+          "sub_nodes": [
+            136,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "89976c6e69ae8a1f62b8bdade307d8bab0d744dccb210c323fc48e02c88c693c"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.834635,
+          "native_2q": 42,
+          "depth": 104,
+          "sub_nodes": [
+            33,
+            39,
+            52,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "aea3b66007fa8d40c9d58f1693920a176bc5d59ddb3550ca06d2f4b4491df991"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_qft_8q",
+      "family": "qft_phase",
+      "width": 8,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.037281,
+      "predicted_f_pred_margin_1_vs_3": 0.078463,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.825483,
+          "native_2q": 67,
+          "depth": 154,
+          "sub_nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            23
+          ],
+          "circuit_sha256": "f64abf9bbaaf6b1124e411685f215b35966d28d675c390d7b3847953ac1399f0"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.788202,
+          "native_2q": 77,
+          "depth": 165,
+          "sub_nodes": [
+            136,
+            137,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "58b8394b436e069a68b0246755d97f59fb9de732b5bc0ce5892046822b42431c"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.74702,
+          "native_2q": 78,
+          "depth": 158,
+          "sub_nodes": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "ce645887792353afb3aceec8ab39c0dd5d2030d9862dd834ceb009a4376ff6c0"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_qft_10q",
+      "family": "qft_phase",
+      "width": 10,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.075312,
+      "predicted_f_pred_margin_1_vs_3": 0.117778,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.763322,
+          "native_2q": 101,
+          "depth": 218,
+          "sub_nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            21,
+            22,
+            23
+          ],
+          "circuit_sha256": "750faf1802754ae17a565ef6fff774ace3dbfa1b6fbae56cb9e09c9f07fca423"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.68801,
+          "native_2q": 113,
+          "depth": 223,
+          "sub_nodes": [
+            123,
+            124,
+            136,
+            137,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "3f00773c50460ac7bff46d662bb69f0643e7d7f6cefd3db9f8e0bc9636777c08"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.645544,
+          "native_2q": 100,
+          "depth": 224,
+          "sub_nodes": [
+            87,
+            97,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            118,
+            129
+          ],
+          "circuit_sha256": "70e28dda1c28df90bd7ed4af199dab4abc5bb7f692885eea15ad98d328a46598"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_dense_6q",
+      "family": "dense_bipartite",
+      "width": 6,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.019131,
+      "predicted_f_pred_margin_1_vs_3": 0.029515,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.894139,
+          "native_2q": 37,
+          "depth": 78,
+          "sub_nodes": [
+            96,
+            103,
+            104,
+            105,
+            106,
+            117
+          ],
+          "circuit_sha256": "1f6d49ea095b348534f072fddab188cfcbd1d116cee540b718417c20251df61d"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.875008,
+          "native_2q": 37,
+          "depth": 76,
+          "sub_nodes": [
+            136,
+            142,
+            143,
+            144,
+            145,
+            146
+          ],
+          "circuit_sha256": "678caf676af78ef0ba5fb0233444f5877ccfc0d8a50c432f6c9b370a734eae98"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.864624,
+          "native_2q": 34,
+          "depth": 72,
+          "sub_nodes": [
+            33,
+            39,
+            52,
+            53,
+            54,
+            55
+          ],
+          "circuit_sha256": "f9651ed4a05b1a8bfa2e3ce06e0b1cbff75fc4ed0bea965fff7f4c11d890d0ef"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_dense_8q",
+      "family": "dense_bipartite",
+      "width": 8,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.035172,
+      "predicted_f_pred_margin_1_vs_3": 0.072217,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.855978,
+          "native_2q": 52,
+          "depth": 106,
+          "sub_nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            23
+          ],
+          "circuit_sha256": "6d78c6fb7bc38d9e7eadeb9222814664d739a2d5aa65a83443749e3f4c9c95db"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.820806,
+          "native_2q": 51,
+          "depth": 93,
+          "sub_nodes": [
+            2,
+            3,
+            4,
+            5,
+            16,
+            22,
+            23,
+            24
+          ],
+          "circuit_sha256": "08df18e90204a0c8c5197def6f2226a62a6326c4d25a7c08231ea1cc1cb70683"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.783761,
+          "native_2q": 65,
+          "depth": 103,
+          "sub_nodes": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "65415fff77a7a9213da451093d14bb8413a37bf2e8fd72d9f724d21ff2c5d962"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_dense_10q",
+      "family": "dense_bipartite",
+      "width": 10,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.059354,
+      "predicted_f_pred_margin_1_vs_3": 0.083811,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.797503,
+          "native_2q": 87,
+          "depth": 137,
+          "sub_nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            16,
+            21,
+            22,
+            23
+          ],
+          "circuit_sha256": "c9875f1b3b1a94b69afad811362eb9101fdcef04a12eaa9bb35d2f96f8c52e95"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.738149,
+          "native_2q": 97,
+          "depth": 143,
+          "sub_nodes": [
+            123,
+            127,
+            136,
+            137,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "e71f437da8674f684b9b6c37993587d8a55476ac17972d17ec1857900832d933"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.713692,
+          "native_2q": 91,
+          "depth": 144,
+          "sub_nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "1143b11dddd6d2a87b49b28781e67810cee03bb78b43c9205c337aae0ea18159"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_ising_6q",
+      "family": "trotter_ising",
+      "width": 6,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.009706,
+      "predicted_f_pred_margin_1_vs_3": 0.038773,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.885694,
+          "native_2q": 40,
+          "depth": 95,
+          "sub_nodes": [
+            91,
+            98,
+            109,
+            110,
+            111,
+            118
+          ],
+          "circuit_sha256": "bf840e4a90920fb18f6ec5dac1042abc25b3a7a0f6fbad69c28e1a29b23c1371"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.875988,
+          "native_2q": 40,
+          "depth": 91,
+          "sub_nodes": [
+            137,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "8263e73c333b04549d5ad37f916018efbe4dc15e83bf96d4150841437f59cba9"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.846921,
+          "native_2q": 40,
+          "depth": 93,
+          "sub_nodes": [
+            134,
+            135,
+            139,
+            153,
+            154,
+            155
+          ],
+          "circuit_sha256": "24e9d879339f5cf0171b3e1651070bced496bda670775f840d2efe1859587d0d"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_ising_8q",
+      "family": "trotter_ising",
+      "width": 8,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.017963,
+      "predicted_f_pred_margin_1_vs_3": 0.058833,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.844515,
+          "native_2q": 59,
+          "depth": 110,
+          "sub_nodes": [
+            88,
+            89,
+            90,
+            91,
+            98,
+            109,
+            110,
+            111
+          ],
+          "circuit_sha256": "7e6478497b8797387e73961ab867037d9ab2b5219ace8404ec7610640ec1ff25"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.826552,
+          "native_2q": 59,
+          "depth": 105,
+          "sub_nodes": [
+            127,
+            136,
+            137,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "9639a49875675a6ea1cbcb4d00bd259ff768f1921f9092b1c23e47f8c1ec4387"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.785682,
+          "native_2q": 61,
+          "depth": 110,
+          "sub_nodes": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16,
+            17
+          ],
+          "circuit_sha256": "13349062479127567737778ccc2a041816f873e1fbbbbfe89045f70f7f480a2e"
+        }
+      ]
+    },
+    {
+      "workload_id": "os_ising_10q",
+      "family": "trotter_ising",
+      "width": 10,
+      "predicted_rank_1_qpu": "ibm_kingston",
+      "predicted_rank_2_qpu": "ibm_fez",
+      "predicted_rank_3_qpu": "ibm_marrakesh",
+      "predicted_f_pred_margin_1_vs_2": 0.038945,
+      "predicted_f_pred_margin_1_vs_3": 0.079574,
+      "qpu_candidates": [
+        {
+          "qpu": "ibm_kingston",
+          "f_pred": 0.80906,
+          "native_2q": 78,
+          "depth": 123,
+          "sub_nodes": [
+            88,
+            89,
+            90,
+            91,
+            98,
+            109,
+            110,
+            111,
+            118,
+            129
+          ],
+          "circuit_sha256": "873bcb9f3578ae3fdb6d063970c36096ddca7ad3e88fca26f95c5f0ccf62b0d7"
+        },
+        {
+          "qpu": "ibm_fez",
+          "f_pred": 0.770115,
+          "native_2q": 78,
+          "depth": 123,
+          "sub_nodes": [
+            123,
+            124,
+            127,
+            136,
+            137,
+            143,
+            144,
+            145,
+            146,
+            147
+          ],
+          "circuit_sha256": "5a2b230c2868bcd639daf97a9da6fb08d59e532268b9eea44e6ace02c9a3a483"
+        },
+        {
+          "qpu": "ibm_marrakesh",
+          "f_pred": 0.729486,
+          "native_2q": 78,
+          "depth": 133,
+          "sub_nodes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            16
+          ],
+          "circuit_sha256": "66501fb9fb0e8b744f1b86d8d749a81adcf32e5b5edd0004ab20cfbdd64d024d"
+        }
+      ]
+    }
+  ],
+  "interleaved_pub_manifests": {
+    "ibm_kingston": [
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_d_prom_k4_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_prom_k6_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_dense_10q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_e_sabre_k4_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_ising_8q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_qaoa_6q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 2,
+        "wid": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_f_sabre_k4_unbuffered_packed",
+        "id": 2,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_qaoa_10q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_prom_k6_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_d_prom_k4_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 4,
+        "wid": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_f_sabre_k4_unbuffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_dense_8q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 0,
+        "wid": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 3,
+        "wid": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_qft_6q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_d_prom_k4_packed",
+        "id": 2,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 1,
+        "wid": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 5,
+        "wid": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_e_sabre_k4_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_f_sabre_k4_unbuffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_e_sabre_k4_buffered_packed",
+        "id": 2,
+        "shots": 1024
+      }
+    ],
+    "ibm_marrakesh": [
+      {
+        "arm": "arm_f_sabre_k4_unbuffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_f_sabre_k4_unbuffered_packed",
+        "id": 2,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_e_sabre_k4_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_e_sabre_k4_buffered_packed",
+        "id": 2,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 0,
+        "wid": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 2,
+        "wid": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_d_prom_k4_packed",
+        "id": 2,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 4,
+        "wid": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 5,
+        "wid": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_e_sabre_k4_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_qaoa_10q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_qft_6q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_prom_k6_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_qaoa_6q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_dense_8q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_g_prom_k6_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 1,
+        "wid": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_ising_8q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_dense_10q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_d_prom_k4_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 3,
+        "wid": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_d_prom_k4_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_f_sabre_k4_unbuffered_packed",
+        "id": 0,
+        "shots": 1024
+      }
+    ],
+    "ibm_fez": [
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_qaoa_10q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_d_prom_k4_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_e_sabre_k4_buffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 5,
+        "wid": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_dense_8q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_e_sabre_k4_buffered_packed",
+        "id": 2,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_f_sabre_k4_unbuffered_packed",
+        "id": 2,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 4,
+        "wid": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_dense_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_d_prom_k4_packed",
+        "id": 2,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_prom_k6_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 0,
+        "wid": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qaoa_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qft_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_ising_10q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_qft_6q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_f_sabre_k4_unbuffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qft_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_qaoa_6q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_f_sabre_k4_unbuffered_packed",
+        "id": 0,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_dense_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 2,
+        "wid": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_ising_8q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_d_prom_k4_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_ctrl_prom_4096_isolated",
+        "id": "os_dense_10q",
+        "shots": 4096
+      },
+      {
+        "arm": "arm_a_sabre_seq",
+        "id": "os_dense_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_e_sabre_k4_buffered_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_b_prom_os_best",
+        "id": "os_qft_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_prom_k6_packed",
+        "id": 1,
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 3,
+        "wid": "os_ising_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_ising_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_g_ctrl_prom_k6_isolated",
+        "id": "os_qaoa_8q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_c_prom_k4_isolated",
+        "id": "os_qaoa_6q",
+        "shots": 1024
+      },
+      {
+        "arm": "arm_h_prom_4x_replicas",
+        "id": 1,
+        "wid": "os_qft_6q",
+        "shots": 1024
+      }
+    ]
+  },
+  "commitment_sha256": "661f49d86fdd0acb435f79c6dba8a544de6befa645b1d3377d951c58e8339f9b"
+}

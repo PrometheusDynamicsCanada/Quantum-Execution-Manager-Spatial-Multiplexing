@@ -1,0 +1,1882 @@
+{
+  "campaign_overview": {
+    "pre_execution_lock_timestamp_utc": "2026-11-02T14:58:41.108890+00:00",
+    "commitment_sha256": "78426d6417210ec1b101f1141969edaa46c6b381eeb4af831eaabd1314495f82",
+    "accounting_summary": {
+      "workloads_per_arm": 16,
+      "total_logical_qubits_across_16_workloads": 124,
+      "experimental_arms_per_qpu": 6,
+      "circuit_executions_per_qpu": 96,
+      "interleaved_pubs_per_qpu": 26,
+      "physical_shots_per_qpu": 26624,
+      "three_qpu_interleaved_pubs": 78,
+      "three_qpu_circuit_executions": 288,
+      "timing_isolation_jobs": 2,
+      "timing_isolation_pubs": 4,
+      "timing_isolation_circuit_executions": 32,
+      "grand_total_jobs": 5,
+      "grand_total_pubs": 82,
+      "grand_total_physical_shots": 83968,
+      "grand_total_circuit_executions": 320
+    },
+    "per_qpu_compiler_selection_counts": {
+      "ibm_kingston": {
+        "sabre_o3": 1,
+        "tket": 7,
+        "prometheus_native": 8
+      },
+      "ibm_marrakesh": {
+        "sabre_o3": 0,
+        "tket": 6,
+        "prometheus_native": 10
+      },
+      "ibm_fez": {
+        "sabre_o3": 0,
+        "tket": 5,
+        "prometheus_native": 11
+      }
+    },
+    "total_jobs_executed": 5,
+    "total_qpu_seconds_charged": 34.0,
+    "empirical_expected_total_charged_qpu_seconds": 34.29
+  },
+  "compiler_metaselection_48pairs": {
+    "total_workload_qpu_pairs": 48,
+    "exact_top1_compiler_accuracy": "25 / 48 (52.1%)",
+    "within_0015_overlap_tolerance_compiler_accuracy": "40 / 48 (83.3%)",
+    "mean_compiler_selection_regret_fb": 0.005565,
+    "median_compiler_selection_regret_fb": 0.0,
+    "pooled_mean_fb_by_compiler": {
+      "sabre_o3_buffered_8way": 0.877592,
+      "tket_buffered_8way": 0.876107,
+      "prometheus_native_buffered_8way": 0.87771,
+      "prometheus_metaselected_buffered_8way": 0.879613
+    },
+    "per_pair_records": [
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_ghz_4q",
+        "family": "ghz_entangler",
+        "width": 4,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.973029,
+        "meta_arm_6_independent_fb": 0.968838,
+        "oracle_best_compiler_fb": 0.975194,
+        "compiler_selection_regret_fb": 0.002165,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.973622,
+          "tket": 0.975194,
+          "prometheus_native": 0.973029
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_bv_5q",
+        "family": "bernstein_vazirani",
+        "width": 5,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.97174,
+        "meta_arm_6_independent_fb": 0.968246,
+        "oracle_best_compiler_fb": 0.974274,
+        "compiler_selection_regret_fb": 0.002534,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.965151,
+          "tket": 0.97174,
+          "prometheus_native": 0.974274
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_grover_5q",
+        "family": "grover_search",
+        "width": 5,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.985037,
+        "meta_arm_6_independent_fb": 0.985451,
+        "oracle_best_compiler_fb": 0.985037,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.978827,
+          "tket": 0.985037,
+          "prometheus_native": 0.979477
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_wstate_6q",
+        "family": "w_state_dicke",
+        "width": 6,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.929828,
+        "meta_arm_6_independent_fb": 0.929882,
+        "oracle_best_compiler_fb": 0.929828,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.92875,
+          "tket": 0.919468,
+          "prometheus_native": 0.929828
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_simon_6q",
+        "family": "simon_period",
+        "width": 6,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.992707,
+        "meta_arm_6_independent_fb": 0.989096,
+        "oracle_best_compiler_fb": 0.992707,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.990407,
+          "tket": 0.992707,
+          "prometheus_native": 0.991773
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_qv_6q",
+        "family": "quantum_volume",
+        "width": 6,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.985635,
+        "meta_arm_6_independent_fb": 0.984416,
+        "oracle_best_compiler_fb": 0.985635,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.983931,
+          "tket": 0.985635,
+          "prometheus_native": 0.983077
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_qaoa_7q",
+        "family": "qaoa_maxcut",
+        "width": 7,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.96843,
+        "meta_arm_6_independent_fb": 0.962536,
+        "oracle_best_compiler_fb": 0.96843,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.958786,
+          "tket": 0.964948,
+          "prometheus_native": 0.96843
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_vqe_su2_7q",
+        "family": "vqe_su2",
+        "width": 7,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.933684,
+        "meta_arm_6_independent_fb": 0.938452,
+        "oracle_best_compiler_fb": 0.933684,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.922864,
+          "tket": 0.92287,
+          "prometheus_native": 0.933684
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_qft_8q",
+        "family": "qft_phase",
+        "width": 8,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.906329,
+        "meta_arm_6_independent_fb": 0.905263,
+        "oracle_best_compiler_fb": 0.94177,
+        "compiler_selection_regret_fb": 0.035441,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": false,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.94177,
+          "tket": 0.932357,
+          "prometheus_native": 0.906329
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_heisenberg_8q",
+        "family": "heisenberg_xxz",
+        "width": 8,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.878568,
+        "meta_arm_6_independent_fb": 0.882435,
+        "oracle_best_compiler_fb": 0.908804,
+        "compiler_selection_regret_fb": 0.030236,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": false,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.892535,
+          "tket": 0.878568,
+          "prometheus_native": 0.908804
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_hiddenshift_9q",
+        "family": "hidden_shift",
+        "width": 9,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.957895,
+        "meta_arm_6_independent_fb": 0.96017,
+        "oracle_best_compiler_fb": 0.957895,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.948854,
+          "tket": 0.957895,
+          "prometheus_native": 0.946031
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_bipartite_9q",
+        "family": "dense_bipartite",
+        "width": 9,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.907882,
+        "meta_arm_6_independent_fb": 0.904147,
+        "oracle_best_compiler_fb": 0.908626,
+        "compiler_selection_regret_fb": 0.000744,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.908626,
+          "tket": 0.905505,
+          "prometheus_native": 0.907882
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_iqp_10q",
+        "family": "iqp_pauli",
+        "width": 10,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.807605,
+        "meta_arm_6_independent_fb": 0.78622,
+        "oracle_best_compiler_fb": 0.807605,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.796472,
+          "tket": 0.781605,
+          "prometheus_native": 0.807605
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_ising_11q",
+        "family": "trotter_ising_nnn",
+        "width": 11,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.785132,
+        "meta_arm_6_independent_fb": 0.785741,
+        "oracle_best_compiler_fb": 0.789055,
+        "compiler_selection_regret_fb": 0.003923,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.789055,
+          "tket": 0.777134,
+          "prometheus_native": 0.785132
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_qft_11q",
+        "family": "qft_phase",
+        "width": 11,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.807194,
+        "meta_arm_6_independent_fb": 0.813665,
+        "oracle_best_compiler_fb": 0.807194,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.793064,
+          "tket": 0.807194,
+          "prometheus_native": 0.793265
+        }
+      },
+      {
+        "backend": "ibm_kingston",
+        "workload_id": "het_qaoa_plaid_12q",
+        "family": "qaoa_plaid",
+        "width": 12,
+        "predicted_compiler": "sabre_o3",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.511347,
+        "meta_arm_6_independent_fb": 0.5216,
+        "oracle_best_compiler_fb": 0.523341,
+        "compiler_selection_regret_fb": 0.011994,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.511347,
+          "tket": 0.523341,
+          "prometheus_native": 0.514118
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_ghz_4q",
+        "family": "ghz_entangler",
+        "width": 4,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.97987,
+        "meta_arm_6_independent_fb": 0.981313,
+        "oracle_best_compiler_fb": 0.97987,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.977832,
+          "tket": 0.968184,
+          "prometheus_native": 0.97987
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_bv_5q",
+        "family": "bernstein_vazirani",
+        "width": 5,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.96317,
+        "meta_arm_6_independent_fb": 0.966415,
+        "oracle_best_compiler_fb": 0.966636,
+        "compiler_selection_regret_fb": 0.003466,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.95975,
+          "tket": 0.966636,
+          "prometheus_native": 0.96317
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_grover_5q",
+        "family": "grover_search",
+        "width": 5,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.978454,
+        "meta_arm_6_independent_fb": 0.979864,
+        "oracle_best_compiler_fb": 0.978454,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.977312,
+          "tket": 0.978454,
+          "prometheus_native": 0.971101
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_wstate_6q",
+        "family": "w_state_dicke",
+        "width": 6,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.529143,
+        "meta_arm_6_independent_fb": 0.522887,
+        "oracle_best_compiler_fb": 0.542409,
+        "compiler_selection_regret_fb": 0.013266,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.542409,
+          "tket": 0.490008,
+          "prometheus_native": 0.529143
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_simon_6q",
+        "family": "simon_period",
+        "width": 6,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.986208,
+        "meta_arm_6_independent_fb": 0.980195,
+        "oracle_best_compiler_fb": 0.986208,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.985765,
+          "tket": 0.986208,
+          "prometheus_native": 0.982706
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_qv_6q",
+        "family": "quantum_volume",
+        "width": 6,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.981957,
+        "meta_arm_6_independent_fb": 0.982836,
+        "oracle_best_compiler_fb": 0.981957,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.978467,
+          "tket": 0.981957,
+          "prometheus_native": 0.979923
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_qaoa_7q",
+        "family": "qaoa_maxcut",
+        "width": 7,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.957244,
+        "meta_arm_6_independent_fb": 0.958482,
+        "oracle_best_compiler_fb": 0.957244,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.943105,
+          "tket": 0.933842,
+          "prometheus_native": 0.957244
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_vqe_su2_7q",
+        "family": "vqe_su2",
+        "width": 7,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.931774,
+        "meta_arm_6_independent_fb": 0.922989,
+        "oracle_best_compiler_fb": 0.931774,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.929071,
+          "tket": 0.931774,
+          "prometheus_native": 0.930127
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_qft_8q",
+        "family": "qft_phase",
+        "width": 8,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.934473,
+        "meta_arm_6_independent_fb": 0.94257,
+        "oracle_best_compiler_fb": 0.938864,
+        "compiler_selection_regret_fb": 0.004391,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.938864,
+          "tket": 0.932441,
+          "prometheus_native": 0.934473
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_heisenberg_8q",
+        "family": "heisenberg_xxz",
+        "width": 8,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.885699,
+        "meta_arm_6_independent_fb": 0.882831,
+        "oracle_best_compiler_fb": 0.888652,
+        "compiler_selection_regret_fb": 0.002953,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.887699,
+          "tket": 0.888652,
+          "prometheus_native": 0.885699
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_hiddenshift_9q",
+        "family": "hidden_shift",
+        "width": 9,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.938758,
+        "meta_arm_6_independent_fb": 0.947963,
+        "oracle_best_compiler_fb": 0.938758,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.919041,
+          "tket": 0.938758,
+          "prometheus_native": 0.917476
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_bipartite_9q",
+        "family": "dense_bipartite",
+        "width": 9,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.908992,
+        "meta_arm_6_independent_fb": 0.903458,
+        "oracle_best_compiler_fb": 0.908992,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.904083,
+          "tket": 0.906017,
+          "prometheus_native": 0.908992
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_iqp_10q",
+        "family": "iqp_pauli",
+        "width": 10,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.78432,
+        "meta_arm_6_independent_fb": 0.787939,
+        "oracle_best_compiler_fb": 0.786238,
+        "compiler_selection_regret_fb": 0.001918,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.771415,
+          "tket": 0.786238,
+          "prometheus_native": 0.78432
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_ising_11q",
+        "family": "trotter_ising_nnn",
+        "width": 11,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.74143,
+        "meta_arm_6_independent_fb": 0.729884,
+        "oracle_best_compiler_fb": 0.760772,
+        "compiler_selection_regret_fb": 0.019342,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": false,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.760772,
+          "tket": 0.74143,
+          "prometheus_native": 0.712819
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_qft_11q",
+        "family": "qft_phase",
+        "width": 11,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.775784,
+        "meta_arm_6_independent_fb": 0.768981,
+        "oracle_best_compiler_fb": 0.775784,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.747184,
+          "tket": 0.656447,
+          "prometheus_native": 0.775784
+        }
+      },
+      {
+        "backend": "ibm_marrakesh",
+        "workload_id": "het_qaoa_plaid_12q",
+        "family": "qaoa_plaid",
+        "width": 12,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.45085,
+        "meta_arm_6_independent_fb": 0.456411,
+        "oracle_best_compiler_fb": 0.493273,
+        "compiler_selection_regret_fb": 0.042423,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": false,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.493273,
+          "tket": 0.481686,
+          "prometheus_native": 0.45085
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_ghz_4q",
+        "family": "ghz_entangler",
+        "width": 4,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.976364,
+        "meta_arm_6_independent_fb": 0.982397,
+        "oracle_best_compiler_fb": 0.979389,
+        "compiler_selection_regret_fb": 0.003025,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.979389,
+          "tket": 0.977203,
+          "prometheus_native": 0.976364
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_bv_5q",
+        "family": "bernstein_vazirani",
+        "width": 5,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.961671,
+        "meta_arm_6_independent_fb": 0.97161,
+        "oracle_best_compiler_fb": 0.963674,
+        "compiler_selection_regret_fb": 0.002003,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.962883,
+          "tket": 0.963674,
+          "prometheus_native": 0.961671
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_grover_5q",
+        "family": "grover_search",
+        "width": 5,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.984988,
+        "meta_arm_6_independent_fb": 0.985451,
+        "oracle_best_compiler_fb": 0.984988,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.984532,
+          "tket": 0.984988,
+          "prometheus_native": 0.98111
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_wstate_6q",
+        "family": "w_state_dicke",
+        "width": 6,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.9145,
+        "meta_arm_6_independent_fb": 0.928955,
+        "oracle_best_compiler_fb": 0.930932,
+        "compiler_selection_regret_fb": 0.016432,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": false,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.928928,
+          "tket": 0.930932,
+          "prometheus_native": 0.9145
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_simon_6q",
+        "family": "simon_period",
+        "width": 6,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.99091,
+        "meta_arm_6_independent_fb": 0.988333,
+        "oracle_best_compiler_fb": 0.992056,
+        "compiler_selection_regret_fb": 0.001146,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.992056,
+          "tket": 0.99091,
+          "prometheus_native": 0.990448
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_qv_6q",
+        "family": "quantum_volume",
+        "width": 6,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.983255,
+        "meta_arm_6_independent_fb": 0.98145,
+        "oracle_best_compiler_fb": 0.983255,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.968929,
+          "tket": 0.979108,
+          "prometheus_native": 0.983255
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_qaoa_7q",
+        "family": "qaoa_maxcut",
+        "width": 7,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.948757,
+        "meta_arm_6_independent_fb": 0.95175,
+        "oracle_best_compiler_fb": 0.953607,
+        "compiler_selection_regret_fb": 0.00485,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.953607,
+          "tket": 0.947918,
+          "prometheus_native": 0.948757
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_vqe_su2_7q",
+        "family": "vqe_su2",
+        "width": 7,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.922157,
+        "meta_arm_6_independent_fb": 0.931844,
+        "oracle_best_compiler_fb": 0.94277,
+        "compiler_selection_regret_fb": 0.020613,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": false,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.942305,
+          "tket": 0.94277,
+          "prometheus_native": 0.922157
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_qft_8q",
+        "family": "qft_phase",
+        "width": 8,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.927328,
+        "meta_arm_6_independent_fb": 0.914763,
+        "oracle_best_compiler_fb": 0.948447,
+        "compiler_selection_regret_fb": 0.021119,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": false,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.939952,
+          "tket": 0.927328,
+          "prometheus_native": 0.948447
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_heisenberg_8q",
+        "family": "heisenberg_xxz",
+        "width": 8,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.928097,
+        "meta_arm_6_independent_fb": 0.902468,
+        "oracle_best_compiler_fb": 0.928097,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.908938,
+          "tket": 0.903212,
+          "prometheus_native": 0.928097
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_hiddenshift_9q",
+        "family": "hidden_shift",
+        "width": 9,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.952419,
+        "meta_arm_6_independent_fb": 0.949899,
+        "oracle_best_compiler_fb": 0.952419,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.910717,
+          "tket": 0.952419,
+          "prometheus_native": 0.92647
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_bipartite_9q",
+        "family": "dense_bipartite",
+        "width": 9,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.89664,
+        "meta_arm_6_independent_fb": 0.897319,
+        "oracle_best_compiler_fb": 0.912817,
+        "compiler_selection_regret_fb": 0.016177,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": false,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.901966,
+          "tket": 0.912817,
+          "prometheus_native": 0.89664
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_iqp_10q",
+        "family": "iqp_pauli",
+        "width": 10,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.755506,
+        "meta_arm_6_independent_fb": 0.763404,
+        "oracle_best_compiler_fb": 0.755506,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.74801,
+          "tket": 0.750417,
+          "prometheus_native": 0.755506
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_ising_11q",
+        "family": "trotter_ising_nnn",
+        "width": 11,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "prometheus_native",
+        "selected_compiler_fb": 0.758891,
+        "meta_arm_6_independent_fb": 0.760679,
+        "oracle_best_compiler_fb": 0.758891,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.737978,
+          "tket": 0.756796,
+          "prometheus_native": 0.758891
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_qft_11q",
+        "family": "qft_phase",
+        "width": 11,
+        "predicted_compiler": "tket",
+        "observed_best_compiler": "tket",
+        "selected_compiler_fb": 0.805596,
+        "meta_arm_6_independent_fb": 0.809346,
+        "oracle_best_compiler_fb": 0.805596,
+        "compiler_selection_regret_fb": 0.0,
+        "exact_compiler_match": true,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.775194,
+          "tket": 0.805596,
+          "prometheus_native": 0.789362
+        }
+      },
+      {
+        "backend": "ibm_fez",
+        "workload_id": "het_qaoa_plaid_12q",
+        "family": "qaoa_plaid",
+        "width": 12,
+        "predicted_compiler": "prometheus_native",
+        "observed_best_compiler": "sabre_o3",
+        "selected_compiler_fb": 0.48199,
+        "meta_arm_6_independent_fb": 0.500588,
+        "oracle_best_compiler_fb": 0.48894,
+        "compiler_selection_regret_fb": 0.00695,
+        "exact_compiler_match": false,
+        "within_0015_overlap_tolerance": true,
+        "observed_fb_by_compiler": {
+          "sabre_o3": 0.48894,
+          "tket": 0.477097,
+          "prometheus_native": 0.48199
+        }
+      }
+    ]
+  },
+  "joint_9way_compiler_qpu_selection_16workloads": {
+    "joint_selected_mean_fb": 0.894375,
+    "joint_meta_arm6_selected_qpu_mean_fb": 0.893004,
+    "oracle_9way_best_mean_fb": 0.902132,
+    "mean_9way_selection_regret_fb": 0.007756,
+    "median_9way_selection_regret_fb": 0.002165,
+    "mean_qpu_selection_regret_on_meta_arm6_fb": 0.00463,
+    "exact_top1_9way_accuracy": "6 / 16 (37.5%)",
+    "within_0015_9way_tolerance_accuracy": "13 / 16 (81.2%)",
+    "exact_top1_qpu_accuracy": "9 / 16 (56.2%)",
+    "within_0015_qpu_tolerance_accuracy": "14 / 16 (87.5%)",
+    "fixed_9_policies_mean_fb": {
+      "sabre_o3@ibm_kingston": 0.892754,
+      "sabre_o3@ibm_marrakesh": 0.857253,
+      "sabre_o3@ibm_fez": 0.88277,
+      "tket@ibm_kingston": 0.892575,
+      "tket@ibm_marrakesh": 0.848046,
+      "tket@ibm_fez": 0.887699,
+      "prometheus_native@ibm_kingston": 0.893921,
+      "prometheus_native@ibm_marrakesh": 0.853981,
+      "prometheus_native@ibm_fez": 0.885229
+    },
+    "delta_joint_selected_vs_fixed_9_policies_fb": {
+      "sabre_o3@ibm_kingston": 0.001621,
+      "sabre_o3@ibm_marrakesh": 0.037123,
+      "sabre_o3@ibm_fez": 0.011605,
+      "tket@ibm_kingston": 0.0018,
+      "tket@ibm_marrakesh": 0.046329,
+      "tket@ibm_fez": 0.006676,
+      "prometheus_native@ibm_kingston": 0.000454,
+      "prometheus_native@ibm_marrakesh": 0.040394,
+      "prometheus_native@ibm_fez": 0.009146
+    },
+    "fixed_qpu_meta_arm6_mean_fb": {
+      "ibm_kingston": 0.892885,
+      "ibm_marrakesh": 0.857189,
+      "ibm_fez": 0.888766
+    },
+    "per_workload_joint_records": [
+      {
+        "workload_id": "het_ghz_4q",
+        "family": "ghz_entangler",
+        "width": 4,
+        "predicted_joint_choice": "prometheus_native@ibm_kingston",
+        "observed_best_9way_choice": "prometheus_native@ibm_marrakesh",
+        "selected_joint_fb": 0.973029,
+        "selected_qpu_meta_arm6_fb": 0.968838,
+        "oracle_9way_best_fb": 0.97987,
+        "joint_9way_regret_fb": 0.006841,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.013559,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": false,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.973622,
+          "sabre_o3@ibm_marrakesh": 0.977832,
+          "sabre_o3@ibm_fez": 0.979389,
+          "tket@ibm_kingston": 0.975194,
+          "tket@ibm_marrakesh": 0.968184,
+          "tket@ibm_fez": 0.977203,
+          "prometheus_native@ibm_kingston": 0.973029,
+          "prometheus_native@ibm_marrakesh": 0.97987,
+          "prometheus_native@ibm_fez": 0.976364
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.968838,
+          "ibm_marrakesh": 0.981313,
+          "ibm_fez": 0.982397
+        }
+      },
+      {
+        "workload_id": "het_bv_5q",
+        "family": "bernstein_vazirani",
+        "width": 5,
+        "predicted_joint_choice": "tket@ibm_kingston",
+        "observed_best_9way_choice": "prometheus_native@ibm_kingston",
+        "selected_joint_fb": 0.97174,
+        "selected_qpu_meta_arm6_fb": 0.968246,
+        "oracle_9way_best_fb": 0.974274,
+        "joint_9way_regret_fb": 0.002534,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.003364,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": false,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.965151,
+          "sabre_o3@ibm_marrakesh": 0.95975,
+          "sabre_o3@ibm_fez": 0.962883,
+          "tket@ibm_kingston": 0.97174,
+          "tket@ibm_marrakesh": 0.966636,
+          "tket@ibm_fez": 0.963674,
+          "prometheus_native@ibm_kingston": 0.974274,
+          "prometheus_native@ibm_marrakesh": 0.96317,
+          "prometheus_native@ibm_fez": 0.961671
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.968246,
+          "ibm_marrakesh": 0.966415,
+          "ibm_fez": 0.97161
+        }
+      },
+      {
+        "workload_id": "het_grover_5q",
+        "family": "grover_search",
+        "width": 5,
+        "predicted_joint_choice": "tket@ibm_kingston",
+        "observed_best_9way_choice": "tket@ibm_kingston",
+        "selected_joint_fb": 0.985037,
+        "selected_qpu_meta_arm6_fb": 0.985451,
+        "oracle_9way_best_fb": 0.985037,
+        "joint_9way_regret_fb": 0.0,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.0,
+        "exact_9way_match": true,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": true,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.978827,
+          "sabre_o3@ibm_marrakesh": 0.977312,
+          "sabre_o3@ibm_fez": 0.984532,
+          "tket@ibm_kingston": 0.985037,
+          "tket@ibm_marrakesh": 0.978454,
+          "tket@ibm_fez": 0.984988,
+          "prometheus_native@ibm_kingston": 0.979477,
+          "prometheus_native@ibm_marrakesh": 0.971101,
+          "prometheus_native@ibm_fez": 0.98111
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.985451,
+          "ibm_marrakesh": 0.979864,
+          "ibm_fez": 0.985451
+        }
+      },
+      {
+        "workload_id": "het_wstate_6q",
+        "family": "w_state_dicke",
+        "width": 6,
+        "predicted_joint_choice": "prometheus_native@ibm_kingston",
+        "observed_best_9way_choice": "tket@ibm_fez",
+        "selected_joint_fb": 0.929828,
+        "selected_qpu_meta_arm6_fb": 0.929882,
+        "oracle_9way_best_fb": 0.930932,
+        "joint_9way_regret_fb": 0.001104,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.0,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": true,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.92875,
+          "sabre_o3@ibm_marrakesh": 0.542409,
+          "sabre_o3@ibm_fez": 0.928928,
+          "tket@ibm_kingston": 0.919468,
+          "tket@ibm_marrakesh": 0.490008,
+          "tket@ibm_fez": 0.930932,
+          "prometheus_native@ibm_kingston": 0.929828,
+          "prometheus_native@ibm_marrakesh": 0.529143,
+          "prometheus_native@ibm_fez": 0.9145
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.929882,
+          "ibm_marrakesh": 0.522887,
+          "ibm_fez": 0.928955
+        }
+      },
+      {
+        "workload_id": "het_simon_6q",
+        "family": "simon_period",
+        "width": 6,
+        "predicted_joint_choice": "tket@ibm_fez",
+        "observed_best_9way_choice": "tket@ibm_kingston",
+        "selected_joint_fb": 0.99091,
+        "selected_qpu_meta_arm6_fb": 0.988333,
+        "oracle_9way_best_fb": 0.992707,
+        "joint_9way_regret_fb": 0.001797,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.000763,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": false,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.990407,
+          "sabre_o3@ibm_marrakesh": 0.985765,
+          "sabre_o3@ibm_fez": 0.992056,
+          "tket@ibm_kingston": 0.992707,
+          "tket@ibm_marrakesh": 0.986208,
+          "tket@ibm_fez": 0.99091,
+          "prometheus_native@ibm_kingston": 0.991773,
+          "prometheus_native@ibm_marrakesh": 0.982706,
+          "prometheus_native@ibm_fez": 0.990448
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.989096,
+          "ibm_marrakesh": 0.980195,
+          "ibm_fez": 0.988333
+        }
+      },
+      {
+        "workload_id": "het_qv_6q",
+        "family": "quantum_volume",
+        "width": 6,
+        "predicted_joint_choice": "tket@ibm_kingston",
+        "observed_best_9way_choice": "tket@ibm_kingston",
+        "selected_joint_fb": 0.985635,
+        "selected_qpu_meta_arm6_fb": 0.984416,
+        "oracle_9way_best_fb": 0.985635,
+        "joint_9way_regret_fb": 0.0,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.0,
+        "exact_9way_match": true,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": true,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.983931,
+          "sabre_o3@ibm_marrakesh": 0.978467,
+          "sabre_o3@ibm_fez": 0.968929,
+          "tket@ibm_kingston": 0.985635,
+          "tket@ibm_marrakesh": 0.981957,
+          "tket@ibm_fez": 0.979108,
+          "prometheus_native@ibm_kingston": 0.983077,
+          "prometheus_native@ibm_marrakesh": 0.979923,
+          "prometheus_native@ibm_fez": 0.983255
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.984416,
+          "ibm_marrakesh": 0.982836,
+          "ibm_fez": 0.98145
+        }
+      },
+      {
+        "workload_id": "het_qaoa_7q",
+        "family": "qaoa_maxcut",
+        "width": 7,
+        "predicted_joint_choice": "prometheus_native@ibm_kingston",
+        "observed_best_9way_choice": "prometheus_native@ibm_kingston",
+        "selected_joint_fb": 0.96843,
+        "selected_qpu_meta_arm6_fb": 0.962536,
+        "oracle_9way_best_fb": 0.96843,
+        "joint_9way_regret_fb": 0.0,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.0,
+        "exact_9way_match": true,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": true,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.958786,
+          "sabre_o3@ibm_marrakesh": 0.943105,
+          "sabre_o3@ibm_fez": 0.953607,
+          "tket@ibm_kingston": 0.964948,
+          "tket@ibm_marrakesh": 0.933842,
+          "tket@ibm_fez": 0.947918,
+          "prometheus_native@ibm_kingston": 0.96843,
+          "prometheus_native@ibm_marrakesh": 0.957244,
+          "prometheus_native@ibm_fez": 0.948757
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.962536,
+          "ibm_marrakesh": 0.958482,
+          "ibm_fez": 0.95175
+        }
+      },
+      {
+        "workload_id": "het_vqe_su2_7q",
+        "family": "vqe_su2",
+        "width": 7,
+        "predicted_joint_choice": "prometheus_native@ibm_kingston",
+        "observed_best_9way_choice": "tket@ibm_fez",
+        "selected_joint_fb": 0.933684,
+        "selected_qpu_meta_arm6_fb": 0.938452,
+        "oracle_9way_best_fb": 0.94277,
+        "joint_9way_regret_fb": 0.009086,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.0,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": true,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.922864,
+          "sabre_o3@ibm_marrakesh": 0.929071,
+          "sabre_o3@ibm_fez": 0.942305,
+          "tket@ibm_kingston": 0.92287,
+          "tket@ibm_marrakesh": 0.931774,
+          "tket@ibm_fez": 0.94277,
+          "prometheus_native@ibm_kingston": 0.933684,
+          "prometheus_native@ibm_marrakesh": 0.930127,
+          "prometheus_native@ibm_fez": 0.922157
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.938452,
+          "ibm_marrakesh": 0.922989,
+          "ibm_fez": 0.931844
+        }
+      },
+      {
+        "workload_id": "het_qft_8q",
+        "family": "qft_phase",
+        "width": 8,
+        "predicted_joint_choice": "tket@ibm_fez",
+        "observed_best_9way_choice": "prometheus_native@ibm_fez",
+        "selected_joint_fb": 0.927328,
+        "selected_qpu_meta_arm6_fb": 0.914763,
+        "oracle_9way_best_fb": 0.948447,
+        "joint_9way_regret_fb": 0.021119,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.027807,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": false,
+        "exact_qpu_match": false,
+        "within_0015_qpu_tolerance": false,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.94177,
+          "sabre_o3@ibm_marrakesh": 0.938864,
+          "sabre_o3@ibm_fez": 0.939952,
+          "tket@ibm_kingston": 0.932357,
+          "tket@ibm_marrakesh": 0.932441,
+          "tket@ibm_fez": 0.927328,
+          "prometheus_native@ibm_kingston": 0.906329,
+          "prometheus_native@ibm_marrakesh": 0.934473,
+          "prometheus_native@ibm_fez": 0.948447
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.905263,
+          "ibm_marrakesh": 0.94257,
+          "ibm_fez": 0.914763
+        }
+      },
+      {
+        "workload_id": "het_heisenberg_8q",
+        "family": "heisenberg_xxz",
+        "width": 8,
+        "predicted_joint_choice": "tket@ibm_kingston",
+        "observed_best_9way_choice": "prometheus_native@ibm_fez",
+        "selected_joint_fb": 0.878568,
+        "selected_qpu_meta_arm6_fb": 0.882435,
+        "oracle_9way_best_fb": 0.928097,
+        "joint_9way_regret_fb": 0.049529,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.020033,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": false,
+        "exact_qpu_match": false,
+        "within_0015_qpu_tolerance": false,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.892535,
+          "sabre_o3@ibm_marrakesh": 0.887699,
+          "sabre_o3@ibm_fez": 0.908938,
+          "tket@ibm_kingston": 0.878568,
+          "tket@ibm_marrakesh": 0.888652,
+          "tket@ibm_fez": 0.903212,
+          "prometheus_native@ibm_kingston": 0.908804,
+          "prometheus_native@ibm_marrakesh": 0.885699,
+          "prometheus_native@ibm_fez": 0.928097
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.882435,
+          "ibm_marrakesh": 0.882831,
+          "ibm_fez": 0.902468
+        }
+      },
+      {
+        "workload_id": "het_hiddenshift_9q",
+        "family": "hidden_shift",
+        "width": 9,
+        "predicted_joint_choice": "tket@ibm_kingston",
+        "observed_best_9way_choice": "tket@ibm_kingston",
+        "selected_joint_fb": 0.957895,
+        "selected_qpu_meta_arm6_fb": 0.96017,
+        "oracle_9way_best_fb": 0.957895,
+        "joint_9way_regret_fb": 0.0,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.0,
+        "exact_9way_match": true,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": true,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.948854,
+          "sabre_o3@ibm_marrakesh": 0.919041,
+          "sabre_o3@ibm_fez": 0.910717,
+          "tket@ibm_kingston": 0.957895,
+          "tket@ibm_marrakesh": 0.938758,
+          "tket@ibm_fez": 0.952419,
+          "prometheus_native@ibm_kingston": 0.946031,
+          "prometheus_native@ibm_marrakesh": 0.917476,
+          "prometheus_native@ibm_fez": 0.92647
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.96017,
+          "ibm_marrakesh": 0.947963,
+          "ibm_fez": 0.949899
+        }
+      },
+      {
+        "workload_id": "het_bipartite_9q",
+        "family": "dense_bipartite",
+        "width": 9,
+        "predicted_joint_choice": "prometheus_native@ibm_fez",
+        "observed_best_9way_choice": "tket@ibm_fez",
+        "selected_joint_fb": 0.89664,
+        "selected_qpu_meta_arm6_fb": 0.897319,
+        "oracle_9way_best_fb": 0.912817,
+        "joint_9way_regret_fb": 0.016177,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.006828,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": false,
+        "exact_qpu_match": false,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.908626,
+          "sabre_o3@ibm_marrakesh": 0.904083,
+          "sabre_o3@ibm_fez": 0.901966,
+          "tket@ibm_kingston": 0.905505,
+          "tket@ibm_marrakesh": 0.906017,
+          "tket@ibm_fez": 0.912817,
+          "prometheus_native@ibm_kingston": 0.907882,
+          "prometheus_native@ibm_marrakesh": 0.908992,
+          "prometheus_native@ibm_fez": 0.89664
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.904147,
+          "ibm_marrakesh": 0.903458,
+          "ibm_fez": 0.897319
+        }
+      },
+      {
+        "workload_id": "het_iqp_10q",
+        "family": "iqp_pauli",
+        "width": 10,
+        "predicted_joint_choice": "prometheus_native@ibm_kingston",
+        "observed_best_9way_choice": "prometheus_native@ibm_kingston",
+        "selected_joint_fb": 0.807605,
+        "selected_qpu_meta_arm6_fb": 0.78622,
+        "oracle_9way_best_fb": 0.807605,
+        "joint_9way_regret_fb": 0.0,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.001719,
+        "exact_9way_match": true,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": false,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.796472,
+          "sabre_o3@ibm_marrakesh": 0.771415,
+          "sabre_o3@ibm_fez": 0.74801,
+          "tket@ibm_kingston": 0.781605,
+          "tket@ibm_marrakesh": 0.786238,
+          "tket@ibm_fez": 0.750417,
+          "prometheus_native@ibm_kingston": 0.807605,
+          "prometheus_native@ibm_marrakesh": 0.78432,
+          "prometheus_native@ibm_fez": 0.755506
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.78622,
+          "ibm_marrakesh": 0.787939,
+          "ibm_fez": 0.763404
+        }
+      },
+      {
+        "workload_id": "het_ising_11q",
+        "family": "trotter_ising_nnn",
+        "width": 11,
+        "predicted_joint_choice": "prometheus_native@ibm_kingston",
+        "observed_best_9way_choice": "sabre_o3@ibm_kingston",
+        "selected_joint_fb": 0.785132,
+        "selected_qpu_meta_arm6_fb": 0.785741,
+        "oracle_9way_best_fb": 0.789055,
+        "joint_9way_regret_fb": 0.003923,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.0,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": true,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.789055,
+          "sabre_o3@ibm_marrakesh": 0.760772,
+          "sabre_o3@ibm_fez": 0.737978,
+          "tket@ibm_kingston": 0.777134,
+          "tket@ibm_marrakesh": 0.74143,
+          "tket@ibm_fez": 0.756796,
+          "prometheus_native@ibm_kingston": 0.785132,
+          "prometheus_native@ibm_marrakesh": 0.712819,
+          "prometheus_native@ibm_fez": 0.758891
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.785741,
+          "ibm_marrakesh": 0.729884,
+          "ibm_fez": 0.760679
+        }
+      },
+      {
+        "workload_id": "het_qft_11q",
+        "family": "qft_phase",
+        "width": 11,
+        "predicted_joint_choice": "tket@ibm_kingston",
+        "observed_best_9way_choice": "tket@ibm_kingston",
+        "selected_joint_fb": 0.807194,
+        "selected_qpu_meta_arm6_fb": 0.813665,
+        "oracle_9way_best_fb": 0.807194,
+        "joint_9way_regret_fb": 0.0,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.0,
+        "exact_9way_match": true,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": true,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.793064,
+          "sabre_o3@ibm_marrakesh": 0.747184,
+          "sabre_o3@ibm_fez": 0.775194,
+          "tket@ibm_kingston": 0.807194,
+          "tket@ibm_marrakesh": 0.656447,
+          "tket@ibm_fez": 0.805596,
+          "prometheus_native@ibm_kingston": 0.793265,
+          "prometheus_native@ibm_marrakesh": 0.775784,
+          "prometheus_native@ibm_fez": 0.789362
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.813665,
+          "ibm_marrakesh": 0.768981,
+          "ibm_fez": 0.809346
+        }
+      },
+      {
+        "workload_id": "het_qaoa_plaid_12q",
+        "family": "qaoa_plaid",
+        "width": 12,
+        "predicted_joint_choice": "sabre_o3@ibm_kingston",
+        "observed_best_9way_choice": "tket@ibm_kingston",
+        "selected_joint_fb": 0.511347,
+        "selected_qpu_meta_arm6_fb": 0.5216,
+        "oracle_9way_best_fb": 0.523341,
+        "joint_9way_regret_fb": 0.011994,
+        "qpu_selection_regret_on_meta_arm6_fb": 0.0,
+        "exact_9way_match": false,
+        "within_0015_9way_tolerance": true,
+        "exact_qpu_match": true,
+        "within_0015_qpu_tolerance": true,
+        "observed_9way_grid_fb": {
+          "sabre_o3@ibm_kingston": 0.511347,
+          "sabre_o3@ibm_marrakesh": 0.493273,
+          "sabre_o3@ibm_fez": 0.48894,
+          "tket@ibm_kingston": 0.523341,
+          "tket@ibm_marrakesh": 0.481686,
+          "tket@ibm_fez": 0.477097,
+          "prometheus_native@ibm_kingston": 0.514118,
+          "prometheus_native@ibm_marrakesh": 0.45085,
+          "prometheus_native@ibm_fez": 0.48199
+        },
+        "observed_meta_arm6_by_qpu_fb": {
+          "ibm_kingston": 0.5216,
+          "ibm_marrakesh": 0.456411,
+          "ibm_fez": 0.500588
+        }
+      }
+    ]
+  },
+  "tket_and_metaselector_spatial_multiplexing_controls": {
+    "tket_8way_packed_vs_same_qubit_isolated": {
+      "isolated_mean_fb": 0.872958,
+      "packed_8way_mean_fb": 0.876107,
+      "mean_delta_fb_packed_minus_isolated": 0.003149,
+      "bootstrap_95pct_ci": [
+        0.00041,
+        0.006078
+      ],
+      "workload_clustered_exact_sign_flip_p": 0.011749
+    },
+    "tket_buffered_dg_ge_2_vs_unbuffered_adjacent_dg_eq_1": {
+      "tket_buffered_mean_fb": 0.876107,
+      "tket_unbuffered_adjacent_mean_fb": 0.84465,
+      "mean_delta_fb": 0.031457,
+      "bootstrap_95pct_ci": [
+        0.000424,
+        0.063634
+      ],
+      "workload_clustered_exact_sign_flip_p": 0.116882
+    },
+    "prometheus_metaselected_vs_competing_8way_compilers": {
+      "vs_sabre_o3_buffered_8way_delta_fb": 0.002021,
+      "vs_sabre_o3_buffered_8way_p_raw": 0.4935,
+      "vs_sabre_o3_buffered_8way_p_holm": 0.518799,
+      "vs_tket_buffered_8way_delta_fb": 0.003507,
+      "vs_tket_buffered_8way_p_raw": 0.259399,
+      "vs_tket_buffered_8way_p_holm": 0.518799,
+      "vs_tket_unbuffered_8way_delta_fb": 0.034963,
+      "vs_tket_unbuffered_8way_p_raw": 0.078491,
+      "vs_tket_unbuffered_8way_p_holm": 0.235474
+    }
+  },
+  "pooled_3qpu_arm_summary": {
+    "arm_1_tket_2pub_k8_isolated": {
+      "n_executions": 48,
+      "mean_fb": 0.872958,
+      "median_fb": 0.926918,
+      "mean_fh": 0.782093,
+      "mean_tvd": 0.268085,
+      "mean_2q": 59.35,
+      "mean_depth": 122.98
+    },
+    "arm_2_sabre_2pub_k8_buffered_packed": {
+      "n_executions": 48,
+      "mean_fb": 0.877592,
+      "median_fb": 0.928999,
+      "mean_fh": 0.788081,
+      "mean_tvd": 0.263463,
+      "mean_2q": 62.77,
+      "mean_depth": 127.65
+    },
+    "arm_3_tket_2pub_k8_buffered_packed": {
+      "n_executions": 48,
+      "mean_fb": 0.876107,
+      "median_fb": 0.932065,
+      "mean_fh": 0.787189,
+      "mean_tvd": 0.263004,
+      "mean_2q": 59.35,
+      "mean_depth": 122.98
+    },
+    "arm_4_tket_2pub_k8_unbuffered_packed": {
+      "n_executions": 48,
+      "mean_fb": 0.84465,
+      "median_fb": 0.887906,
+      "mean_fh": 0.737221,
+      "mean_tvd": 0.308526,
+      "mean_2q": 61.85,
+      "mean_depth": 125.25
+    },
+    "arm_5_prom_native_2pub_k8_buffered_packed": {
+      "n_executions": 48,
+      "mean_fb": 0.87771,
+      "median_fb": 0.928962,
+      "mean_fh": 0.789197,
+      "mean_tvd": 0.262726,
+      "mean_2q": 60.58,
+      "mean_depth": 117.62
+    },
+    "arm_6_prom_metaselected_2pub_k8_buffered_packed": {
+      "n_executions": 48,
+      "mean_fb": 0.879613,
+      "median_fb": 0.930863,
+      "mean_fh": 0.792097,
+      "mean_tvd": 0.257762,
+      "mean_2q": 59.46,
+      "mean_depth": 116.52
+    }
+  },
+  "per_qpu_arm_summary": {
+    "ibm_kingston": {
+      "arm_1_tket_2pub_k8_isolated": {
+        "mean_fb": 0.892148,
+        "median_fb": 0.929758,
+        "mean_fh": 0.810513,
+        "mean_tvd": 0.239877,
+        "mean_2q": 59.62,
+        "mean_depth": 123.88
+      },
+      "arm_2_sabre_2pub_k8_buffered_packed": {
+        "mean_fb": 0.892754,
+        "median_fb": 0.93526,
+        "mean_fh": 0.811062,
+        "mean_tvd": 0.238935,
+        "mean_2q": 62.44,
+        "mean_depth": 125.62
+      },
+      "arm_3_tket_2pub_k8_buffered_packed": {
+        "mean_fb": 0.892575,
+        "median_fb": 0.927613,
+        "mean_fh": 0.810608,
+        "mean_tvd": 0.240014,
+        "mean_2q": 59.62,
+        "mean_depth": 123.88
+      },
+      "arm_4_tket_2pub_k8_unbuffered_packed": {
+        "mean_fb": 0.83664,
+        "median_fb": 0.938597,
+        "mean_fh": 0.737395,
+        "mean_tvd": 0.297755,
+        "mean_2q": 62.25,
+        "mean_depth": 126.12
+      },
+      "arm_5_prom_native_2pub_k8_buffered_packed": {
+        "mean_fb": 0.893921,
+        "median_fb": 0.931756,
+        "mean_fh": 0.813028,
+        "mean_tvd": 0.240409,
+        "mean_2q": 60.12,
+        "mean_depth": 120.31
+      },
+      "arm_6_prom_metaselected_2pub_k8_buffered_packed": {
+        "mean_fb": 0.892885,
+        "median_fb": 0.934167,
+        "mean_fh": 0.810859,
+        "mean_tvd": 0.235893,
+        "mean_2q": 59.19,
+        "mean_depth": 116.94
+      }
+    },
+    "ibm_marrakesh": {
+      "arm_1_tket_2pub_k8_isolated": {
+        "mean_fb": 0.839858,
+        "median_fb": 0.920024,
+        "mean_fh": 0.733007,
+        "mean_tvd": 0.316302,
+        "mean_2q": 61.06,
+        "mean_depth": 122.25
+      },
+      "arm_2_sabre_2pub_k8_buffered_packed": {
+        "mean_fb": 0.857253,
+        "median_fb": 0.924056,
+        "mean_fh": 0.757207,
+        "mean_tvd": 0.295519,
+        "mean_2q": 65.06,
+        "mean_depth": 129.19
+      },
+      "arm_3_tket_2pub_k8_buffered_packed": {
+        "mean_fb": 0.848046,
+        "median_fb": 0.932107,
+        "mean_fh": 0.746154,
+        "mean_tvd": 0.303112,
+        "mean_2q": 61.06,
+        "mean_depth": 122.25
+      },
+      "arm_4_tket_2pub_k8_unbuffered_packed": {
+        "mean_fb": 0.848678,
+        "median_fb": 0.859599,
+        "mean_fh": 0.731977,
+        "mean_tvd": 0.32122,
+        "mean_2q": 62.25,
+        "mean_depth": 125.5
+      },
+      "arm_5_prom_native_2pub_k8_buffered_packed": {
+        "mean_fb": 0.853981,
+        "median_fb": 0.923801,
+        "mean_fh": 0.754524,
+        "mean_tvd": 0.297123,
+        "mean_2q": 62.31,
+        "mean_depth": 117.19
+      },
+      "arm_6_prom_metaselected_2pub_k8_buffered_packed": {
+        "mean_fb": 0.857189,
+        "median_fb": 0.932779,
+        "mean_fh": 0.760234,
+        "mean_tvd": 0.291827,
+        "mean_2q": 61.38,
+        "mean_depth": 117.06
+      }
+    },
+    "ibm_fez": {
+      "arm_1_tket_2pub_k8_isolated": {
+        "mean_fb": 0.886867,
+        "median_fb": 0.936357,
+        "mean_fh": 0.80276,
+        "mean_tvd": 0.248075,
+        "mean_2q": 57.38,
+        "mean_depth": 122.81
+      },
+      "arm_2_sabre_2pub_k8_buffered_packed": {
+        "mean_fb": 0.88277,
+        "median_fb": 0.93444,
+        "mean_fh": 0.795975,
+        "mean_tvd": 0.255936,
+        "mean_2q": 60.81,
+        "mean_depth": 128.12
+      },
+      "arm_3_tket_2pub_k8_buffered_packed": {
+        "mean_fb": 0.887699,
+        "median_fb": 0.936851,
+        "mean_fh": 0.804806,
+        "mean_tvd": 0.245885,
+        "mean_2q": 57.38,
+        "mean_depth": 122.81
+      },
+      "arm_4_tket_2pub_k8_unbuffered_packed": {
+        "mean_fb": 0.848632,
+        "median_fb": 0.896782,
+        "mean_fh": 0.742289,
+        "mean_tvd": 0.306603,
+        "mean_2q": 61.06,
+        "mean_depth": 124.12
+      },
+      "arm_5_prom_native_2pub_k8_buffered_packed": {
+        "mean_fb": 0.885229,
+        "median_fb": 0.927283,
+        "mean_fh": 0.800038,
+        "mean_tvd": 0.250646,
+        "mean_2q": 59.31,
+        "mean_depth": 115.38
+      },
+      "arm_6_prom_metaselected_2pub_k8_buffered_packed": {
+        "mean_fb": 0.888766,
+        "median_fb": 0.9304,
+        "mean_fh": 0.805199,
+        "mean_tvd": 0.245567,
+        "mean_2q": 57.81,
+        "mean_depth": 115.56
+      }
+    }
+  },
+  "timing_isolation_throughput_ibm_marrakesh": {
+    "T5_tket_packed_2pubs_k88": {
+      "job_id": "dbkafj1kdqps739235eg",
+      "backend": "ibm_marrakesh",
+      "num_pubs": 2,
+      "workloads_evaluated": 16,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.5782,
+      "wall_seconds": 8.66,
+      "mean_classical_overlap_fb": 0.854237,
+      "median_classical_overlap_fb": 0.930175,
+      "mean_hellinger_fidelity_fh": 0.754819,
+      "mean_tvd": 0.293758,
+      "workloads_passing_fb_ge_080": 11,
+      "workloads_passing_fb_ge_085": 11,
+      "workloads_passing_fb_ge_090": 10,
+      "qualified_per_charged_s_fb080": 3.6667,
+      "qualified_per_exec_s_fb080": 19.0246,
+      "qualified_per_charged_s_fb085": 3.6667,
+      "qualified_per_exec_s_fb085": 19.0246,
+      "qualified_per_charged_s_fb090": 3.3333,
+      "qualified_per_exec_s_fb090": 17.2951
+    },
+    "T6_prometheus_metaselected_packed_2pubs_k88": {
+      "job_id": "dbkaflhkdqps739235hg",
+      "backend": "ibm_marrakesh",
+      "num_pubs": 2,
+      "workloads_evaluated": 16,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.578,
+      "wall_seconds": 7.05,
+      "mean_classical_overlap_fb": 0.863426,
+      "median_classical_overlap_fb": 0.928238,
+      "mean_hellinger_fidelity_fh": 0.768609,
+      "mean_tvd": 0.280149,
+      "workloads_passing_fb_ge_080": 12,
+      "workloads_passing_fb_ge_085": 11,
+      "workloads_passing_fb_ge_090": 11,
+      "qualified_per_charged_s_fb080": 4.0,
+      "qualified_per_exec_s_fb080": 20.7612,
+      "qualified_per_charged_s_fb085": 3.6667,
+      "qualified_per_exec_s_fb085": 19.0311,
+      "qualified_per_charged_s_fb090": 3.6667,
+      "qualified_per_exec_s_fb090": 19.0311
+    }
+  },
+  "hardware_job_ledger": [
+    {
+      "file": "master_joint_meta_interleaved_ibm_fez.json",
+      "batch_label": "JointMeta_TKET_Interleaved_Master_ibm_fez",
+      "backend": "ibm_fez",
+      "job_id": "dbkacr9ffo6c73bb4rf0",
+      "submission_timestamp": "2026-11-02T15:04:13.576237+00:00",
+      "completion_timestamp": "2026-11-02T15:10:03.511506+00:00",
+      "num_pubs": 26,
+      "total_shots": 26624,
+      "isa_estimated_seconds": 10.007,
+      "quantum_seconds_charged": 9.0,
+      "circuits_execution_time_seconds": 7.0641,
+      "wall_seconds": 349.94
+    },
+    {
+      "file": "master_joint_meta_interleaved_ibm_kingston.json",
+      "batch_label": "JointMeta_TKET_Interleaved_Master_ibm_kingston",
+      "backend": "ibm_kingston",
+      "job_id": "dbkaag9ffo6c73bb4oa0",
+      "submission_timestamp": "2026-11-02T14:59:12.917127+00:00",
+      "completion_timestamp": "2026-11-02T15:00:37.945155+00:00",
+      "num_pubs": 26,
+      "total_shots": 26624,
+      "isa_estimated_seconds": 10.03,
+      "quantum_seconds_charged": 9.0,
+      "circuits_execution_time_seconds": 7.1607,
+      "wall_seconds": 85.03
+    },
+    {
+      "file": "master_joint_meta_interleaved_ibm_marrakesh.json",
+      "batch_label": "JointMeta_TKET_Interleaved_Master_ibm_marrakesh",
+      "backend": "ibm_marrakesh",
+      "job_id": "dbkab5t6p51s73cm9000",
+      "submission_timestamp": "2026-11-02T15:00:39.319044+00:00",
+      "completion_timestamp": "2026-11-02T15:04:12.322191+00:00",
+      "num_pubs": 26,
+      "total_shots": 26624,
+      "isa_estimated_seconds": 10.036,
+      "quantum_seconds_charged": 10.0,
+      "circuits_execution_time_seconds": 7.3044,
+      "wall_seconds": 213.0
+    },
+    {
+      "file": "timing_T5_tket_packed_2pubs_k88_ibm_marrakesh.json",
+      "batch_label": "JointMeta_T5_tket_packed_2pubs_k88_ibm_marrakesh",
+      "backend": "ibm_marrakesh",
+      "job_id": "dbkafj1kdqps739235eg",
+      "submission_timestamp": "2026-11-02T15:10:04.485793+00:00",
+      "completion_timestamp": "2026-11-02T15:10:13.146824+00:00",
+      "num_pubs": 2,
+      "total_shots": 2048,
+      "isa_estimated_seconds": 3.557,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.5782,
+      "wall_seconds": 8.66
+    },
+    {
+      "file": "timing_T6_prometheus_metaselected_packed_2pubs_k88_ibm_marrakesh.json",
+      "batch_label": "JointMeta_T6_prometheus_metaselected_packed_2pubs_k88_ibm_marrakesh",
+      "backend": "ibm_marrakesh",
+      "job_id": "dbkaflhkdqps739235hg",
+      "submission_timestamp": "2026-11-02T15:10:14.701904+00:00",
+      "completion_timestamp": "2026-11-02T15:10:21.748164+00:00",
+      "num_pubs": 2,
+      "total_shots": 2048,
+      "isa_estimated_seconds": 3.555,
+      "quantum_seconds_charged": 3.0,
+      "circuits_execution_time_seconds": 0.578,
+      "wall_seconds": 7.05
+    }
+  ]
+}
